@@ -8,6 +8,9 @@ type ReadableContent =
 
 let loadMimeMessageFrom(filepath: string) = MimeMessage.Load(filepath)
 
+let senderOf (message: MimeMessage) : string = message.Sender.Name + " <" + message.Sender.Address + ">"
+let dateOf (message: MimeMessage) : System.DateTime = message.Date.Date
+
 let rec contentPartsOf (message: MimeMessage) : list<ReadableContent> = contentPartsFromMimeEntity message.Body
 
 and contentPartsFromMimeEntity (entity: MimeEntity) : list<ReadableContent> = 

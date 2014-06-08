@@ -55,6 +55,10 @@
       <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
       <Name>Utils</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EmailParser\EmailParser.fsproj">
+      <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
+      <Name>EmailParser</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

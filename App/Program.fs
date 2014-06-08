@@ -6,6 +6,9 @@ open ODonnellParser.Parser
 let main argv = 
     System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
     let message = loadMimeMessageFrom("../ODonnellParser/ODonnell.eml")
+    let sender = senderOf message
+    let sentDate = dateOf message
     let lines = textOf message |> splitIntoLines
-    let parsed = parseMail lines
+
+    let parsed = parseMail sender sentDate lines
     0
