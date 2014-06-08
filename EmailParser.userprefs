@@ -1,8 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ODonnellParser/ODonnell.fs">
+    <Files>
+      <File FileName="App/Program.fs" Line="1" Column="1" />
+      <File FileName="App/Script.fsx" Line="15" Column="29" />
+      <File FileName="ODonnellParser/ODonnell.fs" Line="1" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Library/Utils.fsproj</String>
+  </DisabledProjects>
 </Properties>

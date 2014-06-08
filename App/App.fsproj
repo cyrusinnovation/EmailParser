@@ -47,13 +47,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Library\Utils.fsproj">
-      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
-      <Name>Utils</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ODonnellParser\ODonnellParser.fsproj">
       <Project>{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}</Project>
       <Name>ODonnellParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.fsproj">
+      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
+      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

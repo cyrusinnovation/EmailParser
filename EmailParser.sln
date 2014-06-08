@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "App", "App\App.fsproj", "{090B9067-7791-4AB6-A584-F4270A9A4A44}"
 EndProject
-Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "Utils", "Library\Utils.fsproj", "EFAA7888-F46F-4E5B-9020-B03B90422E6F"
-EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "ODonnellParser", "ODonnellParser\ODonnellParser.fsproj", "{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}"
+EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "Utils", "Utils\Utils.fsproj", "EFAA7888-F46F-4E5B-9020-B03B90422E6F"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +22,12 @@ Global
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU

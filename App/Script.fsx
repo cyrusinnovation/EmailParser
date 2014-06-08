@@ -1,12 +1,12 @@
-﻿#I "../Library/bin/Debug/"
-#r "EmailParser.dll"
+﻿#I "bin/Debug/"
+#r "EmailParserUtils.dll"
 #r "MimeKitLite.dll"
 #r "HtmlAgilityPack.dll"
+#r "ODonnellParser.dll"
 
-open EmailParser.Mime
-open EmailParser.Html
-open EmailParser.Text
-open EmailParser.ODonnell
+open EmailParser.Utils.Mime
+open EmailParser.Utils.Text
+open ODonnellParser.Parser
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let message = loadMimeMessageFrom("../ODonnellParser/ODonnell.eml")
