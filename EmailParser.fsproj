@@ -45,6 +45,10 @@
     <Reference Include="Html2Xhtml">
       <HintPath>lib\Html2Xhtml.dll</HintPath>
     </Reference>
+    <Reference Include="MimeKitLite">
+      <HintPath>packages\MimeKitLite.0.36.0.0\lib\net40\MimeKitLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library1.fs" />
@@ -63,7 +67,7 @@
   </Target>
   -->
   <ItemGroup>
-    <Content Include="ODonnell.html">
+    <Content Include="ODonnell.eml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
