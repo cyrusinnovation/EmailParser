@@ -1,5 +1,5 @@
 ﻿open Mime
-open Xhtml
+open Html
 
 [<EntryPoint>]
 let main argv = 
