@@ -1,4 +1,4 @@
-﻿module EmailParser.Html
+﻿module EmailParser.Utils.Html
 
 let dataFromHtml(html: string) = 
     let htmlDocument = new HtmlAgilityPack.HtmlDocument()

@@ -7,7 +7,7 @@
     <ProjectGuid>EFAA7888-F46F-4E5B-9020-B03B90422E6F</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>EmailParser</RootNamespace>
-    <AssemblyName>EmailParser</AssemblyName>
+    <AssemblyName>EmailParserUtils</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Name>EmailParser</Name>
   </PropertyGroup>
@@ -54,8 +54,7 @@
     <Compile Include="Html.fs" />
     <Compile Include="Mime.fs" />
     <Compile Include="Text.fs" />
-    <Compile Include="Utils.fs" />
-    <Compile Include="ODonnell.fs" />
+    <Compile Include="Collections.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -68,9 +67,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <Content Include="ODonnell.eml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 </Project>

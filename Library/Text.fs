@@ -1,4 +1,4 @@
-﻿module EmailParser.Text
+﻿module EmailParser.Utils.Text
 
 let splitIntoLines (text: string) = 
     let lineArray = text.Replace("\r\n", "\n").Split( [|'\n'|] )
