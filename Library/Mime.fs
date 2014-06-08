@@ -1,4 +1,4 @@
-﻿module Mime
+﻿module EmailParser.Mime
 
 open MimeKit
 
