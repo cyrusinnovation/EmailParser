@@ -23,7 +23,9 @@ let usage() =
     printfn "current working directory."
 
 let loadDataFrom (filename: string) =
+    // TODO Need to select which parser to use based on file extension
     let message = loadMimeMessageFrom(filename)
+    //TODO Send the message to the parser. Have the parser dig this stuff out.
     let sender = senderOf message
     let sentDate = dateOf message
     let lines = textOf message |> splitIntoLines
