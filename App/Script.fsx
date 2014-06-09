@@ -1,5 +1,5 @@
 ﻿#I "bin/Debug/"
-#r "EmailParser.dll"
+#r "ParserTypes.dll"
 #r "EmailParserUtils.dll"
 #r "MimeKitLite.dll"
 #r "HtmlAgilityPack.dll"
@@ -13,7 +13,7 @@ open EmailParser.Utils.Collections
 open System.Text.RegularExpressions
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
-let message = loadMimeMessageFrom("../ODonnellParser/ODonnell.eml")
+let message = loadMimeMessageFrom("bin/Debug/Email.odonnell")
 let sender = senderOf message
 let sentDate = dateOf message
 let lines = textOf message |> splitIntoLines

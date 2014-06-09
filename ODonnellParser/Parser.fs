@@ -1,6 +1,6 @@
 ﻿module ODonnellParser.Parser
 
-open EmailParser.Parser
+open EmailParser.Types
 open EmailParser.Utils.Collections
 open ODonnellParser.Utils
 

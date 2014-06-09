@@ -6,7 +6,7 @@
     <ProjectGuid>{090B9067-7791-4AB6-A584-F4270A9A4A44}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>App</RootNamespace>
-    <AssemblyName>App</AssemblyName>
+    <AssemblyName>EmailParser</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -55,9 +55,9 @@
       <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
       <Name>Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmailParser\EmailParser.fsproj">
+    <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
       <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
-      <Name>EmailParser</Name>
+      <Name>ParserTypes</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

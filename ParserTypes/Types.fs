@@ -1,4 +1,4 @@
-﻿module EmailParser.Parser
+﻿module EmailParser.Types
 
 open System
 

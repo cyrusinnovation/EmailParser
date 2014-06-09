@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ODonnellParser/Parser.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App/Program.fs">
     <Files>
-      <File FileName="ODonnellParser/Parser.fs" Line="1" Column="25" />
-      <File FileName="Utils/Mime.fs" Line="12" Column="37" />
-      <File FileName="App/Script.fsx" Line="17" Column="40" />
-      <File FileName="EmailParser/Parser.fs" Line="6" Column="6" />
+      <File FileName="App/Program.fs" Line="36" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

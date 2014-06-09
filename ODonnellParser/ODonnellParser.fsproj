@@ -46,7 +46,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
-    <Content Include="ODonnell.eml">
+    <Content Include="Email.odonnell">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -55,9 +55,9 @@
       <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
       <Name>Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmailParser\EmailParser.fsproj">
+    <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
       <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
-      <Name>EmailParser</Name>
+      <Name>ParserTypes</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
