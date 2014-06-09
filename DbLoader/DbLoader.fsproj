@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}</ProjectGuid>
+    <ProjectGuid>{166E52EB-4E26-4074-A695-63D071AC135F}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ODonnellParser</RootNamespace>
-    <AssemblyName>ODonnellParser</AssemblyName>
+    <RootNamespace>DbLoader</RootNamespace>
+    <AssemblyName>DbLoader</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,26 +38,26 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Utils.fs" />
-    <Compile Include="Parser.fs" />
+    <Compile Include="SQLiteLoader.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
-    <Content Include="Email.odonnell">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="app.config" />
+    <None Include="Script.fsx" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sqlite-Net\Sqlite-Net.csproj">
+      <Project>{7E4DB960-FA1A-4087-A221-CCAE27615EB1}</Project>
+      <Name>Sqlite-Net</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
       <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
       <Name>ParserTypes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Utils\Utils.fsproj">
-      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
-      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

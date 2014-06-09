@@ -51,13 +51,13 @@
       <Project>{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}</Project>
       <Name>ODonnellParser</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utils\Utils.fsproj">
-      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
-      <Name>Utils</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
       <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
       <Name>ParserTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.fsproj">
+      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
+      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
