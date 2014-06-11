@@ -1,7 +1,7 @@
 ﻿open EmailParser.Utils.Mime
 open EmailParser.Utils.Text
 open ODonnellParser.Parser
-
+open EmailParser.SQLitePersistence
 
 let usage() =
     printfn "usage: EmailParser MAIL_FILE_1 [MAIL_FILE_2 ...]"
@@ -30,8 +30,9 @@ let loadDataFrom (filename: string) =
     let sentDate = dateOf message
     let lines = textOf message |> splitIntoLines
     let parsed = parseMail sender sentDate lines
+    loadMail parsed
+    let eventsList = retrieveCalendarEntriesFromTodayByDate()
     ()
-
 
 [<EntryPoint>]
 let main argv = 

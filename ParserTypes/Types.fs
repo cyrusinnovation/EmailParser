@@ -13,6 +13,6 @@ type CalendarEntry = {
 type EmailData = {
     MailDate: DateTime;
     MailSender: string;
-    MailIntro: list<string>;
+    MailIntro: string;
     CalendarEntries: list<CalendarEntry>
 }

@@ -55,6 +55,7 @@
     <Compile Include="Mime.fs" />
     <Compile Include="Text.fs" />
     <Compile Include="Collections.fs" />
+    <Compile Include="Date.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

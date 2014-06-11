@@ -31,6 +31,8 @@
     </PlatformTarget>
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
+    <DefineConstants>
+    </DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -40,24 +42,44 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="FSharp.Data.SqlProvider">
+      <HintPath>..\packages\SQLProvider.0.0.9-alpha\lib\net40\FSharp.Data.SqlProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>System.Data.SQLite.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="SQLiteLoader.fs" />
+    <Compile Include="SQLitePersistence.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Script.fsx" />
+    <None Include="packages.config" />
+    <None Include="schema.ddl" />
+    <None Include="test.sqlitedb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="System.Data.SQLite.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sqlite-Net\Sqlite-Net.csproj">
-      <Project>{7E4DB960-FA1A-4087-A221-CCAE27615EB1}</Project>
-      <Name>Sqlite-Net</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
       <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
       <Name>ParserTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.fsproj">
+      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
+      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

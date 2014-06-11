@@ -121,12 +121,12 @@ let rec calendarEntriesFrom (datePart: MessagePart) (messageParts: list<MessageP
 
 
 let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (messageParts: list<MessagePart>) : EmailData =
-    let intro = messageParts |> List.choose (function |IntroPart(intro) -> Some(intro) | _ -> None) |> List.head
+    let intro = messageParts |> extractWithEmptyStringDefault (function | IntroPart(intro) -> Some(String.concat "\n" intro)  | _ -> None)
     let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
     let calendarEntries = calendarEntriesFrom nonIntroParts.Head nonIntroParts.Tail
 
     { MailDate = sentDate; MailSender = sender; MailIntro = intro; CalendarEntries = calendarEntries }
 
-let parseMail (sender: string) (sentDate: System.DateTime) (mailText: list<string>) = 
+let parseMail (sender: string) (sentDate: System.DateTime) (mailText: list<string>) : EmailData = 
     let messageParts = parse mailText PreIntro
     parseIntoEmailData sender sentDate messageParts
