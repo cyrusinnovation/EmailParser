@@ -1,524 +1,480 @@
+                                                                                                                                                                                                                                                               
 Delivered-To: psfblair@gmail.com
-Received: by 10.194.55.98 with SMTP id r2csp83788wjp;
-        Mon, 2 Jun 2014 05:14:07 -0700 (PDT)
-X-Received: by 10.68.164.4 with SMTP id ym4mr39648904pbb.53.1401711246475;
-        Mon, 02 Jun 2014 05:14:06 -0700 (PDT)
-Return-Path: <SRS0+DxwE=27=gmail.com=charlie.odonnell@mxfwd1.rollernet.us>
-Received: from mxfwd1.rollernet.us (mxfwd1.rollernet.us. [2607:fe70:0:16::a])
-        by mx.google.com with ESMTPS id ss10si15722304pab.209.2014.06.02.05.14.05
+Received: by 10.194.55.98 with SMTP id r2csp113002wjp;
+        Mon, 9 Jun 2014 05:06:49 -0700 (PDT)
+X-Received: by 10.68.227.4 with SMTP id rw4mr32046532pbc.3.1402315608708;
+        Mon, 09 Jun 2014 05:06:48 -0700 (PDT)
+Return-Path: <SRS0+R7uw=3G=gmail.com=charlie.odonnell@mxfwd2.rollernet.us>
+Received: from mxfwd2.rollernet.us (mxfwd2.rollernet.us. [2607:fe70:0:16::b])
+        by mx.google.com with ESMTPS id nu1si30460678pbb.216.2014.06.09.05.06.47
         for <psfblair@gmail.com>
         (version=TLSv1 cipher=RC4-SHA bits=128/128);
-        Mon, 02 Jun 2014 05:14:06 -0700 (PDT)
-Received-SPF: pass (google.com: domain of SRS0+DxwE=27=gmail.com=charlie.odonnell@mxfwd1.rollernet.us designates 2607:fe70:0:16::a as permitted sender) client-ip=2607:fe70:0:16::a;
+        Mon, 09 Jun 2014 05:06:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of SRS0+R7uw=3G=gmail.com=charlie.odonnell@mxfwd2.rollernet.us designates 2607:fe70:0:16::b as permitted sender) client-ip=2607:fe70:0:16::b;
 Authentication-Results: mx.google.com;
-       spf=pass (google.com: domain of SRS0+DxwE=27=gmail.com=charlie.odonnell@mxfwd1.rollernet.us designates 2607:fe70:0:16::a as permitted sender) smtp.mail=SRS0+DxwE=27=gmail.com=charlie.odonnell@mxfwd1.rollernet.us;
-       dkim=pass header.i=@mail49.atl11.rsgsv.net;
+       spf=pass (google.com: domain of SRS0+R7uw=3G=gmail.com=charlie.odonnell@mxfwd2.rollernet.us designates 2607:fe70:0:16::b as permitted sender) smtp.mail=SRS0+R7uw=3G=gmail.com=charlie.odonnell@mxfwd2.rollernet.us;
+       dkim=pass header.i=@mail29.us4.mcsv.net;
        dmarc=fail (p=NONE dis=NONE) header.from=gmail.com
-Received: from mail.rollernet.us (mail.rollernet.us [208.79.240.2])
-	by mxfwd1.rollernet.us (Postfix) with ESMTP id 5651AC02AF45
-	for <psfblair@gmail.com>; Mon,  2 Jun 2014 05:14:05 -0700 (PDT)
-X-Spam-Checker-Version: SpamAssassin 3.3.2 (2011-06-06) on mail.rollernet.us
+Received: from mail2.rollernet.us (mail2.rollernet.us [208.79.241.2])
+	by mxfwd2.rollernet.us (Postfix) with ESMTP id 71E14C02AF45
+	for <psfblair@gmail.com>; Mon,  9 Jun 2014 05:06:47 -0700 (PDT)
+X-Spam-Checker-Version: SpamAssassin 3.3.2 (2011-06-06) on mail2.rollernet.us
 X-Spam-Level: 
-X-Spam-Status: No, score=-0.6 required=5.0 tests=FREEMAIL_FROM,HTML_MESSAGE,
-	MIME_QP_LONG_LINE,RP_MATCHES_RCVD,T_DKIM_INVALID autolearn=disabled
+X-Spam-Status: No, score=-5.7 required=5.0 tests=DKIM_ADSP_CUSTOM_MED,
+	DKIM_SIGNED,DKIM_VALID,FREEMAIL_FROM,HTML_MESSAGE,MIME_QP_LONG_LINE,
+	NML_ADSP_CUSTOM_MED,RCVD_IN_IADB_DK,RCVD_IN_IADB_LISTED,RCVD_IN_IADB_OPTIN,
+	RCVD_IN_IADB_OPTIN_GT50,RCVD_IN_IADB_RDNS,RCVD_IN_IADB_SENDERID,
+	RCVD_IN_IADB_SPF,RCVD_IN_IADB_VOUCHED,RP_MATCHES_RCVD autolearn=disabled
 	version=3.3.2
-X-Envelope-From: bounce-mc.us1_623501.2469449-ciriwe=phobot.net@mail49.atl11.rsgsv.net
-Received: from mail49.atl11.rsgsv.net (mail49.atl11.rsgsv.net [205.201.133.49])
-	by mail.rollernet.us (Postfix) with ESMTP
-	for <ciriwe@phobot.net>; Mon,  2 Jun 2014 05:13:56 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=mail49.atl11.rsgsv.net;
- h=Subject:From:Reply-To:To:Date:Message-ID:List-Unsubscribe:Sender:Content-Type:MIME-Version; i=charlie.odonnell=3Dgmail.com@mail49.atl11.rsgsv.net;
- bh=iShRx+CTgHjsvYdyHZDUvXxKYZM=;
- b=ltGnhNUaF1ipOrPF1KV7wbIANXX0Ky0LiUR4RPK0f2XDS4bs1isjSNhRFvll/4479yMKCcAsSpZO
-   gRaHjSEz6fCzFDPk4tyDuBq+icFZm+FVc+liKN1VJ1DgOlxzFH2EuuWa7YQGZiIOJZf/B7WByrSV
-   4l6hg28iVCK11yog1oU=
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=mail49.atl11.rsgsv.net;
- b=fXYrX6Hy3SetF/bpN4qY+/YSizzF0z0Knb3C4XW0ndGVUVXryUCVMDns5Aooavg96VbsVPbdoyVj
-   JPUCTl/wYcOegYSylJeL1AdiM2+5U4pkobLbc0u3OPV7wDAUDak+YDhUrkk60ggXvb3BUOfd03qO
-   iPPBuc5l1KPzzfYPpDI=;
-Received: from (127.0.0.1) by mail49.atl11.rsgsv.net id hhhl8a1lgi0g for <ciriwe@phobot.net>; Mon, 2 Jun 2014 12:13:54 +0000 (envelope-from <bounce-mc.us1_623501.2469449-ciriwe=phobot.net@mail49.atl11.rsgsv.net>)
-Subject: =?utf-8?Q?This=20Week=20in=20the=20NYC=20Innovation=20Community=20=2D=20June=202nd=2C=202014?=
+X-Envelope-From: bounce-mc.us1_623501.2469457-ciriwe=phobot.net@mail29.us4.mcsv.net
+Received: from mail29.us4.mcsv.net (mail29.us4.mcsv.net [205.201.128.29])
+	by mail2.rollernet.us (Postfix) with ESMTP
+	for <ciriwe@phobot.net>; Mon,  9 Jun 2014 05:06:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=mail29.us4.mcsv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-Unsubscribe:Sender:Content-Type:MIME-Version; i=charlie.odonnell=3Dgmail.com@mail29.us4.mcsv.net;
+ bh=VycRBnpEcFGH9Nrr+wi98ERWv0I=;
+ b=a/ssGCsm0Hrqjccab8dQeWzHohSoifv7gzIYjYVXjwXnTMDdSSWmg+EPZLOXuC9rpa9P1fjQKSno
+   tkvQX8oRsljJAn4qaPmO0re1wTbhmWuUFkphQ+e+YDCiBWb2CpkEdpuoUOXYAGxuIEcCc3TC+pea
+   b3ABiXIDM75DrUxJ0s0=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=mail29.us4.mcsv.net;
+ b=ZKmph81FhyS2+S6VuL118CSMWUUG8OZEmI5QhBZPXfBkaqRSPKCRdp6YMIfNC8ucvGQNrTcDhD+t
+   NxxoxJ6AjbPvZsdswM+KyFsN7gkVPLzlibDat2FHLA+GdeVvIU5SuyZcbaqC3zie1003QtgP3MX6
+   DmXyZZSWwRJUeg8BDu0=;
+Received: from (127.0.0.1) by mail29.us4.mcsv.net id himhl6174lgg for <ciriwe@phobot.net>; Mon, 9 Jun 2014 12:06:40 +0000 (envelope-from <bounce-mc.us1_623501.2469457-ciriwe=phobot.net@mail29.us4.mcsv.net>)
+Subject: =?utf-8?Q?This=20Week=20in=20the=20NYC=20Innovation=20Community=20=2D=20June=209th=2C=202014?=
 From: =?utf-8?Q?Charlie=20O=27Donnell?= <charlie.odonnell@gmail.com>
 Reply-To: =?utf-8?Q?Charlie=20O=27Donnell?= <charlie.odonnell@gmail.com>
 To: <ciriwe@phobot.net>
-Date: Mon, 2 Jun 2014 12:13:54 +0000
-Message-ID: <4c2ee8c906b6f9bdf2b29d2b88404ceda97.20140602121328@mail49.atl11.rsgsv.net>
-X-Mailer: MailChimp Mailer - **CID5f7e0960348404ceda97**
-X-Campaign: mailchimp4c2ee8c906b6f9bdf2b29d2b8.5f7e096034
-X-campaignid: mailchimp4c2ee8c906b6f9bdf2b29d2b8.5f7e096034
-X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=4c2ee8c906b6f9bdf2b29d2b8&id=5f7e096034&e=8404ceda97
+Date: Mon, 9 Jun 2014 12:06:40 +0000
+Message-ID: <4c2ee8c906b6f9bdf2b29d2b88404ceda97.20140609120611@mail29.us4.mcsv.net>
+X-Mailer: MailChimp Mailer - **CIDb0aae385778404ceda97**
+X-Campaign: mailchimp4c2ee8c906b6f9bdf2b29d2b8.b0aae38577
+X-campaignid: mailchimp4c2ee8c906b6f9bdf2b29d2b8.b0aae38577
+X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=4c2ee8c906b6f9bdf2b29d2b8&id=b0aae38577&e=8404ceda97
 X-MC-User: 4c2ee8c906b6f9bdf2b29d2b8
-X-Feedback-ID: 623501:623501.2469449:us1:mc
+X-Feedback-ID: 623501:623501.2469457:us1:mc
 X-Accounttype: pd
-List-Unsubscribe: <mailto:unsubscribe-4c2ee8c906b6f9bdf2b29d2b8-5f7e096034-8404ceda97@mailin1.us2.mcsv.net?subject=unsubscribe>, <http://thisisgoingtobebig.us1.list-manage.com/unsubscribe?u=4c2ee8c906b6f9bdf2b29d2b8&id=0567136513&e=8404ceda97&c=5f7e096034>
-Sender: "Charlie O'Donnell" <charlie.odonnell=gmail.com@mail49.atl11.rsgsv.net>
+List-Unsubscribe: <mailto:unsubscribe-4c2ee8c906b6f9bdf2b29d2b8-b0aae38577-8404ceda97@mailin1.us2.mcsv.net?subject=unsubscribe>, <http://thisisgoingtobebig.us1.list-manage.com/unsubscribe?u=4c2ee8c906b6f9bdf2b29d2b8&id=0567136513&e=8404ceda97&c=b0aae38577>
+Sender: "Charlie O'Donnell" <charlie.odonnell=gmail.com@mail29.us4.mcsv.net>
 x-mcda: FALSE
-Content-Type: multipart/alternative; boundary="_----------=_MCPart_753749002"
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_619949472"
 MIME-Version: 1.0
-Received-SPF: pass (mail49.atl11.rsgsv.net: 205.201.133.49 is authorized to use 'bounce-mc.us1_623501.2469449-ciriwe=phobot.net@mail49.atl11.rsgsv.net' in 'mfrom' identity (mechanism 'ip4:205.201.133.49' matched)) receiver=mail.rollernet.us; identity=mailfrom; envelope-from="bounce-mc.us1_623501.2469449-ciriwe=phobot.net@mail49.atl11.rsgsv.net"; helo=mail49.atl11.rsgsv.net; client-ip=205.201.133.49
+Received-SPF: pass (mail29.us4.mcsv.net: 205.201.128.29 is authorized to use 'bounce-mc.us1_623501.2469457-ciriwe=phobot.net@mail29.us4.mcsv.net' in 'mfrom' identity (mechanism 'mx' matched)) receiver=mail2.rollernet.us; identity=mailfrom; envelope-from="bounce-mc.us1_623501.2469457-ciriwe=phobot.net@mail29.us4.mcsv.net"; helo=mail29.us4.mcsv.net; client-ip=205.201.128.29
 X-Rollernet-Abuse: Processed by Roller Network Mail Services. See our abuse policy at http://www.rollernet.us/policy
-X-Rollernet-Tracking: Tracking ID 7f43.538c6a84.9add6.0
+X-Rollernet-Tracking: Tracking ID 7bb4.5395a352.a3166.0
 X-Rollernet-FwdTo: default->psfblair@gmail.com
 
 This is a multi-part message in MIME format
 
---_----------=_MCPart_753749002
+--_----------=_MCPart_619949472
 Content-Type: text/plain; charset="utf-8"; format="fixed"
 Content-Transfer-Encoding: quoted-printable
 
 http://G.CDNNT.COM/click?s=3D445&t=3Dnewsletter&sz=3D728x90&li=3D056713651=
-3&e=3Dciriwe@phobot.net&p=3D5f7e096034
+3&e=3Dciriwe@phobot.net&p=3Db0aae38577
 http://G.CDNNT.COM/click?s=3D2814&t=3Dnewsletter&sz=3D116x15&li=3D05671365=
-13&e=3Dciriwe@phobot.net&p=3D5f7e096034 http://G.CDNNT.COM/click?s=3D96121&=
-t=3Dnewsletter&sz=3D69x15&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096=
-034
+13&e=3Dciriwe@phobot.net&p=3Db0aae38577 http://G.CDNNT.COM/click?s=3D96121&=
+t=3Dnewsletter&sz=3D69x15&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38=
+577
 This week in NYC innovation
 
-Where Brooklyn at?
-
-I've said that it probably wouldn't happen=2C but it did.  A big startup m=
-oved to Brooklyn.
-
-Livestream just moved its entire operation (http://www.nytimes.com/2014/05=
-/23/nyregion/in-search-of-space-and-creativity-a-start-up-is-headed-to-bro=
-oklyn.html?_r=3D0)  and 80 employees over to the old 3rd Ward space in Bus=
-hwick.  I had previously thought that the big Brooklyn companies would all=
- be homegrown--that unless you started out with an employee base that was=
- small=2C and grew it locally=2C you probably wouldn't see such a move.  I=
- guess when they're asking a third the rent you find in Chelsea and half y=
-our employee base lives in Brooklyn anyway the move seems pretty compellin=
-g.
-
-To celebrate=2C let's all go to a ball game!
-
-Actually=2C I had this in the works before=2C but the more the merrier.  O=
-n July 17th=2C the Brooklyn Cyclones--the Mets minor league affiliate in C=
-oney Island--are holding a tech & startups night (http://cyclonesandstartu=
-ps.eventbrite.com) .  We're getting 100's of people out to the ballpark=2C=
- which is a fantastic place to watch a game.  It's right on the boardwalk=
- and the beach.  When's the last time you paid $17 to go watch a ball game=
-=2E  We'll have lots of employees from companies like Huge=2C Makerbot=2C To=
-ugh Mudder=2C Etsy=2C etc.=2C but tickets have already been selling fast.=
-  Looks like we'll get at least 500 out to the game.  If you live and/or w=
-ork in Brooklyn=2C or just want to see baseball without paying hundreds of=
- dollars=2C come join us by RSVPing here. (http://cyclonesandstartups.even=
-tbrite.com)   If you want to get your entire company out to the ballpark f=
-or this=2C just reply and we'll think about doing something cool.
+I hope you all got outside this past weekend...  The weather was amazing.=
+  Would have been nice weather to watch a minor league baseball game in Co=
+ney Island like the Brooklyn startup community is doing in July.  Come joi=
+n us (http://cyclonesandstartups.eventbrite.com) .
 
 _____
 
-Speaking of expanding locations=2C there's a new WeWork Labs location at 7=
-9 Madison Ave.  They would like to personally invite you and your startup=
- in for a tour. Because they love the NY tech community=2C they're offerin=
-g to waive the WeWork setup fees and to give you 20% off of your first mon=
-th! Send an email to joinus@wework.com with the subject line "NoMad-CEONYC=
-" to get started.
+You won't believe what they're trying to tear down in Brooklyn (http://www=
+=2Ethisisgoingtobebig.com/blog/2014/6/8/a-sign-of-the-times-why-saving-the-k=
+entile-sign-is-important.html) ...  (Linkbaity Buzzfeed-like headline of t=
+he day.)
 
 _____
 
-I've got two really compelling technical opportunities to work in the crea=
-tivity and kids space with some fantastic founders.
+Refinery29=2C Buzzfeed=2C Shutterstock=2C KeyMe and NextBigSound are all t=
+alking front end development at tomorrow night's developer-only Stackup Ta=
+lks.  Check it out (http://stackuptalks.com/dev) .
 
-The first is a company that turns kids art into lasting keepsakes.  Imagin=
-e all the things you drew when you were three being saved in a series of c=
-offee table books or posters=2C instead of yellowing away in a box somewhe=
-re.  The company works with schools and was founded by two moms--a former=
- publisher and a former equities trader.  They've done some serious revenu=
-e with an outsourced tech product and are looking in house to build out a=
- technical team with some ecommerce experience.  Anyone who has worked wit=
-h physical logistics like printing and shipping would also be a huge plus.
+_____
 
-The second is another curiousity inspiring company--and it promotes physic=
-al play and problem solving in real life.  They're creating a distributed=
- network of physical classes=2C so the technology is something similar to=
- what you might find at a company like Mindbody=2C which schedules all the=
- yoga you've ever been to.  Plus=2C there's an educational content compone=
-nt which complements the classes--so lots of drip email=2C video and photo=
- distribution=2C etc.
-
-Happy to introduce anyone you or anyone you might know looking to get on b=
-oard with something early.  The nice thing here is that these are cashflow=
- generating businesses.  They sell things that people pay for.
-
-____
-
-Hey=2C does anyone want to code up an event bookmarker that can take Meetu=
-p and General Assembly Pages and put them in our HTML format for this news=
-letter=2C sorting them by date?  So=2C I show up on a page=2C click a book=
-marklet=2C and the Date=2C a description=2C location=2C etc just shows up=
- in a database that I can just sort into the right format?  I dunno what t=
-he going rate for such things is=2C but I'd pay real cash money for that.
-
-____
-
-Here's another project I'd love to see get built... A private Angel List.=
-  I'd like to be able to control who sees what deals I'm looking at=2C and=
- selectively syndicate them out to folks=2C without telling the entire pub=
-lic.  It would make finding co-investors a heck of a lot easier.
-
-____
-
-Two classes you should definitely check out for next week.  My friend Jaso=
-n's Intro to Product Management Workshop (https://generalassemb.ly/educati=
-on/introduction-to-product-management-workshop/new-york-city/5624)  and Ho=
-w to Assess Your Product's Market Viability (https://generalassemb.ly/educ=
-ation/winner-or-dud-assessing-your-products-market-viability/new-york-city=
-/5699) .
-
-____
-
-Also=2C if you care about important stuff=2C like how technology plays a r=
-ole in our election process=2C you'll check out this Open Source Democracy=
- event on Wednesday (https://www.eventbrite.com/e/open-source-democracy-ti=
-ckets-11736876313?aff=3Deiosprexshremail&ref=3Deiosprexshremail) .
-
-____
-
-Do you know who's cool?  My friend Caitlin=2C an investor at Flybridge Cap=
-ital.  She's speaking at this event on Thursday (http://www.eventbrite.com=
-/e/women-20-city-meetup-new-york-city-tickets-11513022761?aff=3Deorg) .
-
-____
+And now=2C back to our show...
 
 
-And now=2C on with our show...
 
-
-Charlie
-
-BrooklynBridge.vc (http://www.brooklynbridge.vc/)
 _____________________________________________
 
-Monday=2C June 2nd
+Monday=2C June 9th
 
-6:15PM - Disruptive Technologists in NYC - Big Data: New Initiatives=2C Op=
-inions & Future (http://www.meetup.com/Disruptive-Technologists-in-NYC/eve=
-nts/176473882/)
+6:30PM - GitHub remote-worker culture and tools (http://www.meetup.com/cto=
+school/events/182177662/)
 
-NYIT
-16 West 61st Street=2C New York=2C NY
+Pivotal Labs
+625 6th Avenue=2C 2nd Floor=2C New York=2C NY
 
-Will explore the new initiatives=2C new products=2C opinions=2C and the fu=
-ture of data.
+In this talk=2C I'll share some of the things that have helped GitHub be a=
+ successful primarily-remote-worker company during my time there since 201=
+0. Specifically=2C we'll discuss:
 
-RSVP (http://www.meetup.com/Disruptive-Technologists-in-NYC/events/1764738=
-82/)
+RSVP (http://www.meetup.com/ctoschool/events/182177662/)
 
-6:45PM - Changing in the Open: Three Views of Open Geo (http://www.eventbr=
-ite.com/e/makers-institute-series-design-thinking-using-strategic-problem-=
-solving-to-amplify-your-social-tickets-11422060691)
-
-Centre For Social Innovation
-601 W 26th Street Suite 325 New York =2C NY
-
-Join Be Social Change & Kristina Drury=2C founder of TYTHEdesign=2C for th=
-e 3-part Makers Institute workshop Design Thinking: Using Strategic Proble=
-m-Solving to Amplify Your Social Impact.
-
-RSVP (http://www.eventbrite.com/e/makers-institute-series-design-thinking-=
-using-strategic-problem-solving-to-amplify-your-social-tickets-11422060691=
-)
-
-7PM - Introduction to Python (http://www.meetup.com/girldevelopit/events/1=
-77513672/)
-
-Etsy Labs
-55 Washington St. Ste 712 =2C Brooklyn=2C NY
-
-Join us for GDI NYC's second Introduction to Python course=2C designed for=
- those who have very limited or no programming experience.
-
-RSVP (http://www.meetup.com/girldevelopit/events/177513672/)
-
-8PM - How to Start: 30 Days from Idea to Decision (https://generalassemb.l=
-y/education/how-to-start-30-days-from-idea-to-decision/new-york-city/5656)
+6PM - Public Speaking and the 3 Cs-Confidence Creativity Comedy (https://g=
+eneralassemb.ly/education/public-speaking-and-the-3-cs-confidence-creativi=
+ty-comedy/new-york-city/5623)
 
 General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+902 Broadway=2C 4th Floor New York=2C NY 10010
 
-In this class=2C you=E2=80=99ll develop a clear=2C 30-day roadmap to evalu=
-ate your potential startup idea without quitting your job.
+Whether you=E2=80=99re an entrepreneur=2C CEO=2C teacher=2C or anyone whos=
+e job or desired job requires speaking in front of others=2C this class wi=
+ll help you gain the confidence=2C presence=2C and charisma to help you co=
+nnect with your audience.
 
-RSVP (https://generalassemb.ly/education/how-to-start-30-days-from-idea-to=
--decision/new-york-city/5656)
+RSVP (https://generalassemb.ly/education/public-speaking-and-the-3-cs-conf=
+idence-creativity-comedy/new-york-city/5623)
 
-Tuesday=2C June 3rd
-
-9AM - The High Performance at Scale NoSQL & Big Data Event (http://www.cou=
-chbase.com/couchbase-nyc-2014)
-
-Conrad Hotel
-
-Hear how real companies are using Couchbase for their Enterprise Applicati=
-ons. Network with your peers=2C meet the Couchbase team=2C and get your ha=
-nds on the technology.
-
-RSVP (http://www.couchbase.com/couchbase-nyc-2014)
-
-6PM - Introduction to Prototyping with Axure (https://generalassemb.ly/edu=
-cation/introduction-to-prototyping-with-axure/new-york-city/5589)
+8:15PM - Introduction to Pricing Strategy (https://generalassemb.ly/educat=
+ion/introduction-to-pricing-strategy/new-york-city/5783)
 
 General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+902 Broadway=2C 4th Floor New York=2C NY 10010
 
-In this workshop=2C you'll learn the basics of prototyping in Axure=2C one=
- of the more powerful prototyping software packages available today.
+In this class=2C you=E2=80=99ll learn how to set a price for your new prod=
+uct or service. After getting started with customer-based pricing=2C you=
+=E2=80=99ll receive an overview of the most common pricing strategies as w=
+ell as the determinants of price.
 
-RSVP (https://generalassemb.ly/education/introduction-to-prototyping-with-=
-axure/new-york-city/5589)
+RSVP (https://generalassemb.ly/education/introduction-to-pricing-strategy/=
+new-york-city/5783)
 
-6PM - Online Campaign Management (https://generalassemb.ly/education/onlin=
-e-campaign-management/new-york-city/5592)
+_____________________________________________
+
+Tuesday=2C June 10th
+
+6:30M - Dev Stackup Front End (http://stackuptalks.com/dev/2014/5/21/next-=
+dev-stackup-front-end-may-28-2014)
+
+Refinery29
+225 Broadway=2C New York=2C NY
+
+At this stackup=2C hear front end lead developers share their latest dev a=
+chievements. Get an inside look into how New York City startups develop th=
+eir dev strategy.
+
+RSVP (http://stackuptalks.com/dev/2014/5/21/next-dev-stackup-front-end-may=
+-28-2014)
+
+6:45PM - Introduction to Product Management Workshop (https://generalassem=
+b.ly/education/introduction-to-product-management-workshop/new-york-city/5=
+624)
 
 General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+902 Broadway=2C 4th Floor New York=2C NY 10010
 
-In this workshop=2C you=E2=80=99ll learn how to set up=2C manage=2C and me=
-asure your online marketing campaigns using a mix of free tools such as Go=
-ogle Analytics=2C URL builder=2C and bit.ly.
+Learn to break a idea into its primary parts to assess a product=E2=80=99s=
+ feasibility. Find tools to evaluate the viability of early ideas. Study a=
+ step-by-step description of the product development process. Learn to tes=
+t a product=E2=80=99s early market potential . High level overview of soft=
+ware building process and the people involved. Learn to create a spec.
 
-RSVP (https://generalassemb.ly/education/online-campaign-management/new-yo=
-rk-city/5592)
-
-7PM - June 2014 NY Tech Meetup (http://www.meetup.com/ny-tech/events/13457=
-3662/)
-
-NYU Skirball Center For The Performing Arts
-
-Join fellow technologists for an evening of live demos from companies deve=
-loping great technology in New York
-
-RSVP (http://www.meetup.com/ny-tech/events/134573662/)
+RSVP (https://generalassemb.ly/education/introduction-to-product-managemen=
+t-workshop/new-york-city/5624)
 
 ____________________________________________
 
-Wednesday=2C June 4th
+Wednesday=2C June 11th
 
-6:30PM - HTTP/2 with Mark Nottingham (http://www.meetup.com/Web-Performanc=
-e-NY/events/174241082/)
-
-Spotify HQ
-45 W 18th St=2C 7th floor=2C New York=2C NY
-
-Mark Nottingham will talk about HTTP/2 - next version of HTTP protocol.
-
-RSVP (http://www.meetup.com/Web-Performance-NY/events/174241082/)
-
-6:30PM - June FinTech Startups Meetup (http://www.meetup.com/NY-FinTech-St=
-artups/events/177060812/)
-
-Dechert LLP
-1095 6th Avenue New York=2C NY=2C 28th Floor=2C NY
-
-Emerging FinTech Panel - A Look Outside the US
-
-RSVP (http://www.meetup.com/NY-FinTech-Startups/events/177060812/)
-
-6PM - Apps Unlocked (https://generalassemb.ly/education/apps-unlocked/new-=
-york-city/5593)
+6PM - How to Pitch Your Startup to NYC Venture Firms (https://generalassem=
+b.ly/education/how-to-pitch-your-startup-to-nyc-venture-firms/new-york-cit=
+y/5626)
 
 General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+902 Broadway=2C 4th Floor New York=2C NY 10010
 
-This class will examine the ins and outs of creating apps from a non-techn=
-ical viewpoint.
+Steve will cover preparation for the pitch session=2C building and designi=
+ng a compelling deck=2C following up after the meeting and more.
 
-RSVP (https://generalassemb.ly/education/apps-unlocked/new-york-city/5593)
+RSVP (https://generalassemb.ly/education/how-to-pitch-your-startup-to-nyc-=
+venture-firms/new-york-city/5626)
 
-6:30PM - Sales Bootcamp (https://generalassemb.ly/education/sales-bootcamp=
--the-art-of-the-pitch/new-york-city/5606)
-
-General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
-
-Learn how to effectively Pitch your product.
-
-RSVP (https://generalassemb.ly/education/sales-bootcamp-the-art-of-the-pit=
-ch/new-york-city/5606)
-
-6PM - Introduction to Agile Development Using Scrum Framework (https://gen=
-eralassemb.ly/education/introduction-to-agile-development-using-scrum-fram=
-ework/new-york-city/5602)
+6:30PM - Data Driven Content Strategy (https://generalassemb.ly/education/=
+data-driven-content-strategy/new-york-city/5625)
 
 General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+902 Broadway=2C 4th Floor New York=2C NY 10010
 
-Scrum is also something that can only be learned by doing=2C so in this wo=
-rkshop you=E2=80=99ll learn the Scrum framework through practical exercise=
-s reinforced with light theory and real-world examples.
+Having a content strategy involves understanding how to effectively use co=
+ntent to drive sales=2C brand awareness=2C engagement=2C and other metrics
 
-RSVP (https://generalassemb.ly/education/introduction-to-agile-development=
--using-scrum-framework/new-york-city/5602)
+RSVP (https://generalassemb.ly/education/data-driven-content-strategy/new-=
+york-city/5625)
 
-8:15PM - Basics of Website Design (https://generalassemb.ly/education/basi=
-cs-of-website-design/new-york-city/5674)
+6:30PM - Clickstream analysis and web design at Gilt.com (http://www.meetu=
+p.com/nyccssux/events/186533552/)
 
-General Assembly West
-10 East 21st Street 4th Floor=2C New York=2C NY
+Pivotal Labs
+625 Sixth Avenue=2C New York=2C NY
 
-Beginning with the background of web design and the unique challenges it p=
-resents=2C you=E2=80=99ll go over web design conventions and best practice=
-s=2C as well as the connection between graphic design and user experience=
- (UX) on the web.
+Roger Huang=2C resident data evangelist at Gilt.com=2C will be showing us=
+ how he uses clickstream data to answer the big questions =E2=80=93 what f=
+eatures should be embraced or retired?
 
-RSVP (https://generalassemb.ly/education/basics-of-website-design/new-york=
--city/5674)
+RSVP (http://www.meetup.com/nyccssux/events/186533552/)
 
 _____________________________________________
 
-Thursday=2C June 5th
+Thursday=2C June 12th
 
-9AM - Geek of the Month (https://generalassemb.ly/education/geek-of-the-mo=
-nth/new-york-city/5555)
+6:30PM - Mob OSS ruby fix (http://www.meetup.com/nycruby/events/187166872/=
+)
 
-General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+Pivotal Labs
+625 Sixth Avenue=2C New York=2C NY
 
-Join GA + NYC Media Lab for an intimate=2C casual presentation and discuss=
-ion guided by Manoush Zomorodi=2C host of WNYC=E2=80=99s New Tech City=2C=
- with professor Colleen Macklin.
+As a group=2C we will work on an open source software issue. We will analy=
+ze the code=2C debug the issue=2C write a test=2C make the test pass=2C an=
+d push it up as a Pull Request.
 
-RSVP (https://generalassemb.ly/education/geek-of-the-month/new-york-city/5=
-555)
+RSVP (http://www.meetup.com/nycruby/events/187166872/)
 
-6PM - Data Visualizations for Businesses (https://generalassemb.ly/educati=
-on/data-visualization-for-businesses-understanding-dashboards-and-metrics-=
-displays/new-york-city/5594)
-
-General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
-
-This class will serve as a practical guide to creating useful=2C informati=
-ve=2C actionable dashboards and real-time metrics displays.
-
-RSVP (https://generalassemb.ly/education/data-visualization-for-businesses=
--understanding-dashboards-and-metrics-displays/new-york-city/5594)
-
-6PM - Data Driven UX Design (https://generalassemb.ly/education/data-drive=
-n-ux-design/new-york-city/5654)
+6:30PM - VoltDB and HP Vertica present: Stonebraker Straight Talk =E2=80=
+=93 Wisdom from the Father of Modern Relational Databases (http://www.even=
+tbrite.com/e/voltdb-and-hp-vertica-present-stonebraker-straight-talk-wisdo=
+m-from-the-father-of-modern-relational-registration-11659683427)
 
 General Assembly East
 902 Broadway 4th Floor=2C New York=2C NY
 
-This class will demonstrate how to make actionable design decisions based=
- on metrics from Google Analytics=2C A/B testing=2C eyetracking data=2C so=
-cial media and real-time stats.
+An educational networking event that will provide insight into why convent=
+ional database thinking could be holding you back.
 
-RSVP (https://generalassemb.ly/education/data-driven-ux-design/new-york-ci=
-ty/5654 )
-
-6:30PM - Content strategy for the mobile future (http://www.meetup.com/nyc=
-cssux/events/179830102/)
-
-AOL/Huffington Post
-770 Broadway=2C New York=2C NY
-
-Speaker: Chris Tse=2C Head of R&D at McGraw-Hill Education Labs
-
-RSVP (http://www.meetup.com/nyccssux/events/179830102/)
-
-7PM - The Product Group June 2014 (http://www.meetup.com/TheProductGroup/e=
-vents/174862332/)
-
-MTV Networks / Viacom
-1515 Broadway=2C Room 44-02=2C New York=2C NY
-
-Share=2C learn and network with fellow Product Managers at The Product Gro=
-up; Featured Product Person: Matthew Smith=2C The Best Product Person of 2=
-013 (Runner-up)
-
-RSVP (http://www.meetup.com/TheProductGroup/events/174862332/)
+RSVP (http://www.eventbrite.com/e/voltdb-and-hp-vertica-present-stonebrake=
+r-straight-talk-wisdom-from-the-father-of-modern-relational-registration-1=
+1659683427)
 
 _____________________________________________
 
-Saturday=2C June 7th
+Monday=2C June 16th
 
-10AM - Validating Assumptions with Lean UX Research (https://generalassemb=
-=2Ely/education/validating-assumptions-with-lean-ux-research/new-york-city/5=
-603)
+5:45PM - Hardwired NYC #11 (http://www.meetup.com/Hardwired-NYC/events/186=
+751762/)
+
+Digitas - Conference Center
+355 Park Avenue South 8th floor=2C New York=2C NY
+
+Demos from Hardware companies
+
+RSVP (http://www.meetup.com/Hardwired-NYC/events/186751762/)
+
+6PM - What is this User Experience (UX) Thing? (https://generalassemb.ly/e=
+ducation/what-is-this-user-experience-ux-thing/new-york-city/5629)
 
 General Assembly East
 902 Broadway 4th Floor=2C New York=2C NY
 
-During this full-day workshop=2C you will learn how to practically and rel=
-iably validate a new product or service idea.
+In this 101 level class we will explore this buzz-worthy concept and break=
+ it down into meaningful=2C actionable bits.
 
-RSVP (https://generalassemb.ly/education/validating-assumptions-with-lean-=
-ux-research/new-york-city/5603)
+RSVP (https://generalassemb.ly/education/what-is-this-user-experience-ux-t=
+hing/new-york-city/5629)
 
-10AM - Validating Assumptions with Lean UX Research (https://generalassemb=
-=2Ely/education/introduction-to-responsive-web-design/new-york-city/5618)
+6:30PM - I'll Come to Your Emotional Rescue: Connecting Digital Experience=
+s to Emotion (http://www.meetup.com/NUI-Central-NY/events/170987852/)
 
-General Assembly Union Square
-41 Union Square West New York=2C NY
+WeWork Labs
+69 Charlton Street=2C New York=2C NY
 
-In this class ideal for web developers=2C designers=2C and project manager=
-s with a basic HTML and CSS knowledge base=2C you=E2=80=99ll get a compreh=
-ensive introduction to the basics of responsive web design.
+Affectiva is empowering a world where our digital experiences are emotiona=
+lly engaging and responsive
 
-RSVP (https://generalassemb.ly/education/introduction-to-responsive-web-de=
-sign/new-york-city/5618)
+RSVP (http://www.meetup.com/NUI-Central-NY/events/170987852/)
+
+7:45PM - Transitioning to Tech (https://generalassemb.ly/education/transit=
+ioning-to-tech/new-york-city/5819)
+
+General Assembly East
+902 Broadway 4th Floor=2C New York=2C NY
+
+This class will help empower you to explore technology entrepreneurship by=
+ guiding you to available resources.
+
+RSVP (https://generalassemb.ly/education/transitioning-to-tech/new-york-ci=
+ty/5819)
 
 _____________________________________________
 
-Sunday=2C June 8th
+Tuesday=2C June 17th
 
-10AM - The Art and Science of Distribution Hacking (https://generalassemb.=
-ly/education/the-art-and-science-of-distribution-hacking/new-york-city/564=
-9)
+5:30PM - What Would Developers Code?: Post-WWDC Lightning Talks and Hackin=
+g (http://www.meetup.com/NYCMAD/events/180107822/)
 
-General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+Gilt Groupe
+2 Park Ave 5th Floor=2C New York=2C NY
 
-This workshop provides the toolbox for anyone who wants to gain or maintai=
-n their competitive edge=2C expand their online presence=2C and obtain a c=
-omprehensive optimization toolbox for long-term success.
+WWDC attendees will give short (five- to ten-minute) talks on what they le=
+arned during the conference=2C then everyone will hack on and try out the=
+ new tools unveiled by Apple.
 
-RSVP (https://generalassemb.ly/education/the-art-and-science-of-distributi=
-on-hacking/new-york-city/5649)
+RSVP (http://www.meetup.com/NYCMAD/events/180107822/)
 
-10AM - Understanding Mobile User Experience (https://generalassemb.ly/educ=
-ation/understanding-mobile-user-experience/new-york-city/5650)
+5:45PM - 19th Hardware Meetup (http://www.meetup.com/NY-Hardware-Start-up/=
+events/187009702/)
 
-General Assembly East
-902 Broadway 4th Floor=2C New York=2C NY
+Microsoft
+11 Times Square=2C New York=2C NY
 
-This lecture looks at the touch points (get it?) we as creators have with=
- our users and their mobile devices.
+We have the fine folks at Indiegogo sponsoring this session=2C and we'll h=
+ave a series of startups who have either raised money or are in the proces=
+s of raising money on Indiegogo talk about their experience.
 
-RSVP (https://generalassemb.ly/education/understanding-mobile-user-experie=
-nce/new-york-city/5650)
+RSVP (http://www.meetup.com/NY-Hardware-Start-up/events/187009702/)
 
-10AM - Introduction to Adobe Illustrator (https://generalassemb.ly/educati=
-on/introduction-to-adobe-illustrator-weekend-workshop/new-york-city/5619)
+6PM - E-Commerce Metrics (https://generalassemb.ly/education/e-commerce-me=
+trics-customer-acquisition/new-york-city/5850)
 
 General Assembly East
 902 Broadway 4th Floor=2C New York=2C NY
 
-This workshop is designed to get you up and running with Adobe Illustrator=
- in just one day. The focus will be on step-by-step instruction leading st=
-udents through the most important tools and concepts in Illustrator.
+This class will get you up to speed on how to get the right data=2C how to=
+ measure it=2C and how to use it for your paid acquisition campaigns=2C as=
+ well as how to optimize those channels including SEM=2C SEO=2C and Email=
+ Marketing.
 
-RSVP (https://generalassemb.ly/education/introduction-to-adobe-illustrator=
--weekend-workshop/new-york-city/5619)
+RSVP (https://generalassemb.ly/education/e-commerce-metrics-customer-acqui=
+sition/new-york-city/5850)
+
+7PM - International: You Say EdTech the Way We Say EdTech (http://www.meet=
+up.com/NYEdTech/events/185877862/)
+
+Knewton
+100 5th Avenue=2C New York=2C NY
+
+Keeping abreast of the international EdTech scene looks a good deal like k=
+nowing what=E2=80=99s happening in the US market=2C but what are the prima=
+ry differences with Brazil=2C Australia=2C and South Africa and others?
+
+RSVP (http://www.meetup.com/NYEdTech/events/185877862/)
+
+____________________________________________
+
+Wednesday=2C June 18th
+
+6PM - Startup to Success Panel (http://www.meetup.com/techinmotionnyc/even=
+ts/184127992/)
+
+NYU Kimmel Center-C95 Lecture Hall
+60 Washington Square South=2C New York=2C NY
+
+At this event=2C the panelists will consist of multiple entrepreneurs givi=
+ng their insight on what they=E2=80=99ve found to work and not work in the=
+ city=2C as well as their own personal struggles and successes of starting=
+ and growing their company in New York.
+
+RSVP (http://www.meetup.com/techinmotionnyc/events/184127992/)
+
+6:30PM - Business Development at a Startup (https://generalassemb.ly/educa=
+tion/business-development-at-a-startup-working-with-engineers-and-getting-=
+deals-done/new-york-city/5765)
+
+General Assembly East
+902 Broadway 4th Floor=2C New York=2C NY
+
+This class is a primer on business development a startup=2C particularly o=
+ne with a consumer product and b2b partnerships.
+
+RSVP (https://generalassemb.ly/education/business-development-at-a-startup=
+-working-with-engineers-and-getting-deals-done/new-york-city/5765)
+
+6:30PM - Creating a Front-end Style Guide (http://www.meetup.com/frontend/=
+events/183536752/)
+
+Front-end focused Software Engineers Dave and Diego will talk through how=
+ we created our Style Guide and Pattern Library and how we use it on a dai=
+ly basis at DoSomething.org.
+
+RSVP (http://www.meetup.com/frontend/events/183536752/)
+
+7PM - June NY Consumer Health Tech Meetup (http://www.meetup.com/nyhealtht=
+ech/events/186750272/)
+
+BluePrint Health
+483 Broadway 2nd Floor=2C New York=2C NY
+
+Join us at this month's NY Consumer Health Tech Meetup! We'll have 8 excit=
+ing consumer health tech startups getting just 60 seconds each (seriously=
+=2C it's just 60 seconds=E2=80=94so don't miss it!) to pitch their product=
+ and how it's going to change the consumer health world.
+
+RSVP (http://www.meetup.com/nyhealthtech/events/186750272/)
+
+_____________________________________________
+
+Thursday=2C June 19th
+
+8:30AM - Techfest Club: Women in Tech Breakfast (https://generalassemb.ly/=
+education/techfest-club-women-in-tech-breakfast/new-york-city/6189)
+
+General Assembly East
+902 Broadway 4th Floor=2C New York=2C NY
+
+Techfest Club is a meetup for women in tech. It's a dose of tech innovatio=
+n=2C inspiration and information all before 10am.
+
+RSVP (https://generalassemb.ly/education/techfest-club-women-in-tech-break=
+fast/new-york-city/6189)
+
+6:30PM - Automating Engineering Onboarding + Dashboarding / Reporting Work=
+flows with R (http://www.meetup.com/ContinuousDeliveryNYC/events/185633662=
+/)
+
+Betterment
+61 W 23rd St. 5th Floor=2C New York=2C NY
+
+We'll discuss the good=2C the bad=2C and the ugly of using Boxen and its i=
+lk to automate engineer onboarding in a repeatable=2C testable=2C and reli=
+able way.
+
+RSVP (http://www.meetup.com/ContinuousDeliveryNYC/events/185633662/)
+
+6:45PM - June 2014 NY Enterprise Technology Meetup (http://www.meetup.com/=
+ny-enterprise-tech/events/183020512/)
+
+Cooley
+1114 Avenue of the Americas=2C New York=2C NY
+
+Our June event will feature a panel on Enterprise Security along with two=
+ startup demos.
+
+RSVP (http://www.meetup.com/ny-enterprise-tech/events/183020512/)
+
+7PM - 6th Bronx Tech Meetup (http://www.meetup.com/BronxTechMeetup/events/=
+179568482/)
+
+Per Scholas
+804 E 138th St # 2=2C Bronx=2C NY
+
+Help welcome Per Scholas' joint venture with Doran Jones to create an "Urb=
+an Development Center" in the South Bronx.
+
+RSVP (http://www.meetup.com/BronxTechMeetup/events/179568482/)
 
 http://G.CDNNT.COM/click?s=3D102936&t=3Dnewsletter&sz=3D300x250&li=3D05671=
-36513&e=3Dciriwe@phobot.net&p=3D5f7e096034
+36513&e=3Dciriwe@phobot.net&p=3Db0aae38577
 http://G.CDNNT.COM/click?s=3D2814&t=3Dnewsletter&sz=3D116x15&li=3D05671365=
-13&e=3Dciriwe@phobot.net&p=3D5f7e096034 http://G.CDNNT.COM/click?s=3D96121&=
-t=3Dnewsletter&sz=3D69x15&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096=
-034
+13&e=3Dciriwe@phobot.net&p=3Db0aae38577 http://G.CDNNT.COM/click?s=3D96121&=
+t=3Dnewsletter&sz=3D69x15&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38=
+577
 Subscribe to this list (http://eepurl.com/e3On) .
 
 Unsubscribe (http://thisisgoingtobebig.us1.list-manage.com/unsubscribe?u=
-=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0567136513&e=3D8404ceda97&c=3D5f7e096034)=
+=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0567136513&e=3D8404ceda97&c=3Db0aae38577)=
  ciriwe@phobot.net from this list | Forward to a friend (http://us1.forward=
--to-friend.com/forward?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D5f7e096034&e=3D=
-8404ceda97) | Update your profile (http://thisisgoingtobebig.us1.list-manage.=
-com/profile?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0567136513&e=3D8404ceda97)
+-to-friend2.com/forward?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Db0aae38577&e=3D=
+8404ceda97) | Update your profile (http://thisisgoingtobebig.us1.list-manage=
+=2Ecom/profile?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0567136513&e=3D8404ceda97)
 
 Copyright (C) 2014 This is going to be BIG! All rights reserved.
---_----------=_MCPart_753749002
+--_----------=_MCPart_619949472
 Content-Type: text/html; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -574,7 +530,7 @@ px" class=3D"email-container">
           <td>
             <!-- expander image -->
             <img src=3D"http://G.CDNNT.COM/imp?s=3D102939&t=3Ddedicated&li=
-=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" border=3D"0" height=3D"=
+=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" border=3D"0" height=3D"=
 1" class=3D"hero" style=3D"display: block;">
           </td>
         </tr>
@@ -582,26 +538,26 @@ px" class=3D"email-container">
           <td>
             <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
 =3D"banner"><tr><td colspan=3D"2"><a href=3D"http://thisisgoingtobebig.us1=
-=2Elist-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D7552065986=
-&e=3D8404ceda97" rel=3D"nofollow">
+=2Elist-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dc069e6df3=
+c&e=3D8404ceda97" rel=3D"nofollow">
             <img src=3D"http://G.CDNNT.COM/imp?s=3D445&t=3Dnewsletter&sz=
-=3D728x90&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" border=3D"0=
+=3D728x90&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" border=3D"0=
 " width=3D"100%" style=3D"display: block;"></a>
             </td></tr><tr style=3D"display:block; height:1px; line-height:=
 1px;"><td><img src=3D"http://G.CDNNT.COM/imp?s=3D2816&t=3Dnewsletter&sz=3D=
-1x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" height=3D"1" widt=
+1x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" height=3D"1" widt=
 h=3D"10" style=3D"display: block;"></td><td><img src=3D"http://G.CDNNT.COM=
 /imp?s=3D2817&t=3Dnewsletter&sz=3D1x1&li=3D0567136513&e=3Dciriwe@phobot.net=
-&p=3D5f7e096034" height=3D"1" width=3D"10" style=3D"display: block;"></td>=
+&p=3Db0aae38577" height=3D"1" width=3D"10" style=3D"display: block;"></td>=
 </tr><tr><td align=3D"left"><a href=3D"http://thisisgoingtobebig.us1.list-=
-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dcaefceadc8&e=3D=
+manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D19b186ef08&e=3D=
 8404ceda97" rel=3D"nofollow"><img src=3D"http://G.CDNNT.COM/imp?s=3D2814&t=
-=3Dnewsletter&sz=3D116x15&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096=
-034" border=3D"0" style=3D"display: block;"></a></td><td align=3D"right"><=
-a href=3D"http://thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4=
-c2ee8c906b6f9bdf2b29d2b8&id=3D56ad46cf00&e=3D8404ceda97" rel=3D"nofollow"=
-><img src=3D"http://G.CDNNT.COM/imp?s=3D96121&t=3Dnewsletter&sz=3D69x15&li=
-=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" border=3D"0" style=3D"d=
+=3Dnewsletter&sz=3D116x15&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38=
+577" border=3D"0" style=3D"display: block;"></a></td><td align=3D"right"><=
+a href=3D"http://thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c=
+2ee8c906b6f9bdf2b29d2b8&id=3D4841e2996a&e=3D8404ceda97" rel=3D"nofollow">=
+<img src=3D"http://G.CDNNT.COM/imp?s=3D96121&t=3Dnewsletter&sz=3D69x15&li=
+=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" border=3D"0" style=3D"d=
 isplay: block;"></a></td></tr></table>
           </td>
         </tr>
@@ -621,110 +577,29 @@ FFF; border: 0px none #FFFFFF; padding:15px;">
 
         <!-- Charlie's bit -->
 
-<p>Where Brooklyn at?</p>
-<p>I've said that it probably wouldn't happen=2C but it did. &nbsp;A big s=
-tartup moved to Brooklyn. &nbsp;</p>
-<p><a href=3D"http://thisisgoingtobebig.us1.list-manage.com/track/click?u=
-=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D45a207925f&e=3D8404ceda97">Livestream j=
-ust moved its entire operation</a>&nbsp;and 80 employees over to the old 3=
-rd Ward space in Bushwick. &nbsp;I had previously thought that the big Bro=
-oklyn companies would all be homegrown--that unless you started out with a=
-n employee base that was small=2C and grew it locally=2C you probably woul=
-dn't see such a move. &nbsp;I guess when they're asking a third the rent y=
-ou find in Chelsea and half your employee base lives in Brooklyn anyway th=
-e move seems pretty compelling.</p>
-<p>To celebrate=2C let's all go to a ball game!</p>
-<p>Actually=2C I had this in the works before=2C but the more the merrier.=
- &nbsp;On July 17th=2C the Brooklyn Cyclones--the Mets minor league affili=
-ate in Coney Island--are holding a <a href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Db92fa7a62=
-f&e=3D8404ceda97">tech &amp; startups night</a>. &nbsp;We're getting 100'=
-s of people out to the ballpark=2C which is a fantastic place to watch a g=
-ame. &nbsp;It's right on the boardwalk and the beach. &nbsp;When's the las=
-t time you paid $17 to go watch a ball game. &nbsp;We'll have lots of empl=
-oyees from companies like Huge=2C Makerbot=2C Tough Mudder=2C Etsy=2C etc.=
-=2C but tickets have already been selling fast. &nbsp;Looks like we'll get=
- at least 500 out to the game. &nbsp;If you live and/or work in Brooklyn=
-=2C or just want to see baseball without paying hundreds of dollars=2C <a=
- href=3D"http://thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2=
-ee8c906b6f9bdf2b29d2b8&id=3D1ad041b3d6&e=3D8404ceda97">come join us by RS=
-VPing here.</a>&nbsp; If you want to get your entire company out to the ba=
-llpark for this=2C just reply and we'll think about doing something cool.<=
-/p>
+        <p>I hope you all got outside this past weekend... &nbsp;The weath=
+er was amazing. &nbsp;Would have been nice weather to watch a minor league=
+ baseball game in Coney Island like the Brooklyn startup community is doin=
+g in July. &nbsp;<a href=3D"http://thisisgoingtobebig.us1.list-manage.com/=
+track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Da005aa44ae&e=3D8404ceda97"=
+>Come join us</a>.</p>
 <p>_____</p>
-<p>Speaking of expanding locations=2C there's a new WeWork Labs location a=
-t 79 Madison Ave. &nbsp;They would like to personally invite you and your=
- startup in for a tour. Because they love the NY tech community=2C they're=
- offering to waive the WeWork setup fees and to give you 20% off of your f=
-irst month! Send an email to joinus@wework.com with the subject line "NoMa=
-d-CEONYC" to get started.</p>
+<p><a href=3D"http://thisisgoingtobebig.us1.list-manage1.com/track/click?u=
+=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Df3a7196bb6&e=3D8404ceda97">You won't be=
+lieve what they're trying to tear down in Brooklyn</a>... &nbsp;(Linkbaity=
+ Buzzfeed-like headline of the day.)</p>
 <p>_____</p>
-<p>I've got two really compelling technical opportunities to work in the c=
-reativity and kids space with some fantastic founders.</p>
-<p>The first is a company that turns kids art into lasting keepsakes. &nbs=
-p;Imagine all the things you drew when you were three being saved in a ser=
-ies of coffee table books or posters=2C instead of yellowing away in a box=
- somewhere. &nbsp;The company works with schools and was founded by two mo=
-ms--a former publisher and a former equities trader. &nbsp;They've done so=
-me serious revenue with an outsourced tech product and are looking in hous=
-e to build out a technical team with some ecommerce experience. &nbsp;Anyo=
-ne who has worked with physical logistics like printing and shipping would=
- also be a huge plus. &nbsp;</p>
-<p>The second is another curiousity inspiring company--and it promotes phy=
-sical play and problem solving in real life. &nbsp;They're creating a dist=
-ributed network of physical classes=2C so the technology is something simi=
-lar to what you might find at a company like Mindbody=2C which schedules a=
-ll the yoga you've ever been to. &nbsp;Plus=2C there's an educational cont=
-ent component which complements the classes--so lots of drip email=2C vide=
-o and photo distribution=2C etc.</p>
-<p>Happy to introduce anyone you or anyone you might know looking to get o=
-n board with something early. &nbsp;The nice thing here is that these are=
- cashflow generating businesses. &nbsp;They sell things that people pay fo=
-r. &nbsp;</p>
-<p>____</p>
-<p>Hey=2C does anyone want to code up an event bookmarker that can take Me=
-etup and General Assembly Pages and put them in our HTML format for this n=
-ewsletter=2C sorting them by date? &nbsp;So=2C I show up on a page=2C clic=
-k a bookmarklet=2C and the Date=2C a description=2C location=2C etc just s=
-hows up in a database that I can just sort into the right format? &nbsp;I=
- dunno what the going rate for such things is=2C but I'd pay real cash mon=
-ey for that. &nbsp;</p>
-<p>____</p>
-<p>Here's another project I'd love to see get built... A private Angel Lis=
-t. &nbsp;I'd like to be able to control who sees what deals I'm looking at=
-=2C and selectively syndicate them out to folks=2C without telling the ent=
-ire public. &nbsp;It would make finding co-investors a heck of a lot easie=
-r.</p>
-<p>____</p>
-<p>Two classes you should definitely check out for next week. &nbsp;My fri=
-end Jason's <a href=3D"http://thisisgoingtobebig.us1.list-manage1.com/trac=
-k/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D382577333c&e=3D8404ceda97">Int=
-ro to Product Management Workshop</a>&nbsp;and <a href=3D"http://thisisgoi=
-ngtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=
-=3D0e3836ac41&e=3D8404ceda97">How to Assess Your Product's Market Viabili=
-ty</a>.</p>
-<p>____</p>
-<p>Also=2C if you care about important stuff=2C like how technology plays=
- a role in our election process=2C you'll <a href=3D"http://thisisgoingtob=
-ebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D5=
-e0946a316&e=3D8404ceda97">check out this Open Source Democracy event on W=
-ednesday</a>.</p>
-<p>____</p>
-<p>Do you know who's cool? &nbsp;My friend Caitlin=2C an investor at Flybr=
-idge Capital. <a href=3D"http://thisisgoingtobebig.us1.list-manage1.com/tr=
-ack/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3De9d462b068&e=3D8404ceda97">&=
-nbsp;She's speaking at this event on Thursday</a>.</p>
-<p>____</p>
+<p>Refinery29=2C Buzzfeed=2C Shutterstock=2C KeyMe and NextBigSound are al=
+l talking front end development at tomorrow night's developer-only Stackup=
+ Talks. &nbsp;<a href=3D"http://thisisgoingtobebig.us1.list-manage.com/tra=
+ck/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D9bd1c67c6a&e=3D8404ceda97">Ch=
+eck it out</a>.</p>
+<p>_____</p>
+<p>And now=2C back to our show...</p>
 <p>&nbsp;</p>
-<p>And now=2C on with our show...</p>
 <p>&nbsp;</p>
-<p>Charlie</p>
-<p><a href=3D"http://thisisgoingtobebig.us1.list-manage.com/track/click?u=
-=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Ddfe92a1376&e=3D8404ceda97">BrooklynBrid=
-ge.vc</a></p>
 
   <!-- End of Charlie's bit -->
-
 
 <!-- Events on this Date -->
 
@@ -732,29 +607,30 @@ ge.vc</a></p>
 
      <!-- Events on this Date -->
   <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Monday=2C=
- June 2nd</strong></font><br><br>
+ June 9th</strong></font><br><br>
 
       <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
 /thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3Dbf32183224&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6:15PM - Disruptive Technologists in NYC - Big Data: New Initiatives=2C=
- Opinions & Future </a><a></a></strong></font><br>
+b29d2b8&id=3D63931669f3&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6:30PM - GitHub remote-worker culture and tools</a><a></a></strong></fon=
+t><br>
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-   NYIT <br>
-16 West 61st Street=2C New York=2C NY
+ Pivotal Labs <br>
+625 6th Avenue=2C 2nd Floor=2C New York=2C NY
   <br>
   <br>
   <!-- Event Description  -->
-   Will explore the new initiatives=2C new products=2C opinions=2C and the=
- future of data.
+   In this talk=2C I'll share some of the things that have helped GitHub b=
+e a successful primarily-remote-worker company during my time there since=
+ 2010. Specifically=2C we'll discuss:
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D917e3df24=
-8&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dcb6b2bd1=
+62&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
 
@@ -762,30 +638,30 @@ an></a>
   <br>
    <br>
 
-       <!-- Event Title Format -->
+   <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
 /thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3Dead9d226d6&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6:45PM - Changing in the Open: Three Views of Open Geo </a><a></a></stro=
-ng></font><br>
+b29d2b8&id=3D20e953433a&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6PM - Public Speaking and the 3 Cs-Confidence Creativity Comedy</a><a></=
+a></strong></font><br>
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-   Centre For Social Innovation <br>
-601 W 26th Street
-Suite 325
-New York =2C NY
+ General Assembly East<br>
+902 Broadway=2C 4th Floor
+New York=2C NY 10010
   <br>
   <br>
   <!-- Event Description  -->
-   Join Be Social Change & Kristina Drury=2C founder of TYTHEdesign=2C for=
- the  3-part Makers Institute workshop  Design Thinking: Using Strategic P=
-roblem-Solving to Amplify Your Social Impact.
+    Whether you=E2=80=99re an entrepreneur=2C CEO=2C teacher=2C or anyone=
+ whose job or desired job requires speaking in front of others=2C this cla=
+ss will help you gain the confidence=2C presence=2C and charisma to help y=
+ou connect with your audience.
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D344249d61=
-7&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D2723bea08=
+1&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
 
@@ -793,28 +669,224 @@ an></a>
   <br>
    <br>
 
+   <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D06a048ce25&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 8:15PM - Introduction to Pricing Strategy</a><a></a></strong></font><br>
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+ General Assembly East<br>
+902 Broadway=2C 4th Floor
+New York=2C NY 10010
+  <br>
+  <br>
+  <!-- Event Description  -->
+In this class=2C you=E2=80=99ll learn how to set a price for your new prod=
+uct or service. After getting started with customer-based pricing=2C you=
+=E2=80=99ll receive an overview of the most common pricing strategies as w=
+ell as the determinants of price.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D8d4e5d0c=
+df&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+   <br>
+
+  _____________________________________________
+  <!-- Events on this Date -->
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Tuesday=
+=2C June 10th</strong></font><br><br>
+
+     <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3Ddc4ec0e753&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+">6:30M - Dev Stackup Front End  </a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+ Refinery29<br>
+ 225 Broadway=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+    At this stackup=2C hear front end lead developers share their latest d=
+ev achievements. Get an inside look into how New York City startups develo=
+p their dev strategy.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D6cf975f4=
+78&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
 
      <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
 /thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D5ea72057c1&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-">7PM - Introduction to Python</a><a></a></strong></font><br>
-
+2b29d2b8&id=3De56fd17153&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6:45PM - Introduction to Product Management Workshop</a><a></a></strong=
+></font><br>
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-    Etsy Labs <br>
-55 Washington St. Ste 712 =2C Brooklyn=2C NY
+ General Assembly East<br>
+902 Broadway=2C 4th Floor
+New York=2C NY 10010
   <br>
   <br>
   <!-- Event Description  -->
-    Join us for GDI NYC's second Introduction to Python course=2C designed=
- for those who have very limited or no programming experience.
+Learn to break a idea into its primary parts to assess a product=E2=80=99s=
+ feasibility.  Find tools to evaluate the viability of early ideas.  Study=
+ a step-by-step description of the product development process.  Learn to=
+ test a product=E2=80=99s early market potential .  High level overview of=
+ software building process and the people involved.  Learn to create a spe=
+c.
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dd287648a0=
-c&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D3361693f7=
+5&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+   <br>
+
+  ____________________________________________
+
+  <!-- Events on this Date -->
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Wednesday=
+=2C June 11th</strong></font><br><br>
+
+
+     <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D17cdc561d6&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6PM - How to Pitch Your Startup to NYC Venture Firms</a><a></a></strong>=
+</font><br>
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+ General Assembly East<br>
+902 Broadway=2C 4th Floor
+New York=2C NY 10010
+  <br>
+  <br>
+  <!-- Event Description  -->
+Steve will cover preparation for the pitch session=2C building and designi=
+ng a compelling deck=2C following up after the meeting and more.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dfd9d0a10=
+3c&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+   <br>
+
+     <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D062d5c795b&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6:30PM - Data Driven Content Strategy</a><a></a></strong></font><br>
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+ General Assembly East<br>
+902 Broadway=2C 4th Floor
+New York=2C NY 10010
+  <br>
+  <br>
+  <!-- Event Description  -->
+Having a content strategy involves understanding how to effectively use co=
+ntent to drive sales=2C brand awareness=2C engagement=2C and other metrics
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dbb552ebc=
+0e&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+   <br>
+
+    <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D034450907e&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6:30PM - Clickstream analysis and web design at Gilt.com</a><a></a></str=
+ong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+    Pivotal Labs <br>
+625 Sixth Avenue=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+    Roger Huang=2C resident data evangelist at Gilt.com=2C will be showing=
+ us how he uses clickstream data to answer the big questions =E2=80=93 wha=
+t features should be embraced or retired?
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dc46588131=
+f&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+  _____________________________________________
+  <!-- Events on this Date -->
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Thursday=
+=2C June 12th</strong></font><br><br>
+
+
+     <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3Dbcaba3aca7&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6:30PM - Mob OSS ruby fix</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  Pivotal Labs <br>
+625 Sixth Avenue=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   As a group=2C we will work on an open source software issue. We will an=
+alyze the code=2C debug the issue=2C write a test=2C make the test pass=2C=
+ and push it up as a Pull Request.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D585745d0=
+1e&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
 
@@ -822,29 +894,31 @@ an></a>
   <br>
   <br>
 
-
-         <!-- Event Title Format -->
+     <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3Db5074fb3c0&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 8PM - How to Start: 30 Days from Idea to Decision </a><a></a></strong><=
-/font><br>
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D5a611bf03f&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6:30PM -
+VoltDB and HP Vertica present:
+Stonebraker Straight Talk =E2=80=93 Wisdom from the Father of Modern Relat=
+ional Databases</a><a></a></strong></font><br>
+
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-    General Assembly East <br>
+   General Assembly East <br>
     902 Broadway 4th Floor=2C
     New York=2C NY
   <br>
   <br>
   <!-- Event Description  -->
-  In this class=2C you=E2=80=99ll develop a clear=2C 30-day roadmap to eva=
-luate your potential startup idea without quitting your job.
+  An educational networking event that will provide insight into why conve=
+ntional database thinking could be holding you back.
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D667223af3=
-6&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D74e03e120=
+1&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
 
@@ -852,31 +926,92 @@ an></a>
   <br>
   <br>
 
+  _____________________________________________
   <!-- Events on this Date -->
-  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Tuesday=
-=2C June 3rd</strong></font><br><br>
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Monday=2C=
+ June 16th</strong></font><br><br>
 
-     <!-- Event Title Format -->
+    <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
 /thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3Dd8bb0a0423&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
->9AM -  The High Performance at Scale NoSQL & Big Data Event</a><a></a></s=
-trong></font><br>
+b29d2b8&id=3D8c40c55c14&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 5:45PM - Hardwired NYC #11</a><a></a></strong></font><br>
 
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-  Conrad Hotel
+Digitas - Conference Center <br>
+355 Park Avenue South
+8th floor=2C
+New York=2C NY
   <br>
   <br>
   <!-- Event Description  -->
-    Hear how real companies are using Couchbase for their Enterprise Appli=
-cations. Network with your peers=2C meet the Couchbase team=2C and get you=
-r hands on the technology.
+    Demos from Hardware companies
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D73bd3586e=
+1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D324fd581=
+46&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D7373e0ad5d&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6PM - What is this User Experience (UX) Thing?</a><a></a></strong></font=
+><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+   General Assembly East <br>
+    902 Broadway 4th Floor=2C
+    New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   In this 101 level class we will explore this buzz-worthy concept and br=
+eak it down into meaningful=2C actionable bits.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D12b80762=
+0f&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+    <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D32fb648200&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6:30PM - I'll Come to Your Emotional Rescue: Connecting Digital Experien=
+ces to Emotion</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  WeWork Labs <br>
+69 Charlton Street=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+    Affectiva is empowering a world where our digital experiences are emot=
+ionally engaging and responsive
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D979a13ce6=
 2&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
@@ -886,29 +1021,28 @@ an></a>
   <br>
 
 
-
-         <!-- Event Title Format -->
+  <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D7ef01fedd7&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6PM - Introduction to Prototyping with Axure </a><a></a></strong></font>=
-<br>
+/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3D5d3ed9ebb8&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 7:45PM - Transitioning to Tech</a><a></a></strong></font><br>
+
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-    General Assembly East <br>
+   General Assembly East <br>
     902 Broadway 4th Floor=2C
     New York=2C NY
   <br>
   <br>
   <!-- Event Description  -->
-   In this workshop=2C you'll learn the basics of prototyping in Axure=2C=
- one of the more powerful prototyping software packages available today.
+This class will help empower you to explore technology entrepreneurship by=
+ guiding you to available resources.
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D48c7a0f2=
-6c&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D3b2105d31=
+b&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
 
@@ -917,30 +1051,64 @@ an></a>
   <br>
 
 
+    _____________________________________________
+  <!-- Events on this Date -->
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Tuesday=
+=2C June 17th</strong></font><br><br>
 
 
-         <!-- Event Title Format -->
+    <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
 /thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D9d7bfdaec5&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6PM - Online Campaign Management </a><a></a></strong></font><br>
+b29d2b8&id=3D312587136f&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 5:30PM - What Would Developers Code?: Post-WWDC Lightning Talks and Hack=
+ing</a><a></a></strong></font><br>
+
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-    General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
+  Gilt Groupe <br>
+2 Park Ave 5th Floor=2C New York=2C NY
   <br>
   <br>
   <!-- Event Description  -->
-In this workshop=2C you=E2=80=99ll learn how to set up=2C manage=2C and me=
-asure your online marketing campaigns using a mix of free tools such as Go=
-ogle Analytics=2C URL builder=2C and bit.ly.
+    WWDC attendees will give short (five- to ten-minute) talks on what the=
+y learned during the conference=2C then everyone will hack on and try out=
+ the new tools unveiled by Apple.
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dae1e408df=
-b&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D5e4a7630c=
+3&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+      <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3D0848dfc484&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 5:45PM - 19th Hardware Meetup</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  Microsoft <br>
+11 Times Square=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   We have the fine folks at Indiegogo sponsoring this session=2C and we'l=
+l have a series of startups who have either raised money or are in the pro=
+cess of raising money on Indiegogo talk about their experience.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dfa363dc44=
+8&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
 
@@ -951,23 +1119,310 @@ an></a>
     <!-- Event Title Format -->
   <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
 /thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D0fa45e27f1&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-">7PM - June 2014 NY Tech Meetup</a><a></a></strong></font><br>
+2b29d2b8&id=3Dcbcb8d6033&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6PM - E-Commerce Metrics</a><a></a></strong></font><br>
 
   <br>
   <!-- Event Location for Premium Newsletter ONLY!! -->
-
-  NYU Skirball Center For The Performing Arts
+   General Assembly East <br>
+    902 Broadway 4th Floor=2C
+    New York=2C NY
   <br>
   <br>
   <!-- Event Description  -->
-  Join fellow technologists for an evening of live demos from companies de=
-veloping great technology in New York
+   This class will get you up to speed on how to get the right data=2C how=
+ to measure it=2C and how to use it for your paid acquisition campaigns=2C=
+ as well as how to optimize those channels including SEM=2C SEO=2C and Ema=
+il Marketing.
   <br>
   <br>
   <!-- Event RSVP Link -->
   <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dec9bf2415=
+1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D3b66b368=
+16&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+    <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D83a744030f&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 7PM - International: You Say EdTech the Way We Say EdTech</a><a></a></st=
+rong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  Knewton <br>
+100 5th Avenue=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+    Keeping abreast of the international EdTech scene looks a good deal li=
+ke knowing what=E2=80=99s happening in the US market=2C but what are the p=
+rimary differences with Brazil=2C Australia=2C and South Africa and others=
+?
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dc3793bcf=
+92&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+    ____________________________________________
+
+  <!-- Events on this Date -->
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Wednesday=
+=2C June 18th</strong></font><br><br>
+
+      <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3D185ce644b8&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6PM - Startup to Success Panel </a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  NYU Kimmel Center-C95 Lecture Hall <br>
+60 Washington Square South=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+    At this event=2C the panelists will consist of multiple entrepreneurs=
+ giving their insight on what they=E2=80=99ve found to work and not work i=
+n the city=2C as well as their own personal struggles and successes of sta=
+rting and growing their company in New York.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dc862d7cba=
+6&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+
+      <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3D445108e07b&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6:30PM - Business Development at a Startup</a><a></a></strong></font><b=
+r>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  General Assembly East <br>
+    902 Broadway 4th Floor=2C
+    New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   This class is a primer on business development a startup=2C particularl=
+y one with a consumer product and b2b partnerships.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D967f7eab9=
+9&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+      <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3De1d395ae9d&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 6:30PM - Creating a Front-end Style Guide</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  <br>
+  <br>
+  <!-- Event Description  -->
+   Front-end focused Software Engineers Dave and Diego will talk through h=
+ow we created our Style Guide and Pattern Library  and how we use it on a=
+ daily basis at DoSomething.org.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Df3a9257e3=
+6&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+      <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D53d72552ba&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 7PM - June NY Consumer Health Tech Meetup</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  BluePrint Health <br>
+  483 Broadway 2nd Floor=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   Join us at this month's NY Consumer Health Tech Meetup! We'll have 8 ex=
+citing consumer health tech startups getting just 60 seconds each (serious=
+ly=2C it's just 60 seconds=E2=80=94so don't miss it!) to pitch their produ=
+ct and how it's going to change the consumer health world.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D610f6aa2=
+3f&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+    _____________________________________________
+  <!-- Events on this Date -->
+  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Thursday=
+=2C June 19th</strong></font><br><br>
+
+     <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3D535009845d&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 8:30AM - Techfest Club: Women in Tech Breakfast</a><a></a></strong></fon=
+t><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+   General Assembly East <br>
+    902 Broadway 4th Floor=2C
+    New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   Techfest Club is a meetup for women in tech. It's a dose of tech innova=
+tion=2C inspiration and information all before 10am.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D493bbbe1f=
+3&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3Dc2903bc834&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6:30PM - Automating Engineering Onboarding + Dashboarding / Reporting W=
+orkflows with R</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+  Betterment <br>
+61 W 23rd St. 5th Floor=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   We'll discuss the good=2C the bad=2C and the ugly of using Boxen and it=
+s ilk to automate engineer onboarding in a repeatable=2C testable=2C and r=
+eliable way.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dd56acbba=
+32&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+    <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
+2b29d2b8&id=3D09ef36ef52&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
+"> 6:45PM - June 2014 NY Enterprise Technology Meetup</a><a></a></strong><=
+/font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+   Cooley <br>
+1114 Avenue of the Americas=2C New York=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   Our June event will feature a panel on Enterprise Security along with t=
+wo startup demos.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Df5f9b70d8=
+3&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
+ 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
+an></a>
+
+  <br>
+  <br>
+  <br>
+
+    <!-- Event Title Format -->
+  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
+/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
+b29d2b8&id=3De75a3de47e&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
+> 7PM - 6th Bronx Tech Meetup</a><a></a></strong></font><br>
+
+  <br>
+  <!-- Event Location for Premium Newsletter ONLY!! -->
+   Per Scholas <br>
+804 E 138th St # 2=2C Bronx=2C NY
+  <br>
+  <br>
+  <!-- Event Description  -->
+   Help welcome Per Scholas' joint venture with Doran Jones to create an "=
+Urban Development Center" in the South Bronx.
+  <br>
+  <br>
+  <!-- Event RSVP Link -->
+  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
+1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dd97d348de=
 d&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
  6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
 an></a>
@@ -975,516 +1430,6 @@ an></a>
   <br>
   <br>
   <br>
-
-     ____________________________________________
-
-  <!-- Events on this Date -->
-  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Wednesday=
-=2C June 4th</strong></font><br><br>
-
-
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D466325731a&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 6:30PM - HTTP/2 with Mark Nottingham</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-    Spotify HQ <br>
-45 W 18th St=2C 7th floor=2C New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-    Mark Nottingham will talk about HTTP/2 - next version of HTTP protocol=
-=2E
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dd8e6be7da=
-b&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D1ffc9b030a&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 6:30PM - June FinTech Startups Meetup</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-    Dechert LLP <br>
-1095 6th Avenue New York=2C NY=2C 28th Floor=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-    Emerging FinTech Panel - A Look Outside the US
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Da6b2c23ab=
-f&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D5c51431a4b&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 6PM - Apps Unlocked</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   This class will examine the ins and outs of creating apps from a non-te=
-chnical viewpoint.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D7f515e2af=
-e&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3De62bb23207&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6:30PM - Sales Bootcamp</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   Learn how to effectively Pitch your product.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D004e7e4f=
-8c&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D8dedbfae31&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6PM - Introduction to Agile Development Using Scrum Framework</a><a></a>=
-</strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   Scrum is also something that can only be learned by doing=2C so in this=
- workshop you=E2=80=99ll learn the Scrum framework through practical exerc=
-ises reinforced with light theory and real-world examples.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Daa0b8dd50=
-5&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3Dc0396571c2&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 8:15PM -  Basics of Website Design</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-    General Assembly West <br>
-    10 East 21st Street 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   Beginning with the background of web design and the unique challenges i=
-t presents=2C you=E2=80=99ll go over web design conventions and best pract=
-ices=2C as well as the connection between graphic design and user experien=
-ce (UX) on the web.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D8aa673376=
-6&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-     _____________________________________________
-  <!-- Events on this Date -->
-  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Thursday=
-=2C June 5th</strong></font><br><br>
-
-
-     <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D5e8e8445e7&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 9AM - Geek of the Month</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   Join GA + NYC Media Lab for an intimate=2C casual presentation and disc=
-ussion guided by Manoush Zomorodi=2C host of WNYC=E2=80=99s New Tech City=
-=2C with professor Colleen Macklin.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Da75dd607=
-fb&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-     <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3Da5b003c589&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 6PM - Data Visualizations for Businesses</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   This class will serve as a practical guide to creating useful=2C inform=
-ative=2C actionable dashboards and real-time metrics displays.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D033ae676=
-ad&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-
-  <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D9e4ffe0375&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6PM - Data Driven UX Design</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-  General Assembly East <br>
-  902 Broadway 4th Floor=2C
-  New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-  This class will demonstrate how to make actionable design decisions base=
-d on metrics from Google Analytics=2C A/B testing=2C eyetracking data=2C s=
-ocial media and real-time stats.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D2f920f57a=
-2&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-  <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D76792b4878&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 6:30PM - Content strategy for the mobile future</a><a></a></strong></fon=
-t><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   AOL/Huffington Post <br>
-770 Broadway=2C New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   Speaker: Chris Tse=2C Head of R&D at McGraw-Hill Education Labs
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D9aef66fa4=
-f&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-  <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D8500e3dada&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
->7PM - The Product Group June 2014</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-    MTV Networks / Viacom <br>
-  1515 Broadway=2C Room 44-02=2C New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-  Share=2C learn and network with fellow Product Managers at The Product G=
-roup; Featured Product Person: Matthew Smith=2C The Best Product Person of=
- 2013 (Runner-up)
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0e71cdcc=
-2b&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-    _____________________________________________
-  <!-- Events on this Date -->
-  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Saturday=
-=2C June 7th</strong></font><br><br>
-
-  <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D38e8c98006&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 10AM - Validating Assumptions with Lean UX Research</a><a></a></strong><=
-/font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   During this full-day workshop=2C you will learn how to practically and=
- reliably validate a new product or service idea.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D89e479ab=
-1d&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-  <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3Dc118ee30d0&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 10AM - Validating Assumptions with Lean UX Research</a><a></a></strong><=
-/font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly Union Square <br>
-  41 Union Square West
-  New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   In this class ideal for web developers=2C designers=2C and project mana=
-gers with a basic HTML and CSS knowledge base=2C you=E2=80=99ll get a comp=
-rehensive introduction to the basics of responsive web design.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Dbd5793c3=
-cb&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-    _____________________________________________
-  <!-- Events on this Date -->
-  <br><br><font face=3D"arial" size=3D"4" color=3D"#333"><strong>Sunday=2C=
- June 8th</strong></font><br><br>
-
-  <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3Dd0b2d8eb15&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 10AM - The Art and Science of Distribution Hacking</a><a></a></strong><=
-/font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   This workshop provides the toolbox for anyone who wants to gain or main=
-tain their competitive edge=2C expand their online presence=2C and obtain=
- a comprehensive optimization toolbox for long-term success.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D2c36bc5e=
-42&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D10f0f3de8d&e=3D8404ceda97" title=3D"" class=3D"" target=3D"=
-"> 10AM - Understanding Mobile User Experience</a><a></a></strong></font><=
-br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-     General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-  This lecture looks at the touch points (get it?) we as creators have wit=
-h our users and their mobile devices.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Da406839cc=
-c&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-    <!-- Event Title Format -->
-  <font face=3D"arial" size=3D"3" color=3D"#000"><strong><a href=3D"http:/=
-/thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2ee8c906b6f9bdf2=
-b29d2b8&id=3D8cf3eb24fe&e=3D8404ceda97" title=3D"" class=3D"" target=3D""=
-> 10AM - Introduction to Adobe Illustrator</a><a></a></strong></font><br>
-
-  <br>
-  <!-- Event Location for Premium Newsletter ONLY!! -->
-   General Assembly East <br>
-    902 Broadway 4th Floor=2C
-    New York=2C NY
-  <br>
-  <br>
-  <!-- Event Description  -->
-   This workshop is designed to get you up and running with Adobe Illustra=
-tor in just one day. The focus will be on step-by-step instruction leading=
- students through the most important tools and concepts in Illustrator.
-  <br>
-  <br>
-  <!-- Event RSVP Link -->
-  <a style=3D"text-decoration: none;" href=3D"http://thisisgoingtobebig.us=
-1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Da18e2a44=
-2e&e=3D8404ceda97"><span style=3D"background-color: #91bd09; padding: 3px=
- 6px 3px; color: #fff; border: 1px solid rgba(0=2C0=2C0=2C0.25);">RSVP</sp=
-an></a>
-
-  <br>
-  <br>
-  <br>
-
-
-
-
-
   <!-- Replace this part End-->
 
         <!-- LiveIntent Tag start-->
@@ -1493,25 +1438,25 @@ an></a>
             <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><t=
 d colspan=3D"2"><a style=3D"display: block; width: 300px; height: 250px;"=
  href=3D"http://thisisgoingtobebig.us1.list-manage.com/track/click?u=3D4c2=
-ee8c906b6f9bdf2b29d2b8&id=3Dafc7fb77d0&e=3D8404ceda97" rel=3D"nofollow"><=
+ee8c906b6f9bdf2b29d2b8&id=3D1bb56d3729&e=3D8404ceda97" rel=3D"nofollow"><=
 img src=3D"http://G.CDNNT.COM/imp?s=3D102936&t=3Dnewsletter&sz=3D300x250&l=
-i=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" border=3D"0" width=3D"=
+i=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" border=3D"0" width=3D"=
 300" height=3D"250" style=3D"display: block;"></a></td></tr><tr style=3D"d=
 isplay:block; height:1px; line-height:1px;"><td><img src=3D"http://G.CDNNT=
 =2ECOM/imp?s=3D102937&t=3Dnewsletter&sz=3D1x1&li=3D0567136513&e=3D=
-ciriwe@phobot.net&p=3D5f7e096034" height=3D"1" width=3D"10" style=3D"display: block;"=
+ciriwe@phobot.net&p=3Db0aae38577" height=3D"1" width=3D"10" style=3D"display: block;"=
 ></td><td><img src=3D"http://G.CDNNT.COM/imp?s=3D102938&t=3Dnewsletter&sz=
-=3D1x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" height=3D"1" w=
+=3D1x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" height=3D"1" w=
 idth=3D"10" style=3D"display: block;"></td></tr><tr><td align=3D"left"><a=
  href=3D"http://thisisgoingtobebig.us1.list-manage1.com/track/click?u=3D4c=
-2ee8c906b6f9bdf2b29d2b8&id=3Dad383e1c77&e=3D8404ceda97" rel=3D"nofollow">=
+2ee8c906b6f9bdf2b29d2b8&id=3D7da344b97b&e=3D8404ceda97" rel=3D"nofollow">=
 <img src=3D"http://G.CDNNT.COM/imp?s=3D2814&t=3Dnewsletter&sz=3D116x15&li=
-=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" border=3D"0" style=3D"d=
+=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" border=3D"0" style=3D"d=
 isplay: block;"></a></td><td align=3D"right"><a href=3D"http://thisisgoing=
 tobebig.us1.list-manage1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=
-=3D015634b1ec&e=3D8404ceda97" rel=3D"nofollow"><img src=3D"http://G.CDNNT=
+=3D23209332f4&e=3D8404ceda97" rel=3D"nofollow"><img src=3D"http://G.CDNNT=
 =2ECOM/imp?s=3D96121&t=3Dnewsletter&sz=3D69x15&li=3D0567136513&e=3D=
-ciriwe@phobot.net&p=3D5f7e096034" border=3D"0" style=3D"display: block;"></a></td></=
+ciriwe@phobot.net&p=3Db0aae38577" border=3D"0" style=3D"display: block;"></a></td></=
 tr></table>
           </td>
         </tr>
@@ -1523,7 +1468,7 @@ tr></table>
             <div class=3D"footerText" style=3D"font-size: 10px;color: #EEE=
 EEE;line-height: 100%;font-family: Verdana;"><b><span style=3D"color: rgb(=
 255=2C 255=2C 255); "><a href=3D"http://thisisgoingtobebig.us1.list-manage=
-2.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D61023e7637&e=3D=
+1.com/track/click?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D07cbc40a05&e=3D=
 8404ceda97" style=3D"color: #EEEEEE;text-decoration: underline;font-weight: nor=
 mal;"><span style=3D"color: rgb(255=2C 255=2C 255); ">Subscribe to this li=
 st</span></a></span></b><span style=3D"color: rgb(255=2C 255=2C 255); "><b=
@@ -1531,19 +1476,19 @@ st</span></a></span></b><span style=3D"color: rgb(255=2C 255=2C 255); "><b=
             <br>
             <span style=3D"color: rgb(255=2C 255=2C 255); "> </span><a hre=
 f=3D"http://thisisgoingtobebig.us1.list-manage.com/unsubscribe?u=3D4c2ee8c=
-906b6f9bdf2b29d2b8&id=3D0567136513&e=3D8404ceda97&c=3D5f7e096034" style=3D"c=
+906b6f9bdf2b29d2b8&id=3D0567136513&e=3D8404ceda97&c=3Db0aae38577" style=3D"c=
 olor: #EEEEEE;text-decoration: underline;font-weight: normal;"><span style=
 =3D"color: rgb(255=2C 255=2C 255); ">Unsubscribe</span></a><span style=3D"=
 color: rgb(255=2C 255=2C 255); "> ciriwe@phobot.net from this list | </span=
-><a href=3D"http://us1.forward-to-friend.com/forward?u=3D4c2ee8c906b6f9bdf=
-2b29d2b8&id=3D5f7e096034&e=3D8404ceda97" style=3D"color: #EEEEEE;text-decora=
-tion: underline;font-weight: normal;"><span style=3D"color: rgb(255=2C 255=
-=2C 255); ">Forward to a friend</span></a><span style=3D"color: rgb(255=2C=
- 255=2C 255); "> | </span><a href=3D"http://thisisgoingtobebig.us1.list-ma=
-nage.com/profile?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0567136513&e=3D=
-8404ceda97" style=3D"color: #EEEEEE;text-decoration: underline;font-weight: normal;=
-"><span style=3D"color: rgb(255=2C 255=2C 255); ">Update your profile</spa=
-n></a><br>
+><a href=3D"http://us1.forward-to-friend2.com/forward?u=3D4c2ee8c906b6f9bd=
+f2b29d2b8&id=3Db0aae38577&e=3D8404ceda97" style=3D"color: #EEEEEE;text-decor=
+ation: underline;font-weight: normal;"><span style=3D"color: rgb(255=2C 25=
+5=2C 255); ">Forward to a friend</span></a><span style=3D"color: rgb(255=
+=2C 255=2C 255); "> | </span><a href=3D"http://thisisgoingtobebig.us1.list=
+-manage.com/profile?u=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D0567136513&e=3D=
+8404ceda97" style=3D"color: #EEEEEE;text-decoration: underline;font-weight: norm=
+al;"><span style=3D"color: rgb(255=2C 255=2C 255); ">Update your profile</=
+span></a><br>
             <br>
             <span style=3D"color: rgb(255=2C 255=2C 255); "> <em>Copyright=
  (C) 2014 This is going to be BIG! All rights reserved.</em></span><br>
@@ -1557,34 +1502,34 @@ n></a><br>
 
 <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"24" heigh=
 t=3D"6"><tbody><tr><td><img src=3D"http://G.CDNNT.COM/imp?s=3D19684&sz=3D2=
-x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=
+x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=
 =3D"6" border=3D"0"></td><td><img src=3D"http://G.CDNNT.COM/imp?s=3D19685&=
-sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" width=3D"2"=
+sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" width=3D"2"=
  height=3D"6" border=3D"0"></td><td><img src=3D"http://G.CDNNT.COM/imp?s=
-=3D19686&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" wid=
+=3D19686&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" wid=
 th=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"http://G.CDNNT.COM=
-/imp?s=3D19687&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e09603=
-4" width=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"http://G.CDN=
-NT.COM/imp?s=3D19688&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7=
-e096034" width=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"http:/=
+/imp?s=3D19687&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae3857=
+7" width=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"http://G.CDN=
+NT.COM/imp?s=3D19688&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0a=
+ae38577" width=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"http:/=
 /G.CDNNT.COM/imp?s=3D19689&sz=3D2x1&li=3D0567136513&e=3Dciriwe@phobot.net&p=
-=3D5f7e096034" width=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"=
+=3Db0aae38577" width=3D"2" height=3D"6" border=3D"0"></td><td><img src=3D"=
 http://G.CDNNT.COM/imp?s=3D19690&sz=3D2x1&li=3D0567136513&e=3D=
-ciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=3D"6" border=3D"0"></td><td><img s=
+ciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=3D"6" border=3D"0"></td><td><img s=
 rc=3D"http://G.CDNNT.COM/imp?s=3D19691&sz=3D2x1&li=3D0567136513&e=3D=
-ciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=3D"6" border=3D"0"></td><td>=
+ciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=3D"6" border=3D"0"></td><td>=
 <img src=3D"http://G.CDNNT.COM/imp?s=3D19692&sz=3D2x1&li=3D0567136513&e=3D=
-ciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=3D"6" border=3D"0"></t=
+ciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=3D"6" border=3D"0"></t=
 d><td><img src=3D"http://G.CDNNT.COM/imp?s=3D19693&sz=3D2x1&li=3D056713651=
-3&e=3Dciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=3D"6" border=3D"=
+3&e=3Dciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=3D"6" border=3D"=
 0"></td><td><img src=3D"http://G.CDNNT.COM/imp?s=3D19694&sz=3D2x1&li=3D056=
-7136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=3D"6" bord=
+7136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=3D"6" bord=
 er=3D"0"></td><td><img src=3D"http://G.CDNNT.COM/imp?s=3D19695&sz=3D2x1&li=
-=3D0567136513&e=3Dciriwe@phobot.net&p=3D5f7e096034" width=3D"2" height=3D"6=
+=3D0567136513&e=3Dciriwe@phobot.net&p=3Db0aae38577" width=3D"2" height=3D"6=
 " border=3D"0"></td></tr></tbody></table>
 
 <img src=3D"http://thisisgoingtobebig.us1.list-manage.com/track/open.php?u=
-=3D4c2ee8c906b6f9bdf2b29d2b8&id=3D5f7e096034&e=3D8404ceda97" height=3D"1"=
+=3D4c2ee8c906b6f9bdf2b29d2b8&id=3Db0aae38577&e=3D8404ceda97" height=3D"1"=
  width=3D"1"></body>
 </html>
---_----------=_MCPart_753749002--
+--_----------=_MCPart_619949472--

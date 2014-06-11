@@ -2,6 +2,7 @@
 open EmailParser.Utils.Text
 open ODonnellParser.Parser
 open EmailParser.SQLitePersistence
+open EmailParser.HtmlGenerator
 
 let usage() =
     printfn "usage: EmailParser MAIL_FILE_1 [MAIL_FILE_2 ...]"
@@ -31,13 +32,19 @@ let loadDataFrom (filename: string) =
     let lines = textOf message |> splitIntoLines
     let parsed = parseMail sender sentDate lines
     loadMail parsed
+    ()
+
+let writeEventsFile() = 
     let eventsList = retrieveCalendarEntriesFromTodayByDate()
+    let html = htmlFrom eventsList
+    System.IO.File.WriteAllText("Events.html", html)
     ()
 
 [<EntryPoint>]
 let main argv = 
-    if argv.Length = 0 then
-        usage()
-    else
-        argv |> Array.iter loadDataFrom
+    if argv.Length = 0 
+    then usage()
+    else argv |> Array.iter loadDataFrom
+
+    writeEventsFile()
     0

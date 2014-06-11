@@ -63,6 +63,10 @@
       <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
       <Name>Utils</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EventsListing\EventsListing.fsproj">
+      <Project>{427B4B20-D0A6-4AA9-933A-F7D23F76DF4E}</Project>
+      <Name>EventsListing</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
