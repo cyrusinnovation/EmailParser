@@ -47,7 +47,7 @@ let dateFrom (dateString: string) =
     let day = capturedGroups.Item(2).Value
     let year = DateTime.Today.Year
     let proposedDate = new DateTime(year, (monthIndexFrom month),  (Convert.ToInt32 day))
-    if proposedDate < DateTime.Today then
+    if proposedDate < DateTime.Today.AddMonths(-1) then       // Events have no years. If the date is less than a month ago, this may be a next year event
         proposedDate.AddYears(1)
     else
         proposedDate
