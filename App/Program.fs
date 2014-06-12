@@ -1,6 +1,5 @@
 ﻿open EmailParser.Utils.Mime
 open EmailParser.Utils.Text
-open ODonnellParser.Parser
 open EmailParser.SQLitePersistence
 open EmailParser.HtmlGenerator
 
@@ -23,14 +22,19 @@ let usage() =
     printfn "Output is written into a file named Events.html in the "
     printfn "current working directory."
 
+let selectParseFunction (fileName: string) = 
+    match fileName with
+        | filename when filename.EndsWith(".odonnell")  -> ODonnellParser.Parser.parseMail
+        | _ -> sprintf "Unrecognized file extension for file: %s" fileName |> failwith
+
 let loadDataFrom (filename: string) =
-    // TODO Need to select which parser to use based on file extension
     let message = loadMimeMessageFrom(filename)
     //TODO Send the message to the parser. Have the parser dig this stuff out.
     let sender = senderOf message
     let sentDate = dateOf message
     let lines = textOf message |> splitIntoLines
-    let parsed = parseMail sender sentDate lines
+    let parseFunction = selectParseFunction filename
+    let parsed = parseFunction sender sentDate lines
     loadMail parsed
     ()
 

@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EventsListing/HtmlGenerator.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Script.fsx">
     <Files>
-      <File FileName="EventsListing/Script.fsx" Line="3" Column="1" />
-      <File FileName="EventsListing/HtmlGenerator.fs" Line="5" Column="1" />
+      <File FileName="Persistence/Script.fsx" Line="12" Column="1" />
+      <File FileName="Persistence/schema.ddl" Line="1" Column="1" />
+      <File FileName="Persistence/SQLitePersistence.fs" Line="27" Column="1" />
+      <File FileName="Utils/Date.fs" Line="7" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
