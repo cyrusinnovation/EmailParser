@@ -6,6 +6,15 @@ open System.Text.RegularExpressions
 
 let stringToStream (text: string) = new MemoryStream(Encoding.UTF8.GetBytes(text))
 
+let replace (toBeReplaced: string) (replacement: string) (text: string) =
+    text.Replace(toBeReplaced, replacement)
+
+let regexReplace (pattern: string) (replacement: string) (text: string) =
+    Regex.Replace(text, pattern, replacement)
+
+let regexReplaceIgnoreCase (pattern: string) (replacement: string) (text: string) =
+    Regex.Replace(text, pattern, replacement, System.Text.RegularExpressions.RegexOptions.IgnoreCase)
+
 let splitIntoLines (text: string) = 
     let lineArray = text.Replace("\r\n", "\n").Split( [|'\n'|] )
     List.ofArray lineArray
@@ -90,4 +99,4 @@ let asciiSubstitutions = [
 
 let asciify (text: string) = 
     asciiSubstitutions 
-        |> List.fold (fun (textSoFar: string) (toReplace: string, replacement: string) -> textSoFar.Replace(toReplace, replacement)) text
+        |> List.fold (fun textSoFar (toBeReplaced, replacement) -> replace toBeReplaced replacement textSoFar) text

@@ -13,6 +13,8 @@ Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "EventsListing", "EventsList
 EndProject
 Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "Utils", "Utils\Utils.fsproj", "EFAA7888-F46F-4E5B-9020-B03B90422E6F"
 EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "DenbowParser", "DenbowParser\DenbowParser.fsproj", "{9D443D2B-5025-4047-872B-F30ACE148339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D443D2B-5025-4047-872B-F30ACE148339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D443D2B-5025-4047-872B-F30ACE148339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D443D2B-5025-4047-872B-F30ACE148339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D443D2B-5025-4047-872B-F30ACE148339}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7E39B94-578A-43D2-9FCE-37D8898B6614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7E39B94-578A-43D2-9FCE-37D8898B6614}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7E39B94-578A-43D2-9FCE-37D8898B6614}.Release|Any CPU.ActiveCfg = Release|Any CPU
