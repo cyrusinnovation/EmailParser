@@ -1,6 +1,10 @@
 ﻿module EmailParser.Utils.Text
 
+open System.IO
+open System.Text
 open System.Text.RegularExpressions
+
+let stringToStream (text: string) = new MemoryStream(Encoding.UTF8.GetBytes(text))
 
 let splitIntoLines (text: string) = 
     let lineArray = text.Replace("\r\n", "\n").Split( [|'\n'|] )

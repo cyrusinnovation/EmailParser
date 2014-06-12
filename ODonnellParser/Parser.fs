@@ -127,6 +127,6 @@ let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (messagePart
 
     { MailDate = sentDate; MailSender = sender; MailIntro = intro; CalendarEntries = calendarEntries }
 
-let parseMail (sender: string) (sentDate: System.DateTime) (mailText: list<string>) : EmailData = 
-    let messageParts = parse mailText PreIntro
-    parseIntoEmailData sender sentDate messageParts
+let parseMail (message: EmailMessage) : EmailData = 
+    let messageParts = parse message.MessageLines PreIntro
+    parseIntoEmailData message.Sender message.SentDate messageParts

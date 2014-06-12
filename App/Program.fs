@@ -29,12 +29,8 @@ let selectParseFunction (fileName: string) =
 
 let loadDataFrom (filename: string) =
     let message = loadMimeMessageFrom(filename)
-    //TODO Send the message to the parser. Have the parser dig this stuff out.
-    let sender = senderOf message
-    let sentDate = dateOf message
-    let lines = textOf message |> splitIntoLines
     let parseFunction = selectParseFunction filename
-    let parsed = parseFunction sender sentDate lines
+    let parsed = parseFunction message
     loadMail parsed
     ()
 

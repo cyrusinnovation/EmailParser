@@ -2,6 +2,12 @@
 
 open System
 
+type EmailMessage = {
+    Sender: string;
+    SentDate: DateTime;
+    MessageLines: list<string>
+}
+
 type CalendarEntry = {
     EventDate: DateTime;
     EventTitle: string;

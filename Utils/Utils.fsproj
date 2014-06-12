@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Compile Include="Html.fs" />
-    <Compile Include="Text.fs" />
-    <Compile Include="Mime.fs" />
     <Compile Include="Collections.fs" />
     <Compile Include="Date.fs" />
+    <Compile Include="Text.fs" />
+    <Compile Include="Html.fs" />
+    <Compile Include="Mime.fs" />
     <None Include="Script.fsx" />
   </ItemGroup>
   <PropertyGroup>
@@ -69,4 +69,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
+      <Project>{D7E39B94-578A-43D2-9FCE-37D8898B6614}</Project>
+      <Name>ParserTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
