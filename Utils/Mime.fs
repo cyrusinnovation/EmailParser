@@ -1,6 +1,7 @@
 ﻿module EmailParser.Utils.Mime
 
 open MimeKit
+open EmailParser.Utils.Text
 
 type ReadableContent =
     | HtmlPart of string
@@ -39,3 +40,4 @@ let textOf (message: MimeMessage) : string =
     contentPartsOf message 
     |> List.choose (function | TextPart(content) -> Some(content) | _ -> None)
     |> String.concat "\r\n"
+    |> asciify
