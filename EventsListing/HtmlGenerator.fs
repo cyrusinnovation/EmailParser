@@ -11,7 +11,7 @@ type HtmlAccumulator = {
 let addHeader calendarEntry accumulator =    
     let currentEntryDate = calendarEntry.EventDate
 
-    if currentEntryDate = accumulator.Date then accumulator.Html
+    if currentEntryDate.ToString("D") = accumulator.Date.ToString("D") then accumulator.Html
     else accumulator.Html + "<h3>" + currentEntryDate.ToString("D") + "</h3>\n\n"
 
 let addEntryTime calendarEntry htmlSoFar = 

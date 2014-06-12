@@ -13,7 +13,7 @@ open EmailParser.Utils.Collections
 open System.Text.RegularExpressions
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
-let message = loadMimeMessageFrom("bin/Debug/Email.odonnell")
+let message = loadMimeMessageFrom("../ODonnellParser/Email.odonnell")
 let sender = senderOf message
 let sentDate = dateOf message
 let lines = textOf message |> splitIntoLines
@@ -22,7 +22,7 @@ let messageParts = parse lines PreIntro
 let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
 let date = extractDateStringFrom nonIntroParts.Head    
 let time = extractTimeStringFrom nonIntroParts.Tail.Head
-let (thisEntryData, rest) = extractRemainingDataForCurrentCalendarEntry nonIntroParts.Tail
+let (thisEntryData, rest) = extractRemainingDataForCurrentCalendarEntry nonIntroParts.Tail.Tail
 
 let calendarEntry = calendarEntryFrom date time thisEntryData
 

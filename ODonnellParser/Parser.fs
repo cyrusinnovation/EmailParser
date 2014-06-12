@@ -86,10 +86,10 @@ let extractTimeStringFrom = function
     | _ -> "12AM"
 
 let extractRemainingDataForCurrentCalendarEntry (messageParts: list<MessagePart>) = 
-    messageParts.Tail |> takeAndSkipUntil (function 
-                                            | DatePart(_) -> true 
-                                            | TimePart(_) -> true 
-                                            | _ -> false )
+    messageParts |> takeAndSkipUntil (function 
+                                        | DatePart(_) -> true 
+                                        | TimePart(_) -> true 
+                                        | _ -> false )
 
 let calendarEntryFrom (date: string) (time: string) (messageParts: seq<MessagePart>) = 
     let title = messageParts        |> extractWithEmptyStringDefault (function | TitlePart(aTitle)      -> Some(aTitle)                  | _ -> None)
