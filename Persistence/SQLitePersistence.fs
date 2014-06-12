@@ -14,8 +14,6 @@ type EmailType = DataContext.``[main].[emails]Entity``
 type CalendarEntryType = DataContext.``[main].[calendar_entries]Entity``
 
 let loadEmailData (dataContext: DataContext) emailData =
-    let mailDateSinceEpoch = secondsSinceEpoch emailData.MailDate
-
     let email = dataContext.``[main].[emails]``.Create()
     email.date <- emailData.MailDate.ToString("yyyy-MM-dd hh:mm:ss") |> Some
     email.sender <- emailData.MailSender |> Some
@@ -24,8 +22,6 @@ let loadEmailData (dataContext: DataContext) emailData =
     email
 
 let loadCalendarEntry (dataContext: DataContext) (email: EmailType) calendarEntry = 
-    let entryDateSinceEpoch = secondsSinceEpoch calendarEntry.EventDate |> Some
-
     let calendar_entry = dataContext.``[main].[calendar_entries]``.Create()
     calendar_entry.date <- calendarEntry.EventDate.ToString("yyyy-MM-dd hh:mm:ss") |> Some
     calendar_entry.title <- calendarEntry.EventTitle |> Some

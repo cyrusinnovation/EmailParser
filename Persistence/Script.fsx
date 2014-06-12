@@ -2,7 +2,7 @@
 #r "ParserTypes.dll"
 #r "DbLoader.dll"
 #r "System.Data.SQLite.dll"
-#r "../packages/SQLProvider.0.0.9-alpha/lib/net40/FSharp.Data.SQLProvider.dll"
+#r "FSharp.Data.SQLProvider.dll"
 
 open System
 open System.Linq

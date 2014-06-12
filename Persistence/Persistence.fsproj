@@ -42,9 +42,6 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="FSharp.Data.SqlProvider">
-      <HintPath>..\packages\SQLProvider.0.0.9-alpha\lib\net40\FSharp.Data.SqlProvider.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -53,6 +50,9 @@
     </Reference>
     <Reference Include="System.Data.SQLite">
       <HintPath>System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.SqlProvider">
+      <HintPath>FSharp.Data.SqlProvider.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +71,7 @@
     <None Include="System.Data.SQLite.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="FSharp.Data.SqlProvider.dll" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
