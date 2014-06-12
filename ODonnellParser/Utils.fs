@@ -2,7 +2,17 @@
 
 open System
 open System.Text.RegularExpressions
+open MimeKit
+open EmailParser.Utils.Mime
 open EmailParser.Utils.Text
+open EmailParser.Types
+
+let messageDataFor (message: MimeMessage) =
+    {
+        Sender = senderOf message;
+        SentDate = dateOf message;
+        MessageLines = (textOf message |> splitIntoLines)
+    }
 
 let removeEventUrlFrom (eventHeader: string) = 
     let startOfEventUrl = eventHeader.IndexOf(" (http")

@@ -1,5 +1,6 @@
 ﻿module ODonnellParser.Parser
 
+open MimeKit
 open EmailParser.Types
 open EmailParser.Utils.Collections
 open ODonnellParser.Utils
@@ -127,6 +128,7 @@ let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (messagePart
 
     { MailDate = sentDate; MailSender = sender; MailIntro = intro; CalendarEntries = calendarEntries }
 
-let parseMail (message: EmailMessage) : EmailData = 
-    let messageParts = parse message.MessageLines PreIntro
-    parseIntoEmailData message.Sender message.SentDate messageParts
+let parseMail (message: MimeMessage) : EmailData = 
+    let messageData = messageDataFor message
+    let messageParts = parse messageData.MessageLines PreIntro
+    parseIntoEmailData messageData.Sender messageData.SentDate messageParts

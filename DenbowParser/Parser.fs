@@ -1,8 +1,9 @@
 ﻿module DenbowParser.Parser
 
+open MimeKit
 open EmailParser.Types
 open EmailParser.Utils.Collections
-
+open EmailParser.Utils.Mime
 
 type State =
     | PreIntro

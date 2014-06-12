@@ -1,12 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DenbowParser/Parser.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ODonnellParser/Parser.fs">
     <Files>
-      <File FileName="ParserTypes/Types.fs" Line="15" Column="30" />
-      <File FileName="App/Program.fs" Line="32" Column="1" />
-      <File FileName="ODonnellParser/Parser.fs" Line="1" Column="1" />
-      <File FileName="Utils/Mime.fs" Line="51" Column="43" />
-      <File FileName="DenbowParser/Parser.fs" Line="6" Column="1" />
+      <File FileName="App/Program.fs" Line="5" Column="1" />
+      <File FileName="Utils/Mime.fs" Line="4" Column="1" />
+      <File FileName="DenbowParser/Parser.fs" Line="4" Column="1" />
+      <File FileName="ODonnellParser/Parser.fs" Line="132" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
