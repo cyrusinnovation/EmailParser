@@ -45,11 +45,4 @@ let loadMimeMessageFrom(filepath: string) =
     let messageStream = System.IO.File.ReadAllText(filepath).Trim() |> stringToStream
     (new MimeKit.MimeParser(messageStream)).ParseMessage()
     // MimeMessage.Load(filepath)  //Damn MimeKit doesn't let you load a message from a string
-(*
-    {
-        Sender = senderOf message;
-        SentDate = dateOf message;
-        MessageLines = (textOf message |> splitIntoLines)
-    }
-*)
 

@@ -14,6 +14,19 @@ System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 open EmailParser.Types
 open EmailParser.SQLitePersistence
 
+
+type Provider = SqlDataProvider< ConnectionString = @"Data Source=test.sqlitedb;Version=3",
+                                  DatabaseVendor = Common.DatabaseProviderTypes.SQLITE,
+                                  UseOptionTypes = true >
+let dataContext = Provider.GetDataContext()
+
+let email = dataContext.``[main].[emails]``.Create()
+email.date <- Some("2014-12-12 12:00:00")
+email.timestamp <- Some(1418385600L)
+email.sender <- Some("sender")
+email.intro <- Some("intro")
+dataContext.SubmitUpdates() 
+
 let calendarEntry = {
     EventDate = System.DateTime.Today;
     EventTitle = "title";
@@ -36,7 +49,7 @@ let emailData = {
     MailIntro = "an\nintro";
     CalendarEntries = [calendarEntry; yesterdayEntry]
 }
- 
+
 loadMail emailData
 
 let retrieved = retrieveCalendarEntriesFromTodayByDate()

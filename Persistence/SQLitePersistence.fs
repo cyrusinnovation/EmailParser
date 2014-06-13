@@ -16,6 +16,7 @@ type CalendarEntryType = DataContext.``[main].[calendar_entries]Entity``
 let loadEmailData (dataContext: DataContext) emailData =
     let email = dataContext.``[main].[emails]``.Create()
     email.date <- emailData.MailDate.ToString("yyyy-MM-dd hh:mm:ss") |> Some
+    email.timestamp <- emailData.MailDate |> secondsSinceEpoch |> Some 
     email.sender <- emailData.MailSender |> Some
     email.intro <- emailData.MailIntro |> Some
     dataContext.SubmitUpdates()
@@ -24,6 +25,7 @@ let loadEmailData (dataContext: DataContext) emailData =
 let loadCalendarEntry (dataContext: DataContext) (email: EmailType) calendarEntry = 
     let calendar_entry = dataContext.``[main].[calendar_entries]``.Create()
     calendar_entry.date <- calendarEntry.EventDate.ToString("yyyy-MM-dd hh:mm:ss") |> Some
+    calendar_entry.timestamp <- calendarEntry.EventDate |> secondsSinceEpoch |> Some 
     calendar_entry.title <- calendarEntry.EventTitle |> Some
     calendar_entry.location <- calendarEntry.EventLocation |> Some
     calendar_entry.description <- calendarEntry.EventDescription |> Some
@@ -58,10 +60,11 @@ let toCalendarEntry (dbCalendarEntry: CalendarEntryType) =
 
 let retrieveCalendarEntriesFromTodayByDate() =
     let dataContext = Provider.GetDataContext()
-    query {    // Can't filter using string comparison or use optional int columns with SQLProvider.
+    let todayTimestamp = DateTime.Today |> secondsSinceEpoch
+    query {    // Can't filter using string comparison with SQLProvider.
             for calendarEntry in dataContext.``[main].[calendar_entries]`` do
-            sortBy calendarEntry.date
-            select calendarEntry  } |> Seq.filter isTodayOrLater 
-                                    |> Seq.toList
+            where (calendarEntry.timestamp.Value >= todayTimestamp)
+            sortBy calendarEntry.timestamp
+            select calendarEntry  } |> Seq.toList
                                     |> List.map toCalendarEntry
     
