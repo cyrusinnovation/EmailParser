@@ -23,12 +23,16 @@ let dateFromMonthDay (monthString: string) (dayString: string) =
         proposedDate.AddYears(1)
     else
         proposedDate
-    
+
+//TODO Distinguish between events with a midnight time and those with no time at all            
 let hoursAndMinutesFrom (timeString: string) =      //Assumption that this ends with am/pm
-    let time = timeString.Substring(0, timeString.Length - 2).Trim()
-    let hoursAndMinutes = time.Split(':') |> Array.map (fun numString -> (Convert.ToDouble numString))
-    let hours = if timeString.ToLower().EndsWith("pm") 
-                then hoursAndMinutes.[0] + 12.0
-                else hoursAndMinutes.[0]
-    let minutes = if hoursAndMinutes.Length = 2 then hoursAndMinutes.[1] else 0.0
-    (hours, minutes)
+    if System.String.IsNullOrWhiteSpace(timeString) then
+        (0.0, 0.0)
+    else
+        let time = timeString.Substring(0, timeString.Length - 2).Trim() |> regexReplace @"\s+" ""
+        let hoursAndMinutes = time.Split(':') |> Array.map (fun numString -> (Convert.ToDouble numString))
+        let hours = if timeString.ToLower().EndsWith("pm") 
+                    then hoursAndMinutes.[0] + 12.0
+                    else hoursAndMinutes.[0]
+        let minutes = if hoursAndMinutes.Length = 2 then hoursAndMinutes.[1] else 0.0
+        hours, minutes

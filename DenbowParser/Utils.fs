@@ -47,13 +47,21 @@ let extractTitleFrom (eventHeader: string) =
     let startIndex = eventHeader.IndexOf("]") + 1
     eventHeader.Substring(startIndex).Trim()
 
-let toDateTime (dateTimeString: string) = 
-    let normalized = regexReplace " +"  " " dateTimeString
+let dateAndTimeFrom (dateTimeString: string) = 
+    let normalized = dateTimeString |> regexReplace " +"  " " 
+                                    |> regexReplace @"\s+:" ":"     //No space around colons in time
+                                    |> regexReplace @":\s+" ":"
+                                    |> regexReplaceIgnoreCase @"\s+am\s+" "am " //No space before am or pm
+                                    |> regexReplaceIgnoreCase @"\s+pm\s+" "pm " 
+
     let parts = normalized.Split(' ')
 
     let date = dateFromMonthDay parts.[0] parts.[1]
-    let hours, minutes = hoursAndMinutesFrom parts.[2]
-    date.AddHours(hours).AddMinutes(minutes)
+    if parts.Length > 2 then
+        let hours, minutes = hoursAndMinutesFrom parts.[2]
+        date.AddHours(hours).AddMinutes(minutes)
+    else
+        date
 
 let containsCalendarLink (descriptionLine: string) =
     let normalizedLine = descriptionLine.ToLower() |> regexReplace " +"  " "
@@ -64,3 +72,4 @@ let removeCalendarLink (descriptionLine: string) =
         descriptionLine |> regexReplace @"\s*\|?\s*\[http.*" ""        //Remove everything after " | [http" with or without pipe
     else
         descriptionLine
+

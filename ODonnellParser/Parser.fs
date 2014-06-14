@@ -3,6 +3,7 @@
 open MimeKit
 open EmailParser.Types
 open EmailParser.Utils.Collections
+open EmailParser.Utils.Uri
 open ODonnellParser.Utils
 
 type State =
@@ -101,7 +102,7 @@ let calendarEntryFrom (date: string) (time: string) (messageParts: seq<MessagePa
     {
         EventDate = (dateAndTimeFrom date time);
         EventTitle = title;
-        EventLocation = location;
+        EventLocation = Some(location);
         EventDescription = description;
         RsvpLink = (uriFrom rsvp)
     }

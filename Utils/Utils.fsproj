@@ -55,6 +55,7 @@
     <Compile Include="Text.fs" />
     <Compile Include="Date.fs" />
     <Compile Include="Html.fs" />
+    <Compile Include="Uri.fs" />
     <Compile Include="Mime.fs" />
     <None Include="Script.fsx" />
   </ItemGroup>

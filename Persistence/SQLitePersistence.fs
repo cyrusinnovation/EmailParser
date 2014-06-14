@@ -27,9 +27,9 @@ let loadCalendarEntry (dataContext: DataContext) (email: EmailType) calendarEntr
     calendar_entry.date <- calendarEntry.EventDate.ToString("yyyy-MM-dd hh:mm:ss") |> Some
     calendar_entry.timestamp <- calendarEntry.EventDate |> secondsSinceEpoch |> Some 
     calendar_entry.title <- calendarEntry.EventTitle |> Some
-    calendar_entry.location <- calendarEntry.EventLocation |> Some
+    calendar_entry.location <- calendarEntry.EventLocation
     calendar_entry.description <- calendarEntry.EventDescription |> Some
-    calendar_entry.rsvp <- calendarEntry.RsvpLink.AbsoluteUri |> Some
+    calendar_entry.rsvp <- calendarEntry.RsvpLink |> Option.map (fun uri -> uri.AbsoluteUri)
     calendar_entry.email <- email.id
     dataContext.SubmitUpdates()
 
@@ -53,9 +53,9 @@ let toCalendarEntry (dbCalendarEntry: CalendarEntryType) =
     {
         EventDate = (dbCalendarEntry.date |> dateFrom);
         EventTitle = dbCalendarEntry.title.Value;
-        EventLocation = dbCalendarEntry.location.Value;
+        EventLocation = dbCalendarEntry.location;
         EventDescription = dbCalendarEntry.description.Value;
-        RsvpLink = new System.Uri(dbCalendarEntry.rsvp.Value)        
+        RsvpLink = dbCalendarEntry.rsvp |> Option.map (fun link -> new System.Uri(link))      
     }
 
 let retrieveCalendarEntriesFromTodayByDate() =

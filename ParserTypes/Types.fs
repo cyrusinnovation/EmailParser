@@ -11,9 +11,9 @@ type EmailMessage = {
 type CalendarEntry = {
     EventDate: DateTime;
     EventTitle: string;
-    EventLocation: string;
+    EventLocation: option<string>;
     EventDescription: string;
-    RsvpLink: Uri
+    RsvpLink: option<Uri>
 }
 
 type EmailData = {

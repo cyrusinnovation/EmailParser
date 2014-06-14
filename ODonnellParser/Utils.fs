@@ -57,9 +57,3 @@ let dateAndTimeFrom (dateString: string) (timeString: string) =
     let date = dateFrom dateString
     let hours, minutes = hoursAndMinutesFrom timeString
     date.AddHours(hours).AddMinutes(minutes)
-
-let uriFrom (uriString: string) = 
-    try 
-        new Uri(uriString)
-    with 
-        | ex -> new Uri("file://unparsable.uri/")

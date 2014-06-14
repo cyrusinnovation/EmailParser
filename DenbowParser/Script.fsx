@@ -20,11 +20,9 @@ let messageData = messageDataFor message
 let messageLines = messageData.MessageLines
 
 let messageParts = parse messageLines PreIntro
-//let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
-//let date = extractDateStringFrom nonIntroParts.Head    
-//let time = extractTimeStringFrom nonIntroParts.Tail.Head
-//let (thisEntryData, rest) = extractRemainingDataForCurrentCalendarEntry nonIntroParts.Tail.Tail
+let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
+let (thisEntryData, rest) = extractRemainingDataForCurrentCalendarEntry nonIntroParts.Tail
 
-//let calendarEntry = calendarEntryFrom date time thisEntryData
+let calendarEntry = calendarEntryFrom (Seq.head thisEntryData) (Seq.skip 1 thisEntryData)
 
-//let parsed = parseMail message
+let parsed = parseMail message

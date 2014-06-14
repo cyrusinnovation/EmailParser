@@ -24,10 +24,14 @@ let addEntryDescription calendarEntry htmlSoFar =
     htmlSoFar + "<p>" + calendarEntry.EventDescription + "</p>\n"
 
 let addEntryLocation calendarEntry htmlSoFar =
-    htmlSoFar + "<p>" + calendarEntry.EventLocation + "</p>\n"
+    match calendarEntry.EventLocation with
+        | Some(location) -> htmlSoFar + "<p>" + location + "</p>\n"
+        | None -> htmlSoFar
 
 let addEntryRsvp calendarEntry htmlSoFar =
-    htmlSoFar + "<p>" + calendarEntry.RsvpLink.AbsoluteUri + "</p>\n"
+    match calendarEntry.RsvpLink with
+        | Some(uri) -> htmlSoFar + "<p>" + uri.AbsoluteUri + "</p>\n"
+        | None -> htmlSoFar
 
 let htmlEntryFor (accumulator: HtmlAccumulator) (calendarEntry: CalendarEntry) = 
     let entryHtml = accumulator |> (addHeader calendarEntry)
