@@ -4,6 +4,11 @@ open System.IO
 open System.Text
 open System.Text.RegularExpressions
 
+let isBlank (text: string) = System.String.IsNullOrWhiteSpace(text)
+
+let startsWithOneOf (strings: seq<string>) (text: string) = 
+    strings |> Seq.exists (fun prefix -> text.StartsWith(prefix))
+
 let stringToStream (text: string) = new MemoryStream(Encoding.UTF8.GetBytes(text))
 
 let replace (toBeReplaced: string) (replacement: string) (text: string) =

@@ -4,7 +4,7 @@ open EmailParser.SQLitePersistence
 open EmailParser.HtmlGenerator
 
 let usage() =
-    printfn "usage: EmailParser MAIL_FILE_1 [MAIL_FILE_2 ...]"
+    printfn "usage: EmailParser.exe MAIL_FILE_1 [MAIL_FILE_2 ...]"
     printfn ""
     printfn "This program parses files containing emails in MIME"
     printfn "multipart format such as .eml files. The mails should"

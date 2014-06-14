@@ -8,7 +8,16 @@ type ReadableContent =
     | HtmlPart of string
     | TextPart of string
 
-let senderOf (message: MimeMessage) : string = message.Sender.Name + " <" + message.Sender.Address + ">"
+let senderOf (message: MimeMessage) : string = 
+    let useMessageSender (message: MimeMessage) = 
+        match message.Sender with 
+        | null -> "Unknown sender"
+        | obj  -> message.Sender.Name + " <" + message.Sender.Address + ">"
+
+    match (message.From |> Seq.toList) with
+        | first :: rest -> first.ToString()
+        | [] -> useMessageSender message
+
 let dateOf (message: MimeMessage) : System.DateTime = message.Date.Date
 
 let rec contentPartsOf (message: MimeMessage) : list<ReadableContent> = contentPartsFromMimeEntity message.Body
@@ -41,8 +50,7 @@ let textOf (message: MimeMessage) : string =
     |> String.concat "\r\n"
     |> asciify
 
-let loadMimeMessageFrom(filepath: string) = 
+let loadMimeMessageFrom (filepath: string) = 
     let messageStream = System.IO.File.ReadAllText(filepath).Trim() |> stringToStream
     (new MimeKit.MimeParser(messageStream)).ParseMessage()
-    // MimeMessage.Load(filepath)  //Damn MimeKit doesn't let you load a message from a string
 

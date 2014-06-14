@@ -4,6 +4,7 @@ open System
 open System.Text.RegularExpressions
 open MimeKit
 open EmailParser.Utils.Mime
+open EmailParser.Utils.Date
 open EmailParser.Utils.Text
 open EmailParser.Types
 
@@ -43,33 +44,14 @@ let (|AnEventHeader|_|) (line: string) =
     if m.Success
     then Some()
     else None
-
-let monthIndexFrom (monthString: string) = 
-    let months = [| "jan"; "feb"; "mar"; "apr"; "may"; "jun"; "jul"; "aug"; "sep"; "oct"; "nov"; "dec" |]
-    let thisMonth = monthString.Substring(0,3).ToLower()
-    let index = Array.IndexOf(months, thisMonth)
-    if index = -1 then 1 else (index + 1)
      
 let dateFrom (dateString: string) = 
     let normalizingRegex = Regex(@"^[^\s]*\s+([A-Za-z]+)\s+(\d+).*")  // Chop off day of the week and "th" at the end
     let capturedGroups : GroupCollection = normalizingRegex.Match(dateString).Groups 
     let month = capturedGroups.Item(1).Value
     let day = capturedGroups.Item(2).Value
-    let year = DateTime.Today.Year
-    let proposedDate = new DateTime(year, (monthIndexFrom month),  (Convert.ToInt32 day))
-    if proposedDate < DateTime.Today.AddMonths(-1) then       // Events have no years. If the date is less than a month ago, this may be a next year event
-        proposedDate.AddYears(1)
-    else
-        proposedDate
+    dateFromMonthDay month day
 
-let hoursAndMinutesFrom (timeString: string) =
-    let time = timeString.Substring(0, timeString.Length - 2)
-    let hoursAndMinutes = time.Split(':') |> Array.map (fun numString -> (Convert.ToDouble numString))
-    let hours = if timeString.ToLower().EndsWith("pm") 
-                then hoursAndMinutes.[0] + 12.0
-                else hoursAndMinutes.[0]
-    let minutes = if hoursAndMinutes.Length = 2 then hoursAndMinutes.[1] else 0.0
-    (hours, minutes)
 
 let dateAndTimeFrom (dateString: string) (timeString: string) =
     let date = dateFrom dateString
