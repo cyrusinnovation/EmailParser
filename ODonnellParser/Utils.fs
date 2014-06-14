@@ -52,8 +52,10 @@ let dateFrom (dateString: string) =
     let day = capturedGroups.Item(2).Value
     dateFromMonthDay month day
 
-
-let dateAndTimeFrom (dateString: string) (timeString: string) =
+let dateAndTimeFrom (dateString: string) (timeString: string) : DateAndTime =
     let date = dateFrom dateString
-    let hours, minutes = hoursAndMinutesFrom timeString
-    date.AddHours(hours).AddMinutes(minutes)
+    match hoursAndMinutesFrom timeString with
+        | Some(hours, minutes) -> 
+            let dateTime = date.AddHours(hours).AddMinutes(minutes)
+            { Date = dateTime ; Time = Some(dateTime) }
+        | None -> { Date = date ; Time = None }

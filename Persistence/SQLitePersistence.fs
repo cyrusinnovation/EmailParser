@@ -24,8 +24,9 @@ let loadEmailData (dataContext: DataContext) emailData =
 
 let loadCalendarEntry (dataContext: DataContext) (email: EmailType) calendarEntry = 
     let calendar_entry = dataContext.``[main].[calendar_entries]``.Create()
-    calendar_entry.date <- calendarEntry.EventDate.ToString("yyyy-MM-dd HH:mm:ss") |> Some
-    calendar_entry.timestamp <- calendarEntry.EventDate |> secondsSinceEpoch |> Some 
+    calendar_entry.date <- calendarEntry.EventDate.Date.ToString("yyyy-MM-dd") |> Some
+    calendar_entry.time <- calendarEntry.EventDate.Time |> Option.map (fun time -> time.ToString("HH:mm:ss"))
+    calendar_entry.timestamp <- calendarEntry.EventDate.Date |> secondsSinceEpoch |> Some 
     calendar_entry.title <- calendarEntry.EventTitle |> Some
     calendar_entry.location <- calendarEntry.EventLocation
     calendar_entry.description <- calendarEntry.EventDescription |> Some
@@ -45,13 +46,19 @@ let isTodayOrLater (calendarEntry: CalendarEntryType) =
         | None -> true
         | Some(dateString) -> DateTime.Parse(dateString) >= DateTime.Today
 
-let dateFrom = function
-    | None -> DateTime.Today.AddDays(7.0)
-    | Some(dateString) -> DateTime.Parse(dateString)
+let dateAndTimeFrom (date: option<string>) (time: option<string>) : DateAndTime = 
+    match date with
+    | None -> { Date = DateTime.Today.AddDays(7.0); Time = None }
+    | Some(dateString) -> 
+        match time with 
+        | None -> { Date = DateTime.Parse(dateString) ; Time = None }
+        | Some(timeString) -> 
+            let dateTime = DateTime.Parse(dateString + " " + timeString)
+            { Date = dateTime; Time = Some(dateTime) }
 
 let toCalendarEntry (dbCalendarEntry: CalendarEntryType) = 
     {
-        EventDate = (dbCalendarEntry.date |> dateFrom);
+        EventDate = (dateAndTimeFrom dbCalendarEntry.date dbCalendarEntry.time);
         EventTitle = dbCalendarEntry.title.Value;
         EventLocation = dbCalendarEntry.location;
         EventDescription = dbCalendarEntry.description.Value;

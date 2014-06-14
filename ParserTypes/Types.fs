@@ -8,8 +8,13 @@ type EmailMessage = {
     MessageLines: list<string>
 }
 
+type DateAndTime = {
+    Date: DateTime;
+    Time: option<DateTime>;    //Same datetime as EventDate, but allowing None if no time was specified
+}
+
 type CalendarEntry = {
-    EventDate: DateTime;
+    EventDate: DateAndTime;
     EventTitle: string;
     EventLocation: option<string>;
     EventDescription: string;

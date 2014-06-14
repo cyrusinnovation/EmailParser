@@ -57,11 +57,14 @@ let dateAndTimeFrom (dateTimeString: string) =
     let parts = normalized.Split(' ')
 
     let date = dateFromMonthDay parts.[0] parts.[1]
-    if parts.Length > 2 then
-        let hours, minutes = hoursAndMinutesFrom parts.[2]
-        date.AddHours(hours).AddMinutes(minutes)
-    else
-        date
+    let time = if parts.Length > 2 then parts.[2] else ""
+
+    match hoursAndMinutesFrom time with
+        | Some(hours, minutes) -> 
+            let dateTime = date.AddHours(hours).AddMinutes(minutes)
+            { Date = dateTime ; Time = Some(dateTime) }
+        | None -> { Date = date ; Time = None }
+
 
 let containsCalendarLink (descriptionLine: string) =
     let normalizedLine = descriptionLine.ToLower() |> regexReplace " +"  " "

@@ -9,6 +9,7 @@
 CREATE TABLE calendar_entries(
    id INTEGER PRIMARY KEY NOT NULL,
    date TEXT,
+   time TEXT,
    timestamp INTEGER, 
    title TEXT,
    location TEXT,

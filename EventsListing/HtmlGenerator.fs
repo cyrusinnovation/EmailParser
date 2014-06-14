@@ -2,20 +2,23 @@
 
 open System
 open EmailParser.Types
+open EmailParser.Utils.Text
 
 type HtmlAccumulator = {
     Html: string;
-    Date: DateTime
+    DateTime: DateAndTime
 }
 
 let addHeader calendarEntry accumulator =    
     let currentEntryDate = calendarEntry.EventDate
 
-    if currentEntryDate.ToString("D") = accumulator.Date.ToString("D") then accumulator.Html
-    else accumulator.Html + "<h3>" + currentEntryDate.ToString("D") + "</h3>\n\n"
+    if currentEntryDate.Date.ToString("D") = accumulator.DateTime.Date.ToString("D") then accumulator.Html
+    else accumulator.Html + "<h3>" + currentEntryDate.Date.ToString("D") + "</h3>\n\n"
 
 let addEntryTime calendarEntry htmlSoFar = 
-    htmlSoFar + "<h4>" + calendarEntry.EventDate.ToString("t").ToLower() + " - "
+    match calendarEntry.EventDate.Time with
+    | None -> htmlSoFar + "<h4>(all day) - "
+    | Some(dateTime) -> htmlSoFar + "<h4>" + dateTime.ToString("t").ToLower() + " - "
 
 let addEntryTitle calendarEntry htmlSoFar = 
     htmlSoFar + calendarEntry.EventTitle + "</h4>\n\n"
@@ -25,8 +28,8 @@ let addEntryDescription calendarEntry htmlSoFar =
 
 let addEntryLocation calendarEntry htmlSoFar =
     match calendarEntry.EventLocation with
-        | Some(location) -> htmlSoFar + "<p>" + location + "</p>\n"
         | None -> htmlSoFar
+        | Some(location) -> htmlSoFar + "<p>" + location + "</p>\n"
 
 let addEntryRsvp calendarEntry htmlSoFar =
     match calendarEntry.RsvpLink with
@@ -41,14 +44,14 @@ let htmlEntryFor (accumulator: HtmlAccumulator) (calendarEntry: CalendarEntry) =
                                 |> (addEntryLocation calendarEntry)
                                 |> (addEntryRsvp calendarEntry)
 
-    { Html = entryHtml; Date = calendarEntry.EventDate }
+    { Html = entryHtml; DateTime = calendarEntry.EventDate }
 
 let rec toHtml accumulator calendarEntries =
     match calendarEntries with
         | calendarEntry :: remainingEntries -> toHtml (htmlEntryFor accumulator calendarEntry) remainingEntries    
-        | [] -> { Html = accumulator.Html + "\n</body>\n</html>" ; Date = accumulator.Date }
+        | [] -> { Html = accumulator.Html + "\n</body>\n</html>" ; DateTime = accumulator.DateTime }
 
 let htmlFrom calendarEntries = 
-    let initialState = { Html = "<html>\n<body>\n" ; Date = DateTime.Today.AddDays(-1.0) }
+    let initialState = { Html = "<html>\n<body>\n" ; DateTime = { Date = DateTime.Today.AddDays(-1.0) ; Time = None } }
     let accumulated = toHtml initialState calendarEntries
     accumulated.Html
