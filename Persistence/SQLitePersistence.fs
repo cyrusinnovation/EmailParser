@@ -6,7 +6,7 @@ open FSharp.Data.Sql
 open EmailParser.Types
 open EmailParser.Utils.Date
 
-type Provider = SqlDataProvider< ConnectionString = @"Data Source=test.sqlitedb;Version=3",
+type Provider = SqlDataProvider< ConnectionString = @"Data Source=events.sqlitedb;Version=3",
                                   DatabaseVendor = Common.DatabaseProviderTypes.SQLITE,
                                   UseOptionTypes = true >
 type DataContext = Provider.dataContext

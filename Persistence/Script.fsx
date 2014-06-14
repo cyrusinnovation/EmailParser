@@ -15,7 +15,7 @@ open EmailParser.Types
 open EmailParser.SQLitePersistence
 
 
-type Provider = SqlDataProvider< ConnectionString = @"Data Source=test.sqlitedb;Version=3",
+type Provider = SqlDataProvider< ConnectionString = @"Data Source=events.sqlitedb;Version=3",
                                   DatabaseVendor = Common.DatabaseProviderTypes.SQLITE,
                                   UseOptionTypes = true >
 let dataContext = Provider.GetDataContext()
@@ -30,17 +30,17 @@ dataContext.SubmitUpdates()
 let calendarEntry = {
     EventDate = System.DateTime.Today;
     EventTitle = "title";
-    EventLocation = "location";
+    EventLocation = "location" |> Some;
     EventDescription = "A nice description";
-    RsvpLink = new System.Uri("http://www.google.com")
+    RsvpLink = new System.Uri("http://www.google.com") |> Some
 }
 
 let yesterdayEntry = {
     EventDate = System.DateTime.Today.AddDays(-1.0);
     EventTitle = "title2";
-    EventLocation = "location2";
+    EventLocation = "location2" |> Some; 
     EventDescription = "A nice description2";
-    RsvpLink = new System.Uri("http://www.facebook.com")
+    RsvpLink = new System.Uri("http://www.facebook.com") |> Some
 }
 
 let emailData = {
@@ -56,4 +56,28 @@ let retrieved = retrieveCalendarEntriesFromTodayByDate()
 
 List.head retrieved
 List.tail retrieved
+
+let rows =  query { 
+                for calendarEntry in dataContext.``[main].[calendar_entries]`` do
+                sortBy calendarEntry.timestamp
+                select calendarEntry  } |> Seq.toList
+
+rows |> List.map (fun row -> row.Delete())
+dataContext.SubmitUpdates() 
+
+let shouldBeEmpty =  query { 
+                        for calendarEntry in dataContext.``[main].[calendar_entries]`` do
+                        sortBy calendarEntry.timestamp
+                        select calendarEntry  } |> Seq.toList
+
+let emails = query { for email in dataContext.``[main].[emails]`` do
+                     sortBy email.timestamp
+                     select email  } |> Seq.toList
+
+emails |> List.map (fun row -> row.Delete())
+dataContext.SubmitUpdates() 
+
+let noEmails =  query { for email in dataContext.``[main].[emails]`` do
+                        sortBy email.timestamp
+                        select email  } |> Seq.toList
 

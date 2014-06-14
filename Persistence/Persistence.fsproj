@@ -65,13 +65,13 @@
     <None Include="Script.fsx" />
     <None Include="packages.config" />
     <None Include="schema.ddl" />
-    <None Include="test.sqlitedb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="System.Data.SQLite.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="FSharp.Data.SqlProvider.dll" />
+    <None Include="events.sqlitedb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ParserTypes\ParserTypes.fsproj">
