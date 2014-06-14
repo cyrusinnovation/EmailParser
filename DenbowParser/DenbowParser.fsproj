@@ -60,7 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Email.denbow">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Script.fsx" />
-    <None Include="Email.denbow" />
   </ItemGroup>
 </Project>

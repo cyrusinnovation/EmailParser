@@ -17,6 +17,7 @@ let usage() =
     printfn "file extensions corresponding to the sender, which determines"
     printfn "the parser to be used. These extensions are:"
     printfn ""
+    printfn "   .denbow - extension for Frank Denbow's mails"
     printfn "   .odonnell - extension for Charlie O'Donnell's mails"
     printfn ""
     printfn "Output is written into a file named Events.html in the "
@@ -24,6 +25,7 @@ let usage() =
 
 let selectParseFunction (fileName: string) = 
     match fileName with
+        | filename when filename.EndsWith(".denbow")  -> DenbowParser.Parser.parseMail
         | filename when filename.EndsWith(".odonnell")  -> ODonnellParser.Parser.parseMail
         | _ -> sprintf "Unrecognized file extension for file: %s" fileName |> failwith
 

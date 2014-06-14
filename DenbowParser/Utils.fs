@@ -73,3 +73,5 @@ let removeCalendarLink (descriptionLine: string) =
     else
         descriptionLine
 
+let fixLinks (description: string) =
+    description |> regexReplaceIgnoreCase @"\[(http[^\]]+)\]\s*(\w+\s+\w+)" "<a href=$1>$2</a>"

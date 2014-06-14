@@ -115,7 +115,7 @@ let calendarEntryFrom (rsvpLinkPart: MessagePart) (messageParts: seq<MessagePart
         EventDate = (dateAndTimeFrom date);
         EventTitle = title;
         EventLocation = None;
-        EventDescription = description;
+        EventDescription = (fixLinks description);
         RsvpLink = (uriFrom rsvp)
     }
 

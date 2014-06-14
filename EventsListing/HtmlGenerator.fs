@@ -15,7 +15,7 @@ let addHeader calendarEntry accumulator =
     else accumulator.Html + "<h3>" + currentEntryDate.ToString("D") + "</h3>\n\n"
 
 let addEntryTime calendarEntry htmlSoFar = 
-    htmlSoFar + "<h4>" + calendarEntry.EventDate.ToString("t") + " "
+    htmlSoFar + "<h4>" + calendarEntry.EventDate.ToString("t").ToLower() + " - "
 
 let addEntryTitle calendarEntry htmlSoFar = 
     htmlSoFar + calendarEntry.EventTitle + "</h4>\n\n"
@@ -30,7 +30,7 @@ let addEntryLocation calendarEntry htmlSoFar =
 
 let addEntryRsvp calendarEntry htmlSoFar =
     match calendarEntry.RsvpLink with
-        | Some(uri) -> htmlSoFar + "<p>" + uri.AbsoluteUri + "</p>\n"
+        | Some(uri) -> htmlSoFar + "<p>RSVP: <a href=" + uri.AbsoluteUri + ">" + uri.AbsoluteUri + "</a></p>\n"
         | None -> htmlSoFar
 
 let htmlEntryFor (accumulator: HtmlAccumulator) (calendarEntry: CalendarEntry) = 

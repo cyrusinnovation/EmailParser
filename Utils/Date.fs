@@ -31,8 +31,8 @@ let hoursAndMinutesFrom (timeString: string) =      //Assumption that this ends 
     else
         let time = timeString.Substring(0, timeString.Length - 2).Trim() |> regexReplace @"\s+" ""
         let hoursAndMinutes = time.Split(':') |> Array.map (fun numString -> (Convert.ToDouble numString))
-        let hours = if timeString.ToLower().EndsWith("pm") 
-                    then hoursAndMinutes.[0] + 12.0
-                    else hoursAndMinutes.[0]
+        let hours = if timeString.Trim().ToLower().EndsWith("am") 
+                    then hoursAndMinutes.[0] 
+                    else hoursAndMinutes.[0] + 12.0
         let minutes = if hoursAndMinutes.Length = 2 then hoursAndMinutes.[1] else 0.0
         hours, minutes
