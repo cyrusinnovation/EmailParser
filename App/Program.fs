@@ -30,7 +30,8 @@ let selectParseFunction (fileName: string) =
         | _ -> sprintf "Unrecognized file extension for file: %s" fileName |> failwith
 
 let loadDataFrom (filename: string) =
-    let message = loadMimeMessageFrom(filename)
+    let inputString = System.IO.File.ReadAllText(filename)
+    let message = loadMimeMessageFrom(inputString)
     let parseFunction = selectParseFunction filename
     let parsed = parseFunction message
     loadMail parsed

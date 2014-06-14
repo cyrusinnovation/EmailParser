@@ -50,7 +50,7 @@ let textOf (message: MimeMessage) : string =
     |> String.concat "\r\n"
     |> asciify
 
-let loadMimeMessageFrom (filepath: string) = 
-    let messageStream = System.IO.File.ReadAllText(filepath).Trim() |> stringToStream
+let loadMimeMessageFrom (messageString: string) = 
+    let messageStream = messageString.Trim() |> stringToStream
     (new MimeKit.MimeParser(messageStream)).ParseMessage()
 
