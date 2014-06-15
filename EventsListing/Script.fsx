@@ -1,32 +1,34 @@
 ﻿#I "bin/Debug"
 #r "ParserTypes.dll"
-#r "EventsListing.dll"
+#r "EmailParserUtils.dll"
+
+#load "HtmlGenerator.fs"
 
 open EmailParser.Types
 open EmailParser.HtmlGenerator
 
 let firstEntry = {
-    EventDate = System.DateTime.Today;
+    EventDate = { Date = System.DateTime.Today ; Time = None };
     EventTitle = "title1";
-    EventLocation = "location1";
+    EventLocation = Some("location1");
     EventDescription = "A nice description1";
-    RsvpLink = new System.Uri("http://www.facebook.com")
+    RsvpLink = new System.Uri("http://www.facebook.com") |> Some
 }
 
 let secondEntry = {
-    EventDate = System.DateTime.Today;
+    EventDate = { Date = System.DateTime.Today; Time = System.DateTime.Today |> Some };
     EventTitle = "title2";
-    EventLocation = "location2";
+    EventLocation = Some("location2");
     EventDescription = "A nice description2";
-    RsvpLink = new System.Uri("http://www.google.com")
+    RsvpLink = new System.Uri("http://www.google.com") |> Some
 }
 
 let thirdEntry = {
-    EventDate = System.DateTime.Today.AddDays(1.0);
+    EventDate = { Date = System.DateTime.Today.AddDays(1.0); Time = None };
     EventTitle = "title3";
-    EventLocation = "location3";
+    EventLocation = None;
     EventDescription = "A nice description3";
-    RsvpLink = new System.Uri("http://www.foobar.com")
+    RsvpLink = None
 }
 
 let calendarEntries = [ firstEntry ; secondEntry ; thirdEntry ] 

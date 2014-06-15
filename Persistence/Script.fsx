@@ -1,19 +1,21 @@
 ﻿#I "bin/Debug/"
+#r "EmailParserUtils.dll"
 #r "ParserTypes.dll"
-#r "DbLoader.dll"
 #r "System.Data.SQLite.dll"
 #r "FSharp.Data.SQLProvider.dll"
-
-open System
-open System.Linq
-open FSharp.Data.Sql
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 // System.Environment.SetEnvironmentVariable("MONO_PATH", "lib")  //Easier just to put DLL at top level of project.
 
+// Setting CurrentDirectory above makes the .fs file load when run in F# Interactive, but 
+// when the .fsx file is in the editor the #load directive still fails - can't see System.Data.SQLite.dll
+#load "SQLitePersistence.fs"
+
+open System
+open System.Linq
+open FSharp.Data.Sql
 open EmailParser.Types
 open EmailParser.SQLitePersistence
-
 
 type Provider = SqlDataProvider< ConnectionString = @"Data Source=events.sqlitedb;Version=3",
                                   DatabaseVendor = Common.DatabaseProviderTypes.SQLITE,
@@ -28,7 +30,7 @@ email.intro <- Some("intro")
 dataContext.SubmitUpdates() 
 
 let calendarEntry = {
-    EventDate = System.DateTime.Today;
+    EventDate = { Date = System.DateTime.Today; Time = System.DateTime.Today |> Some }
     EventTitle = "title";
     EventLocation = "location" |> Some;
     EventDescription = "A nice description";
@@ -36,7 +38,7 @@ let calendarEntry = {
 }
 
 let yesterdayEntry = {
-    EventDate = System.DateTime.Today.AddDays(-1.0);
+    EventDate = { Date = System.DateTime.Today.AddDays(-2.0); Time = None }
     EventTitle = "title2";
     EventLocation = "location2" |> Some; 
     EventDescription = "A nice description2";

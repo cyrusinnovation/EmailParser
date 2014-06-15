@@ -12,18 +12,18 @@ open EmailParser.Utils.Mime
 open EmailParser.Utils.Text
 open EmailParser.Utils.Collections
 open System.Text.RegularExpressions
-open DenbowParser.Parser
-open DenbowParser.Utils
+open ODonnellParser.Parser
+open ODonnellParser.Utils
 
-let message = System.IO.File.ReadAllText("Email.denbow") |> loadMimeMessageFrom 
+let message = System.IO.File.ReadAllText("Email.odonnell") |> loadMimeMessageFrom
 
 let messageData = messageDataFor message
-let messageLines = messageData.MessageLines
-
-let messageParts = parse messageLines PreIntro
+let messageParts = parse messageData.MessageLines PreIntro
 let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
-let (thisEntryData, rest) = extractRemainingDataForCurrentCalendarEntry nonIntroParts.Tail
+let date = extractDateStringFrom nonIntroParts.Head    
+let time = extractTimeStringFrom nonIntroParts.Tail.Head
+let (thisEntryData, rest) = extractRemainingDataForCurrentCalendarEntry nonIntroParts.Tail.Tail
 
-let calendarEntry = calendarEntryFrom (Seq.head thisEntryData) (Seq.skip 1 thisEntryData)
+let calendarEntry = calendarEntryFrom date time thisEntryData
 
 let parsed = parseMail message
