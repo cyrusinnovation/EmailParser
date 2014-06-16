@@ -13,7 +13,7 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "EventsListing", "EventsList
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "DenbowParser", "DenbowParser\DenbowParser.fsproj", "{9D443D2B-5025-4047-872B-F30ACE148339}"
 EndProject
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Utils", "Utils\Utils.fsproj", "EFAA7888-F46F-4E5B-9020-B03B90422E6F"
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Utils", "Utils\Utils.fsproj", "{EFAA7888-F46F-4E5B-9020-B03B90422E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,6 @@ Global
 		{D7E39B94-578A-43D2-9FCE-37D8898B6614}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7E39B94-578A-43D2-9FCE-37D8898B6614}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7E39B94-578A-43D2-9FCE-37D8898B6614}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAA7888-F46F-4E5B-9020-B03B90422E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
