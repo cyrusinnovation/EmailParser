@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>EFAA7888-F46F-4E5B-9020-B03B90422E6F</ProjectGuid>
+    <ProjectGuid>{EFAA7888-F46F-4E5B-9020-B03B90422E6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>EmailParser</RootNamespace>
     <AssemblyName>EmailParserUtils</AssemblyName>
