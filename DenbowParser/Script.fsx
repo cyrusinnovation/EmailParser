@@ -2,7 +2,6 @@
 #r "ParserTypes.dll"
 #r "EmailParserUtils.dll"
 #r "MimeKitLite.dll"
-#r "HtmlAgilityPack.dll"
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 #load "Utils.fs"
