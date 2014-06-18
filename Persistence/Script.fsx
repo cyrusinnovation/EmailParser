@@ -62,6 +62,7 @@ List.tail retrieved
 let rows =  query { 
                 for calendarEntry in dataContext.``[main].[calendar_entries]`` do
                 sortBy calendarEntry.timestamp
+                sortBy calendarEntry.title
                 select calendarEntry  } |> Seq.toList
 
 rows |> List.map (fun row -> row.Delete())
@@ -69,17 +70,14 @@ dataContext.SubmitUpdates()
 
 let shouldBeEmpty =  query { 
                         for calendarEntry in dataContext.``[main].[calendar_entries]`` do
-                        sortBy calendarEntry.timestamp
                         select calendarEntry  } |> Seq.toList
 
 let emails = query { for email in dataContext.``[main].[emails]`` do
-                     sortBy email.timestamp
                      select email  } |> Seq.toList
 
 emails |> List.map (fun row -> row.Delete())
 dataContext.SubmitUpdates() 
 
 let noEmails =  query { for email in dataContext.``[main].[emails]`` do
-                        sortBy email.timestamp
                         select email  } |> Seq.toList
 

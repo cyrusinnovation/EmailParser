@@ -77,7 +77,7 @@
       <Name>ParserTypes</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utils\Utils.fsproj">
-      <Project>EFAA7888-F46F-4E5B-9020-B03B90422E6F</Project>
+      <Project>{EFAA7888-F46F-4E5B-9020-B03B90422E6F}</Project>
       <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>

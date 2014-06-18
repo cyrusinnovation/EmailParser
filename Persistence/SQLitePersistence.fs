@@ -72,6 +72,7 @@ let retrieveCalendarEntriesFromTodayByDate() =
             for calendarEntry in dataContext.``[main].[calendar_entries]`` do
             where (calendarEntry.timestamp.Value >= todayTimestamp)
             sortBy calendarEntry.timestamp
+            sortBy calendarEntry.title
             select calendarEntry  } |> Seq.toList
                                     |> List.map toCalendarEntry
     
