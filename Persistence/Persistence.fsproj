@@ -65,10 +65,6 @@
     <None Include="events.sqlitedb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="System.Data.SQLite.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="FSharp.Data.SqlProvider.dll" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,5 +76,13 @@
       <Project>{EFAA7888-F46F-4E5B-9020-B03B90422E6F}</Project>
       <Name>Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="System.Data.SQLite.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FSharp.Data.SqlProvider.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

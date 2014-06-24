@@ -19,7 +19,6 @@
     <Tailcalls>false</Tailcalls>
     <PlatformTarget>
     </PlatformTarget>
-    <OtherFlags>--standalone</OtherFlags>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,19 +29,22 @@
     </PlatformTarget>
     <Externalconsole>true</Externalconsole>
     <Tailcalls>true</Tailcalls>
+    <DefineConstants>
+    </DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="MimeKitLite">
       <HintPath>..\packages\MimeKitLite.0.36.0.0\lib\net40\MimeKitLite.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.3\lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System.Security" />
+    <Reference Include="FSharp.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
@@ -61,10 +63,6 @@
       <Project>{EFAA7888-F46F-4E5B-9020-B03B90422E6F}</Project>
       <Name>Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Persistence\Persistence.fsproj">
-      <Project>{166E52EB-4E26-4074-A695-63D071AC135F}</Project>
-      <Name>Persistence</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DenbowParser\DenbowParser.fsproj">
       <Project>{9D443D2B-5025-4047-872B-F30ACE148339}</Project>
       <Name>DenbowParser</Name>
@@ -73,8 +71,24 @@
       <Project>{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}</Project>
       <Name>ODonnellParser</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Persistence\Persistence.fsproj">
+      <Project>{166E52EB-4E26-4074-A695-63D071AC135F}</Project>
+      <Name>Persistence</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="EmailParser.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FSharp.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FSharp.Core.optdata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FSharp.Core.sigdata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
