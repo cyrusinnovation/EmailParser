@@ -1,0 +1,407 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: pblair@cyrusinnovation.com
+Received: by 10.43.48.2 with SMTP id uu2csp236872icb;
+        Mon, 8 Jul 2013 09:50:56 -0700 (PDT)
+X-Received: by 10.49.24.52 with SMTP id r20mr16841813qef.54.1373302256739;
+        Mon, 08 Jul 2013 09:50:56 -0700 (PDT)
+Return-Path: <info@meetup.com>
+Received: from mail0.phi.meetup.com (mail0.phi.meetup.com. [38.123.132.110])
+        by mx.google.com with ESMTP id b4si6273145qan.114.2013.07.08.09.50.56
+        for <pblair@cyrusinnovation.com>;
+        Mon, 08 Jul 2013 09:50:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of info@meetup.com designates 38.123.132.110 as permitted sender) client-ip=38.123.132.110;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of info@meetup.com designates 38.123.132.110 as permitted sender) smtp.mail=info@meetup.com
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=meetup; d=meetup.com;
+ b=U4NCda/ahhgCvtPDaIXZGJBDdIKX9wlo5CaWVURHZJudxUVCTcV7/5+U7JTogIgoqnDFlHIFMKAG
+   4jNYNUjRV1ZT42zVZFumd0MXnyyXf44Znwsw0PsnpLbrlQjnZtkXtw9I99/0b8oAefUl1isuhgYA
+   AHiw7rndhCvVBbHKzn0=;
+Received: from jobs0.meetup.com (10.3.0.30) by mail0.phi.meetup.com id hrbmv015odg9 for <pblair@cyrusinnovation.com>; Mon, 8 Jul 2013 12:50:55 -0400 (envelope-from <info@meetup.com>)
+Message-ID: <469868696.1373302255705.JavaMail.root@jobs0.meetup.com>
+From: eXtreme Tuesday Club - Boston <info@meetup.com>
+Sender: info@meetup.com
+To: pblair@cyrusinnovation.com
+Subject: Tomorrow: Join 3 Extreme Programmers at "eXtreme Tuesday Club -
+ Boston Monthly Meetup"
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_83753311_1621859833.1373302255704"
+X-MEETUP-MESG-ID: 34080162
+X-MEETUP-RECIP-ID: 5342366
+X-MEETUP-TRACK: md2
+Date: Mon, 8 Jul 2013 12:50:55 -0400
+
+------=_Part_83753311_1621859833.1373302255704
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_83753312_588281860.1373302255704"
+
+------=_Part_83753312_588281860.1373302255704
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Just a quick reminder that eXtreme Tuesday Club - Boston has a Meetup tomorrow. Are you going?
+
+Don Roby added this Meetup for eXtreme Tuesday Club - Boston
+
+What: eXtreme Tuesday Club - Boston Monthly Meetup
+
+When: Tuesday, July 9, 2013 6:30 PM
+
+Where: 
+Cambridge Brewing Company
+1 Kendall Square
+Cambridge, MA 
+
+We're moving the meetings back to Tuesdays, and changing the name back.
+
+Click here to say you're going http://www.meetup.com/xp-28/events/125626492/t/md2_rt
+
+To stop receiving reminder emails about Meetups from this group, click here:
+http://www.meetup.com/__ms5342366/xp-28/optout/?submit=true&email=evRemind&expires=1373475055691&sig=2e84daf5c3cc5a3b90dfa30c8e5fe91b55a7a0f2
+
+-- 
+Add info@meetup.com to your address book to receive all Meetup emails
+
+To manage your email settings for this group, go to: http://www.meetup.com/xp-28/settings/
+Meetup, POB 4668 #37895 NY NY USA 10163
+
+Meetup HQ in NYC is hiring!  http://www.meetup.com/jobs/
+
+------=_Part_83753312_588281860.1373302255704
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+   
+<!-- X-track: md2 -->
+<!-- Rsvp: $ other.response -->
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>Meetup</title>
+<style type="text/css">
+@media only screen and (max-device-width: 480px) {
+.other-meetups-tearsheet {
+display:none;
+}
+*[class=people],*[class=noFloat] {
+width: 100%!important;
+float:none!important
+}
+.showMobile {
+color:#222!important;
+line-height: 16px!important;
+max-height:20px!important;
+height:20px!important;
+}
+.hideMobile {
+color:#fff!important;
+line-height:0px!important;
+display:none!important;
+}
+}
+@media only screen and (max-device-width: 320px) {
+.event-meta,
+.event-rsvp-box,
+.noFloat,
+.event-rsvp-box-status {
+float:none!important;
+width:100%!important;
+}
+.showMobile {
+color:#222!important;
+line-height: 16px!important;
+max-height:20px!important;
+height:20px!important;
+}
+.hideMobile {
+color:#fff!important;
+line-height:5px!important;
+display:none!important;
+}
+.event-rsvp-box {
+margin-top:8px;
+}
+.other-meetups-rsvp {
+width:40%!important;
+}
+.other-meetups-event-meta {
+width:60%!important;
+}
+.event-rsvp-box-actions {
+width:100%;
+}
+*[class=people] {
+width: 100%!important;
+float:none!important
+}
+
+
+}
+@media only screen and (min-width: 10px) {
+.meetup-button-gradient {
+background-image:-webkit-gradient(linear,left top,left bottom,from(#e6304c),to(#cb1834));
+background-image:-moz-linear-gradient(center top,#e6304c,#cb1834);
+text-shadow:#b8263c -1px -1px 0;
+-moz-box-shadow:#ed6e81 1px 1px 0 0 inset;
+-webkit-box-shadow:#ed6e81 1px 1px 0 0 inset;
+-o-box-shadow:#ed6e81 1px 1px 0 0 inset;
+box-shadow:#ed6e81 1px 1px 0 0 inset;
+}
+.meetup-button-link {
+border: none!important;
+padding: 5px 18px!important;
+}
+}
+</style>
+</head>
+<body style="margin:0;padding:0;font-family:arial;color:#333;background-color:#fff;text-align:center;">
+<div style="background:#fff!important;">
+
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td style="width:49%;padding:0;border-top:1px solid #e6304c;" valign="top"><div style="height:22px;background:#e6304c;">&nbsp;</div></td>
+<td style="width:52px;padding:0;border-top:1px solid #e6304c;"><a href="http://www.meetup.com/t/md2_1"><img src="http://www.meetup.com/t/img/md2/logo_52x35.gif" width="52" height="39" alt="Meetup" style="border:0;" /></a></td>
+<td style="width:49%;padding:0;border-top:1px solid #e6304c;" valign="top"><div style="height:22px;background:#e6304c;">&nbsp;</div></td>
+</tr>
+</table>
+
+<div style="width:94%;min-width:220px;max-width:650px;margin:0 auto;padding-top:6px;text-align:left;font-family:arial,sans-serif;font-size:13px;line-height:18px;color:#545454;">
+
+<div class="mu-subheader" style="border-bottom:5px solid #fff;">
+<span style="background:#e6304c;color:#fff;border:4px solid #e6304c;text-transform:uppercase;font-size:11px;">tomorrow</span>
+</div>
+<div style="border-top:5px solid #fff;border-bottom:5px solid #fff;text-decoration:none;color:#e6304c;font-size:28px;line-height:30px;font-weight:bold;"><a href="http://www.meetup.com/__ms5342366/xp-28/events/125626492/t/md2_grp/?rv=md2&_af_eid=125626492&_af=event&expires=1373475055692&sig=b0fd870352d269dbca2d4c723b3c9503b7dc3226" style="color:#e6304c!important;text-decoration:none;"><font color="#e6304c">eXtreme Tuesday Club - Boston Monthly Meetup</font></a></div>
+<div style="border-top:2px solid #fff;border-bottom:6px solid #fff; background:#fff;color:#ccc!important;font-size:18px;">eXtreme Tuesday Club - Boston</div>
+
+<div style="border-top:1px dotted #ccc;margin-bottom:8px;overflow:hidden;width:100%;">
+
+<div class="event-meta" style="float:left;width:50%; min-width:220px;border-top:8px solid #fff; background:#fff;">
+<div style="border-bottom:10px solid #fff;border-right:10px solid #fff; background:#fff;">
+<span style="color:#111111;">Tuesday, July 9, 2013</span><br>6:30 PM
+</div>
+<div style="border-right:10px solid #fff; background:#fff;">
+<span style="color:#111111;">Cambridge Brewing Company</span><br />
+1 Kendall Square<br/>
+Cambridge, MA 02139											</div>
+</div>
+
+<div class="event-rsvp-box" style="border-top:8px solid #fff; background:#fff;width:49%; min-width: 200px; float:left;">
+
+
+
+
+
+
+
+
+<table class="event-rsvp-box-status" cellspacing="0" cellpadding="0" style="background-color:#eee;float:right;width:160px;">
+        <tr><td style="border-top:8px solid #eee;border-bottom:8px solid #eee;border-left:8px solid #eee;border-right:8px solid #eee; background:#eee;text-align:center;">
+                <div style="font-weight:normal;font-size:16px;color:#545454!important;">Will you attend?</div>
+		                <div style="font-size:11px;line-height:15px;"></div>
+		                <div style="border-top:4px solid #eee; background:#eee;">
+                <table class="event-rsvp-box-actions" cellspacing="0" cellpadding="0" style="width:100%;">
+									<tr>
+										<td style="width:50%;padding-right:4px;">
+											<div style="display:block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:block;"><a href="http://www.meetup.com/__ms5342366/xp-28/events/125626492/t/md2_lnm/?response=3&fromEmail=125626492&action=rsvp&rv=md2&_af_eid=125626492&_af=event&refund_policy=true&expires=1373475055691&sig=a23be7ca87bc73e6709f2f14e222c6d6b9d1fe44" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>Yes</nobr></font></a></span></div>
+										</td> 
+										<td style="width:50%;">
+											<div style="display:block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:block;"><a href="http://www.meetup.com/__ms5342366/xp-28/events/125626492/t/md2_lnm/?response=2&action=rsvp&rv=md2&_af_eid=125626492&_af=event&refund_policy=true&expires=1373475055691&sig=1cb615ca34f0cc9aaf609e20e83db3228d76fc8e" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>No</nobr></font></a></span></div>
+										</td>
+									</tr>
+                </table>
+                </div>
+        </td></tr>
+</table>
+<div style="float:right;width:160px;text-align:center;border-top:10px solid #fff; background:#fff;">
+<span style="color:#e6304c;"></span>
+</div>
+
+
+</div>
+</div>
+
+<div style="border-top:1px dotted #ccc;">
+<div style="border-top:8px solid #fff;border-bottom:8px solid #fff; background:#fff;">
+<div style="font-size:16px;font-weight:bold;">
+
+
+3 Extreme Programmers attending, including:
+
+
+</div>
+<div style="clear:both;width:100%;overflow:hidden">
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/xp-28/members/5713230/t/md2_fcs/"><img src="http://photos1.meetupstatic.com/photos/member/3/4/9/2/thumb_2893458.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/xp-28/members/5713230/t/md2_fcs/" style="color:#0066CC;text-decoration:none;">Don Roby</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;I'm a software developer with some experience in XP, and an interest in agile processes in general.&quot;</div>
+					</td></tr>
+	</table>
+</div>
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/xp-28/members/98780142/t/md2_fcs/"><img src="http://photos4.meetupstatic.com/img/noPhoto_50.png" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/xp-28/members/98780142/t/md2_fcs/" style="color:#0066CC;text-decoration:none;">Andy Bradwin</a>
+																</div>
+					</td></tr>
+	</table>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div style="border-top:1px dotted #ccc;">
+<div style="border-top:8px solid #fff;border-bottom:8px solid #fff; background:#fff;">
+We're moving the meetings back to Tuesdays, and changing the name back.<br>
+<a href="http://www.meetup.com/xp-28/events/125626492/t/md2_grp/?rv=md2" style="color:#06C;text-transform:uppercase;text-decoration:none;font-size:12px;">Learn more</a>
+</div>
+</div>
+
+
+
+<div style="background-color:#eee;border-top:10px solid #fff; background:#fff;">
+<div style="background-color:#eee;font-weight:bold;border:8px solid #eee;color:#545454!important;font-size:16px;"><a href="http://www.meetup.com/xp-28/" style="color:#545454!important;text-decoration:none;"><font color="#545454">More Meetups from this group</font></a></div>
+<table cellpadding="0" cellspacing="0" style="width:100%;background-color:#eee;">
+<tr>
+	<td class="other-meetups-tearsheet" style="width:32px;background-color:#eee;vertical-align:top;border-top:1px solid #fff;padding:8px 0 8px 8px;">
+				<div style="border:1px solid #555;">
+			<div style="background-color:#555;text-transform:uppercase;color:#fff!important;font-weight:bold;text-align:center;font-size:9px;line-height:14px;padding:0 4px;"><font color="#fff">Aug</font></div>
+			<div style="background-color:#fff;font-size:16px;font-weight:bold;text-align:center;padding:1px 4px 0 4px;">13</div>
+		</div>
+			</td>
+	<td style="vertical-align:top;padding:8px;border-top:1px solid #fff;">
+		<table cellpadding="0" cellspacing="0" style="width:100%;">
+			<tr>
+				<td style="background-color:#eee;vertical-align:top;">
+					<a href="http://www.meetup.com/xp-28/events/dngcqyrlbrb/t/md2_evn/?rv=md2&_af_eid=dngcqyrlbrb&_af=event" style="font-size:14px; color: #3987CB; text-decoration: none; ">eXtreme Tuesday Club - Boston Monthly Meetup</a><br/>
+					<div style="padding:2px 0 4px 0;font-size:12px;line-height:16px;">
+										Tuesday, August 13, 2013 6:30 PM	
+										&middot;
+																				<nobr>1 attending</nobr>
+										</div>
+				</td>
+				<td style="background-color:#eee;width:76px;vertical-align:top;">
+					<div style="display:inline-block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:inline-block;"><a href="http://www.meetup.com/xp-28/events/dngcqyrlbrb/t/md2_evn/?rv=md2&_af_eid=dngcqyrlbrb&_af=event" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:inline-block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>RSVP</nobr></font></a></span></div>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+
+
+<br/>
+<div style="background-color:#eee;">
+<div style="border-bottom:1px solid #fff;font-size:13px;">
+<div style="border:8px solid #eee;">
+Sponsored by
+<span style="white-space:nowrap;line-height:22px;font-size:13px;"><a href="http://www.meetup.com/xp-28/sponsors/" style="color:#0066CC;text-decoration:none;">Cengage Learning</a>,</span>
+<span style="white-space:nowrap;line-height:22px;font-size:13px;"><a href="http://www.meetup.com/xp-28/sponsors/" style="color:#0066CC;text-decoration:none;">Pillar Technology</a> and</span>
+<span style="white-space:nowrap;line-height:22px;font-size:13px;"><a href="http://www.meetup.com/xp-28/sponsors/" style="color:#0066CC;text-decoration:none;">Cyrus Innovation</a></span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div style="border-top:10px solid #fff;border-bottom:10px solid #fff; background:#fff;text-align:center;font-size:12px;">
+To stop receiving reminder emails about Meetups from this group, <a href="http://www.meetup.com/__ms5342366/xp-28/optout/?submit=true&email=evRemind&expires=1373475055698&sig=5c0e9a0dbd9e2f2eeab36dcfabad97890079d505" style="#545454;">click here</a>.
+</div>
+<br/>
+
+
+<div style="background:#555;text-align:center;border:5px solid #555">
+<div style="clear:both;background:#555;text-align:center;border-top:solid 20px #555;border-bottom:solid 20px #555;">
+<div style="width:94%;margin:0 auto;border-left:solid 10px #555;border-right:solid 10px #555;min-width:220px;max-width:650px;text-align:left;font-family:arial;color:#ccc;font-size:11px;line-height:14px;">
+<p style="margin: 0 0 .25em;color:#ccc;">Add <strong><a href="mailto:info@meetup.com" style="color:#ccc;">info@meetup.com</a></strong> to your address book to receive all Meetup emails</p>
+<p style="margin: 0 0 .25em;color:#cccccc;">To manage your email settings, <a href="http://www.meetup.com/account/comm/" style="color:#cccccc!important;">click here</a></p>
+<p style="margin: 0 0 .25em;color:#cccccc;"><a href="#" style="color:#ccc;text-decoration:none;cursor:default;">Meetup, POB 4668 #37895 NY NY USA 10163</a></p>
+<p style="margin: 0 0 .25em;color:#cccccc;"><strong>Meetup HQ in NYC is hiring!</strong>  <a href="http://www.meetup.com/jobs/" style="color:#cccccc!important;">meetup.com/jobs</a></p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+------=_Part_83753312_588281860.1373302255704--
+
+------=_Part_83753311_1621859833.1373302255704
+Content-Type: text/calendar; name=meetup.ics; method=REQUEST; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=meetup.ics
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//Meetup Events v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Meetup Events
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20130708T164227Z
+DTSTART;TZID=America/New_York:20130709T183000
+DTEND;TZID=America/New_York:20130709T213000
+STATUS:CONFIRMED
+SUMMARY:eXtreme Tuesday Club - Boston Monthly Meetup
+DESCRIPTION:eXtreme Tuesday Club - Boston\nTuesday\, July 9 at 6:30 PM\n\
+ nWe're moving the meetings back to Tuesdays\, and changing the name back
+ .\n\nDetails: http://www.meetup.com/xp-28/events/125626492/
+ORGANIZER;CN=Meetup Reminder:MAILTO:info@meetup.com
+CLASS:PUBLIC
+CREATED:20101226T183523Z
+GEO:42.36;-71.06
+LOCATION:Cambridge Brewing Company (1 Kendall Square\, Cambridge\, MA 021
+ 39)
+URL:http://www.meetup.com/xp-28/events/125626492/
+LAST-MODIFIED:20101226T183523Z
+UID:event_dngcqyrkbmb@meetup.com
+END:VEVENT
+END:VCALENDAR
+
+------=_Part_83753311_1621859833.1373302255704--
+

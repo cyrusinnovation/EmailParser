@@ -3,7 +3,8 @@
    date TEXT,
    timestamp INTEGER, 
    sender TEXT,
-   intro TEXT
+   intro TEXT,
+   entire_message TEXT
 );
 
 CREATE TABLE calendar_entries(

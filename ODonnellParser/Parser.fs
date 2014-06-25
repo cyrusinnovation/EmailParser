@@ -122,14 +122,14 @@ let rec calendarEntriesFrom (datePart: MessagePart) (messageParts: list<MessageP
         | _ -> sprintf "Nonempty list not starting with date or time part: [%s]" (remainingParts.ToString()) |> failwith
 
 
-let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (messageParts: list<MessagePart>) : EmailData =
+let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (originalMessageString: string) (messageParts: list<MessagePart>) : EmailData =
     let intro = messageParts |> extractWithEmptyStringDefault (function | IntroPart(intro) -> Some(String.concat "\n" intro)  | _ -> None)
     let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
     let calendarEntries = calendarEntriesFrom nonIntroParts.Head nonIntroParts.Tail
 
-    { MailDate = sentDate; MailSender = sender; MailIntro = intro; CalendarEntries = calendarEntries }
+    { MailDate = sentDate; MailSender = sender; MailIntro = intro; OriginalMessage = originalMessageString; CalendarEntries = calendarEntries }
 
-let parseMail (message: MimeMessage) : EmailData = 
-    let messageData = messageDataFor message
+let parseMail (message: MimeMessage) (originalMessageString: string) : EmailData = 
+    let messageData = messageDataFor message originalMessageString
     let messageParts = parse messageData.MessageLines PreIntro
-    parseIntoEmailData messageData.Sender messageData.SentDate messageParts
+    parseIntoEmailData messageData.Sender messageData.SentDate originalMessageString messageParts

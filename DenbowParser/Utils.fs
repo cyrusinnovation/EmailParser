@@ -8,12 +8,13 @@ open EmailParser.Utils.Text
 open EmailParser.Utils.Date
 open EmailParser.Types
 
-let messageDataFor (message: MimeMessage) =
+let messageDataFor (message: MimeMessage) (originalMessageString: string) =
     let messageLines = htmlPartsOf message |> String.concat "\n" |> toPlainText |> splitIntoLines
     {
         Sender = senderOf message;
         SentDate = dateOf message;
-        MessageLines = messageLines
+        MessageLines = messageLines;
+        EntireMessage = originalMessageString
     }
             
 let startsWithEventDate (line: string) =
@@ -48,7 +49,7 @@ let extractTitleFrom (eventHeader: string) =
     eventHeader.Substring(startIndex).Trim()
 
 let dateAndTimeFrom (dateTimeString: string) = 
-    let normalized = dateTimeString |> regexReplace " +"  " " 
+    let normalized = dateTimeString |> normalizeSpace
                                     |> regexReplace @"\s+:" ":"     //No space around colons in time
                                     |> regexReplace @":\s+" ":"
                                     |> regexReplaceIgnoreCase @"\s+am\s+" "am " //No space before am or pm
@@ -67,7 +68,7 @@ let dateAndTimeFrom (dateTimeString: string) =
 
 
 let containsCalendarLink (descriptionLine: string) =
-    let normalizedLine = descriptionLine.ToLower() |> regexReplace " +"  " "
+    let normalizedLine = descriptionLine.ToLower() |> normalizeSpace
     normalizedLine.Contains("view in calendar")
 
 let removeCalendarLink (descriptionLine: string) =

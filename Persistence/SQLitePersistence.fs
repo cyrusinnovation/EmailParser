@@ -19,6 +19,7 @@ let loadEmailData (dataContext: DataContext) emailData =
     email.timestamp <- emailData.MailDate |> secondsSinceEpoch |> Some 
     email.sender <- emailData.MailSender |> Some
     email.intro <- emailData.MailIntro |> Some
+    email.entire_message <- emailData.OriginalMessage |> Some
     dataContext.SubmitUpdates()
     email
 
