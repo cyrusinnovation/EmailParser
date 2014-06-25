@@ -1,6 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MeetupParser/Script.fsx">
+    <Files>
+      <File FileName="MeetupParser/Script.fsx" Line="5" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/paulblair/Documents/workspace-Monodevelop/EmailParser/DbLoaderDebugger/Program.fs" line="5" column="1" />

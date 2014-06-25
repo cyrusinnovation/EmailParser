@@ -15,6 +15,8 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "DenbowParser", "DenbowParse
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Utils", "Utils\Utils.fsproj", "{EFAA7888-F46F-4E5B-9020-B03B90422E6F}"
 EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "MeetupParser", "MeetupParser\MeetupParser.fsproj", "{561CEF0A-3584-44FE-B5F8-0F574E1019B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{427B4B20-D0A6-4AA9-933A-F7D23F76DF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{427B4B20-D0A6-4AA9-933A-F7D23F76DF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{427B4B20-D0A6-4AA9-933A-F7D23F76DF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{561CEF0A-3584-44FE-B5F8-0F574E1019B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561CEF0A-3584-44FE-B5F8-0F574E1019B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561CEF0A-3584-44FE-B5F8-0F574E1019B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561CEF0A-3584-44FE-B5F8-0F574E1019B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D4D8A6-CCF5-449E-A5FC-00078D897A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -19,14 +19,16 @@ let usage() =
     printfn ""
     printfn "   .denbow - extension for Frank Denbow's mails"
     printfn "   .odonnell - extension for Charlie O'Donnell's mails"
+    printfn "   .meetup - extension for mails from meetup.com"
     printfn ""
     printfn "Output is written into a file named Events.html in the "
     printfn "current working directory."
 
 let selectParseFunction (fileName: string) = 
     match fileName with
-        | filename when filename.EndsWith(".denbow")  -> DenbowParser.Parser.parseMail
-        | filename when filename.EndsWith(".odonnell")  -> ODonnellParser.Parser.parseMail
+        | filename when filename.EndsWith(".denbow")   -> DenbowParser.Parser.parseMail
+        | filename when filename.EndsWith(".odonnell") -> ODonnellParser.Parser.parseMail
+        | filename when filename.EndsWith(".meetup")   -> MeetupParser.Parser.parseMail
         | _ -> sprintf "Unrecognized file extension for file: %s" fileName |> failwith
 
 let loadDataFrom (filename: string) =

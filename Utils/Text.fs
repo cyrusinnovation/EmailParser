@@ -24,6 +24,8 @@ let splitIntoLines (text: string) =
     let lineArray = text.Replace("\r\n", "\n").Split( [|'\n'|] )
     List.ofArray lineArray
 
+let normalizeSpace (text: string) = text |> regexReplace " +"  " "
+
 let asciiSubstitutions = [
         ("’",  "'") ;
         ("–",  "-") ;

@@ -1,0 +1,508 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: psfblair@gmail.com
+Received: by 10.194.55.98 with SMTP id r2csp174890wjp;
+        Tue, 24 Jun 2014 10:08:15 -0700 (PDT)
+X-Received: by 10.66.163.164 with SMTP id yj4mr3218016pab.91.1403629694978;
+        Tue, 24 Jun 2014 10:08:14 -0700 (PDT)
+Return-Path: <SRS0+HsA7=3V=meetup.com=info@mxfwd2.rollernet.us>
+Received: from mxfwd2.rollernet.us (mxfwd2.rollernet.us. [2607:fe70:0:16::b])
+        by mx.google.com with ESMTPS id mk6si1287886pab.91.2014.06.24.10.08.14
+        for <psfblair@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Tue, 24 Jun 2014 10:08:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of SRS0+HsA7=3V=meetup.com=info@mxfwd2.rollernet.us designates 2607:fe70:0:16::b as permitted sender) client-ip=2607:fe70:0:16::b;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of SRS0+HsA7=3V=meetup.com=info@mxfwd2.rollernet.us designates 2607:fe70:0:16::b as permitted sender) smtp.mail=SRS0+HsA7=3V=meetup.com=info@mxfwd2.rollernet.us
+Received: from mail2.rollernet.us (mail2.rollernet.us [208.79.241.2])
+	by mxfwd2.rollernet.us (Postfix) with ESMTP id D170BC02A8BD
+	for <psfblair@gmail.com>; Tue, 24 Jun 2014 10:08:13 -0700 (PDT)
+X-Spam-Checker-Version: SpamAssassin 3.3.2 (2011-06-06) on mail2.rollernet.us
+X-Spam-Level: ***
+X-Spam-Status: No, score=3.7 required=5.0 tests=DKIM_SIGNED,DKIM_VALID,
+	DKIM_VALID_AU,HTML_MESSAGE,LONG_IMG_URI,T_RP_MATCHES_RCVD autolearn=disabled
+	version=3.3.2
+X-Envelope-From: info@meetup.com
+Received: from mail5.nyi.meetup.com (mail5.nyi.meetup.com [64.90.170.35])
+	by mail2.rollernet.us (Postfix) with ESMTP
+	for <ciriwe@phobot.net>; Tue, 24 Jun 2014 10:08:10 -0700 (PDT)
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=meetup; d=meetup.com;
+ b=BN9fznChOq4IbUESpeN8tJxRZ/GTyBvH4OQ48ukM8FR5x9AS7i0bnE/I8IKUJw7at253+1ej/lB3
+   TjbmQgVK91qpjzB84uBdQx4jmiwlyqdDj7/yhCSTbmwRcLGU+jFCH+eGFiNqZw8qN2dCoDDT0ZYf
+   hQidHKbyg3SHvGLtAgY=;
+Received: by mail5.nyi.meetup.com id hl6o7m15obo4 for <ciriwe@phobot.net>; Tue, 24 Jun 2014 13:08:06 -0400 (envelope-from <info@meetup.com>)
+Received: by pmta0.phi.meetup.com id hl6o7c15odgg for <ciriwe@phobot.net>; Tue, 24 Jun 2014 13:08:06 -0400 (envelope-from <info@meetup.com>)
+Message-ID: <620576586.1403629686054.JavaMail.root@jobs0.meetup.com>
+From: Agile / Lean Practitioners <info@meetup.com>
+Sender: info@meetup.com
+To: ciriwe@phobot.net
+Subject: Tomorrow: Join 69 Agile / Lean Practitioners at "Progress at human
+ scale: how discipline, patience & respect leads to org change"
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_12790036_136585416.1403629686052"
+X-MEETUP-MESG-ID: 80482642
+X-MEETUP-RECIP-ID: 6387787
+X-MEETUP-TRACK: md1
+Date: Tue, 24 Jun 2014 13:08:06 -0400
+Received-SPF: pass (meetup.com: 64.90.170.35 is authorized to use 'info@meetup.com' in 'mfrom' identity (mechanism 'ip4:64.90.170.0/26' matched)) receiver=mail2.rollernet.us; identity=mailfrom; envelope-from="info@meetup.com"; helo=mail5.nyi.meetup.com; client-ip=64.90.170.35
+X-Rollernet-Abuse: Processed by Roller Network Mail Services. See our abuse policy at http://www.rollernet.us/policy
+X-Rollernet-Tracking: Tracking ID 67b3.53a9b07a.49e9c.0
+X-Rollernet-FwdTo: default->psfblair@gmail.com
+
+------=_Part_12790036_136585416.1403629686052
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_12790038_1698265910.1403629686053"
+
+------=_Part_12790038_1698265910.1403629686053
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Just a quick reminder that Agile / Lean Practitioners has a Meetup tomorrow. Are you going?
+
+Terrence McGovern added this Meetup for Agile / Lean Practitioners
+
+What: Progress at human scale: how discipline, patience & respect leads to org change
+
+When: Wednesday, June 25, 2014 6:30 PM
+
+Where: 
+Kaplan Test Prep
+395 Hudson Street, 3rd Floor
+New York, NY 
+
+There are moments an organization recognizes a need for change, calls upon outside expertise and dives in with commitment. This is what you do while waiting for that moment. This is about a team changing from within at a pace and to the degree people...
+
+Click here to say you're going http://www.meetup.com/agile-lean-practitioners/events/181749242/t/md1_rt
+
+To stop receiving reminder emails about Meetups from this group, click here:
+http://www.meetup.com/__ms6387787/agile-lean-practitioners/optout/?submit=true&_ms_unsub=true&email=evRemind&expires=1403802486033&sig=952a917c4ffe4d50dccc262cb78e433c2befa381
+
+-- 
+Add info@meetup.com to your address book to receive all Meetup emails
+
+To manage your email settings for this group, go to: http://www.meetup.com/agile-lean-practitioners/settings/
+Meetup, POB 4668 #37895 NY NY USA 10163
+
+Meetup HQ in NYC is hiring!  http://www.meetup.com/jobs/
+
+------=_Part_12790038_1698265910.1403629686053
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+   
+<!-- X-track: md1 -->
+<!-- Rsvp: $ other.response -->
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>Meetup</title>
+<style type="text/css">
+@media only screen and (max-device-width: 480px) {
+.other-meetups-tearsheet {
+display:none;
+}
+*[class=people],*[class=noFloat] {
+width: 100%!important;
+float:none!important
+}
+.showMobile {
+color:#222!important;
+line-height: 16px!important;
+max-height:20px!important;
+height:20px!important;
+}
+.hideMobile {
+color:#fff!important;
+line-height:0px!important;
+display:none!important;
+}
+}
+@media only screen and (max-device-width: 320px) {
+.event-meta,
+.event-rsvp-box,
+.noFloat,
+.event-rsvp-box-status {
+float:none!important;
+width:100%!important;
+}
+.showMobile {
+color:#222!important;
+line-height: 16px!important;
+max-height:20px!important;
+height:20px!important;
+}
+.hideMobile {
+color:#fff!important;
+line-height:5px!important;
+display:none!important;
+}
+.event-rsvp-box {
+margin-top:8px;
+}
+.other-meetups-rsvp {
+width:40%!important;
+}
+.other-meetups-event-meta {
+width:60%!important;
+}
+.event-rsvp-box-actions {
+width:100%;
+}
+*[class=people] {
+width: 100%!important;
+float:none!important
+}
+
+
+}
+@media only screen and (min-width: 10px) {
+.meetup-button-gradient {
+background-image:-webkit-gradient(linear,left top,left bottom,from(#e6304c),to(#cb1834));
+background-image:-moz-linear-gradient(center top,#e6304c,#cb1834);
+text-shadow:#b8263c -1px -1px 0;
+-moz-box-shadow:#ed6e81 1px 1px 0 0 inset;
+-webkit-box-shadow:#ed6e81 1px 1px 0 0 inset;
+-o-box-shadow:#ed6e81 1px 1px 0 0 inset;
+box-shadow:#ed6e81 1px 1px 0 0 inset;
+}
+.meetup-button-link {
+border: none!important;
+padding: 5px 18px!important;
+}
+}
+</style>
+</head>
+<body style="margin:0;padding:0;font-family:arial;color:#333;background-color:#fff;text-align:center;">
+<div style="background:#fff!important;">
+
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td style="width:49%;padding:0;border-top:1px solid #e6304c;" valign="top"><div style="height:22px;background:#e6304c;">&nbsp;</div></td>
+<td style="width:52px;padding:0;border-top:1px solid #e6304c;">
+<a href="http://www.meetup.com/t/md1_1/"><img src="http://www.meetup.com/z/img/md1/MSM2Mzg3Nzg3IzIwMTQtMDYtMjQgMTM6MDg6MDYjNzM3NDM3NGItZDhmOC00YzAxLThiNzEtY2MyMmU2ZGEyNmFi/logo_52x35.gif" width="52" height="35" alt="Meetup" style="border:0;" /></a>
+</td>
+<td style="width:49%;padding:0;border-top:1px solid #e6304c;" valign="top"><div style="height:22px;background:#e6304c;">&nbsp;</div></td>
+</tr>
+</table>
+
+<div style="width:94%;min-width:220px;max-width:650px;margin:0 auto;padding-top:6px;text-align:left;font-family:arial,sans-serif;font-size:13px;line-height:18px;color:#545454;">
+
+<div class="mu-subheader" style="border-bottom:5px solid #fff;">
+<span style="background:#e6304c;color:#fff;border:4px solid #e6304c;text-transform:uppercase;font-size:11px;">tomorrow</span>
+</div>
+<div style="border-top:5px solid #fff;border-bottom:5px solid #fff;text-decoration:none;color:#e6304c;font-size:28px;line-height:30px;font-weight:bold;"><a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/181749242/t/md1_grp/?rv=md1&_af_eid=181749242&_af=event&expires=1403802486035&sig=449abd56f5042d350ffbe99214985d3b3346750c" style="color:#e6304c!important;text-decoration:none;"><font color="#e6304c">Progress at human scale: how discipline, patience &amp; respect leads to org change</font></a></div>
+<div style="border-top:2px solid #fff;border-bottom:6px solid #fff; background:#fff;color:#ccc!important;font-size:18px;">Agile / Lean Practitioners</div>
+
+<div style="border-top:1px dotted #ccc;margin-bottom:8px;overflow:hidden;width:100%;">
+
+<div class="event-meta" style="float:left;width:50%; min-width:220px;border-top:8px solid #fff; background:#fff;">
+<div style="border-bottom:10px solid #fff;border-right:10px solid #fff; background:#fff;">
+<span style="color:#111111;">Wednesday, June 25, 2014</span><br>6:30 PM
+</div>
+<div style="border-right:10px solid #fff; background:#fff;">
+<span style="color:#111111;">Kaplan Test Prep</span><br />
+395 Hudson Street, 3rd Floor<br/>
+New York, NY 10014											</div>
+</div>
+
+<div class="event-rsvp-box" style="border-top:8px solid #fff; background:#fff;width:49%; min-width: 200px; float:left;">
+
+
+
+
+
+
+
+
+<table class="event-rsvp-box-status" cellspacing="0" cellpadding="0" style="background-color:#eee;float:right;width:160px;">
+	<tr><td style="border-top:8px solid #eee;border-bottom:8px solid #eee;border-left:8px solid #eee;border-right:8px solid #eee; background:#eee;text-align:center;">
+		<div style="font-weight:normal;font-size:16px;color:#545454!important;">Are you going?</div>
+				<div style="font-size:11px;line-height:15px;"></div>
+				<div style="border-top:4px solid #eee; background:#eee;">
+			<table class="event-rsvp-box-actions" cellspacing="0" cellpadding="0" style="width:100%;">
+				<tr>
+					<td style="width:50%;padding-right:4px;">
+						<div style="display:block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:block;"><a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/181749242/t/md1_lnm/?response=3&fromEmail=181749242&action=rsvp&rv=md1&_af_eid=181749242&_af=event&refund_policy=true&expires=1403802486034&sig=a0fc01b185bfe004fb93a442d8ad10b2866dc9a8" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>Yes</nobr></font></a></span></div>
+					</td>
+					<td style="width:50%;">
+						<div style="display:block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:block;"><a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/181749242/t/md1_lnm/?response=2&action=rsvp&rv=md1&_af_eid=181749242&_af=event&refund_policy=true&expires=1403802486034&sig=2c2b3ecb550e78818bfb3ce74e44d3044eef62db" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>No</nobr></font></a></span></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</td></tr>
+</table>
+<div style="float:right;width:160px;text-align:center;border-top:10px solid #fff; background:#fff;">
+	<span style="color:#e6304c;"></span>
+</div>
+
+
+</div>
+</div>
+
+<div style="border-top:1px dotted #ccc;">
+<div style="border-top:8px solid #fff;border-bottom:8px solid #fff; background:#fff;">
+<div style="font-size:16px;font-weight:bold;">
+
+
+69 Agile / Lean Practitioners going, including:
+
+
+</div>
+<div style="clear:both;width:100%;overflow:hidden">
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/8025857/t/md1_fcs/"><img src="http://photos3.meetupstatic.com/photos/member/1/1/e/6/thumb_58264582.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/8025857/t/md1_fcs/" style="color:#0066CC;text-decoration:none;">Jessica Barnett</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;Product &quot;</div>
+					</td></tr>
+	</table>
+</div>
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/11729870/t/md1_fcs/"><img src="http://photos3.meetupstatic.com/photos/member/4/a/a/thumb_9241194.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/11729870/t/md1_fcs/" style="color:#0066CC;text-decoration:none;">Phil Hruska</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;Investor and software entrepreneur [2 successful enterprise software startups sold].  Launching an investment and technology website. 
+&quot;</div>
+					</td></tr>
+	</table>
+</div>
+<div style="clear:both;width:100%;overflow:hidden">
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/47496072/t/md1_fcs/"><img src="http://photos2.meetupstatic.com/photos/member/7/d/c/thumb_115982012.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/47496072/t/md1_fcs/" style="color:#0066CC;text-decoration:none;">Dave</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;Hi. I work for a web/mobile dev company&quot;</div>
+					</td></tr>
+	</table>
+</div>
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/9158819/t/md1_fcs/"><img src="http://photos3.meetupstatic.com/photos/member/1/f/f/d/thumb_6248189.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/9158819/t/md1_fcs/" style="color:#0066CC;text-decoration:none;">Ken Warner</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;Hi, I'm a software engineer at Kaplan Test Prep&quot;</div>
+					</td></tr>
+	</table>
+</div>
+</div><div style="clear:both;width:100%;overflow:hidden">
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/126594342/t/md1_fcs/"><img src="http://photos1.meetupstatic.com/photos/member/1/8/2/6/thumb_174126182.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/126594342/t/md1_fcs/" style="color:#0066CC;text-decoration:none;">Andrew</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;Java/J2EE developer&quot;</div>
+					</td></tr>
+	</table>
+</div>
+<div style="float:left;border:5px solid #fff;border-top:10px solid #fff;border-left:none;border-right:15px solid #fff;width:47%;max-width:47%;min-width:220px;" class="people">
+	<table style="width:100%;">
+		<tr><td valign="top" style="min-width:50px;padding-right:10px;overflow:hidden;min-height:50px;height:50px;max-height:50px;width:50px;">
+			<div style="min-height:50px;overflow:hidden;min-width:50px;height:50px;max-height:50px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/31579052/t/md1_fcs/"><img src="http://photos4.meetupstatic.com/photos/member/d/4/b/4/thumb_117114452.jpeg" border="0" style="width:50px;display:block;margin:0;" /></a>
+			</div>
+		</td>
+		<td valign="top" align="left">
+			<div style="border-bottom:5px solid #fff;font-size:14px;line-height:14px;">
+				<a href="http://www.meetup.com/agile-lean-practitioners/members/31579052/t/md1_fcs/" style="color:#0066CC;text-decoration:none;">Duri Chitayat</a>
+																</div>
+						<div style="border-bottom:5px solid #fff;font-size:12px;line-height:14px;">&quot;Scrum Master, Lean enthusiast, recovering entrepreneur, now @netatwork_corp&quot;</div>
+					</td></tr>
+	</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div style="border-top:1px dotted #ccc;">
+<div style="border-top:8px solid #fff;border-bottom:8px solid #fff; background:#fff;">
+There are moments an organization recognizes a need for change, calls upon outside expertise and dives in with commitment. This is what you do while waiting for that moment. This is about a team changing from within at a pace and to the degree people...<br>
+<a href="http://www.meetup.com/agile-lean-practitioners/events/181749242/t/md1_grp/?rv=md1" style="color:#06C;text-transform:uppercase;text-decoration:none;font-size:12px;">Learn more</a>
+</div>
+</div>
+
+
+
+<div style="background-color:#eee;border-top:10px solid #fff; background:#fff;">
+<div style="background-color:#eee;font-weight:bold;border:8px solid #eee;color:#545454!important;font-size:16px;"><a href="http://www.meetup.com/agile-lean-practitioners/" style="color:#545454!important;text-decoration:none;"><font color="#545454">More Meetups from this group</font></a></div>
+<table cellpadding="0" cellspacing="0" style="width:100%;background-color:#eee;">
+<tr>
+	<td class="other-meetups-tearsheet" style="width:32px;background-color:#eee;vertical-align:top;border-top:1px solid #fff;padding:8px 0 8px 8px;">
+				<div style="border:1px solid #555;">
+			<div style="background-color:#555;text-transform:uppercase;color:#fff!important;font-weight:bold;text-align:center;font-size:9px;line-height:14px;padding:0 4px;"><font color="#fff">Jul</font></div>
+			<div style="background-color:#fff;font-size:16px;font-weight:bold;text-align:center;padding:1px 4px 0 4px;">16</div>
+		</div>
+			</td>
+	<td style="vertical-align:top;padding:8px;border-top:1px solid #fff;">
+		<table cellpadding="0" cellspacing="0" style="width:100%;">
+			<tr>
+				<td style="background-color:#eee;vertical-align:top;">
+					<a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/179793422/t/md1_evn/?rv=md1&_af_eid=179793422&_af=event&expires=1403802486042&sig=ca88c486bb98d59bc1e4cf2f9e46229c68b215e3" style="font-size:14px; color: #3987CB; text-decoration: none; ">Moving from Agile Software Dev to Business Agility and Radical Innovation</a><br/>
+					<div style="padding:2px 0 4px 0;font-size:12px;line-height:16px;">
+										Wednesday, July 16, 2014 6:30 PM	
+										&middot;
+																				<nobr>52 attending</nobr>
+										</div>
+				</td>
+				<td style="background-color:#eee;width:76px;vertical-align:top;">
+					<div style="display:inline-block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:inline-block;"><a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/179793422/t/md1_evn/?rv=md1&_af_eid=179793422&_af=event&expires=1403802486042&sig=ca88c486bb98d59bc1e4cf2f9e46229c68b215e3" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:inline-block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>RSVP</nobr></font></a></span></div>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="other-meetups-tearsheet" style="width:32px;background-color:#eee;vertical-align:top;border-top:1px solid #fff;padding:8px 0 8px 8px;">
+				<div style="border:1px solid #555;">
+			<div style="background-color:#555;text-transform:uppercase;color:#fff!important;font-weight:bold;text-align:center;font-size:9px;line-height:14px;padding:0 4px;"><font color="#fff">Aug</font></div>
+			<div style="background-color:#fff;font-size:16px;font-weight:bold;text-align:center;padding:1px 4px 0 4px;">20</div>
+		</div>
+			</td>
+	<td style="vertical-align:top;padding:8px;border-top:1px solid #fff;">
+		<table cellpadding="0" cellspacing="0" style="width:100%;">
+			<tr>
+				<td style="background-color:#eee;vertical-align:top;">
+					<a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/178838702/t/md1_evn/?rv=md1&_af_eid=178838702&_af=event&expires=1403802486044&sig=32fd282d2c907c7fc556f455a571eab36527be89" style="font-size:14px; color: #3987CB; text-decoration: none; ">Thinking, Talking, Showing; The Three Ways of Sketching</a><br/>
+					<div style="padding:2px 0 4px 0;font-size:12px;line-height:16px;">
+										Wednesday, August 20, 2014 6:30 PM	
+										&middot;
+																				<nobr>49 attending</nobr>
+										</div>
+				</td>
+				<td style="background-color:#eee;width:76px;vertical-align:top;">
+					<div style="display:inline-block;border:1px solid #9d1328;background-color:#e9003c;-moz-border-radius: 3px 3px 3px 3px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;text-align:center;"><span class="meetup-button-gradient" style="background-color:#e9003c;display:inline-block;"><a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/events/178838702/t/md1_evn/?rv=md1&_af_eid=178838702&_af=event&expires=1403802486044&sig=32fd282d2c907c7fc556f455a571eab36527be89" class="meetup-button-link" style="border-color:#e9003c;border-width:5px 18px;border-style:solid;font-family:arial,sans-serif;font-weight:bold;white-space:nowrap;color:#fff!important;display:inline-block;text-decoration:none;text-align:center;cursor:pointer;"><font color="#fff"><nobr>RSVP</nobr></font></a></span></div>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+
+
+
+</div>
+
+<br/>
+
+
+<div style="background:#555;text-align:center;border:5px solid #555">
+<div style="clear:both;background:#555;text-align:center;border-top:solid 20px #555;border-bottom:solid 20px #555;">
+<div style="width:94%;margin:0 auto;border-left:solid 10px #555;border-right:solid 10px #555;min-width:220px;max-width:650px;text-align:left;font-family:arial;color:#ccc;font-size:11px;line-height:14px;">
+<p style="margin: 0 0 .25em;color:#ccc;"><a href="http://www.meetup.com/__ms6387787/agile-lean-practitioners/optout/?submit=true&_ms_unsub=true&email=evRemind&expires=1403802486045&sig=45fd5d0b1aa75c02df0b7b77f53079671ad7407c" style="color:#ccc;text-decoration:underline;">Unsubscribe</a> from similar emails from this Meetup Group</p>
+<p style="margin: 0 0 .25em;color:#ccc;">Add <a href="mailto:info@meetup.com" style="color:#ccc;">info@meetup.com</a> to your address book to receive all Meetup emails</p>
+<p style="margin: 0 0 .25em;color:#ccc;"><a href="#" style="color:#ccc;text-decoration:none;cursor:default;">Meetup, POB 4668 #37895 NY NY USA 10163</a></p>
+<p style="margin: 0 0 .25em;color:#ccc;"><strong>Meetup HQ in NYC is hiring!</strong>  <a href="http://www.meetup.com/jobs/" style="color:#ccc;">meetup.com/jobs</a></p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+------=_Part_12790038_1698265910.1403629686053--
+
+------=_Part_12790036_136585416.1403629686052
+Content-Type: text/calendar; name=meetup.ics; method=REQUEST; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=meetup.ics
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//Meetup Events v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Events - Agile / Lean Practitioners
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20140624T165549Z
+DTSTART;TZID=America/New_York:20140625T183000
+DTEND;TZID=America/New_York:20140625T200000
+STATUS:CONFIRMED
+SUMMARY:Progress at human scale: how discipline\, patience & respect lead
+ s to org change
+DESCRIPTION:Agile / Lean Practitioners\nWednesday\, June 25 at 6:30 PM\n\
+ nThere are moments an organization recognizes a need for change\, calls 
+ upon outside expertise and dives in with commitment. This is what you do
+  while w...\n\nDetails: http://www.meetup.com/agile-lean-practitioners/e
+ vents/181749242/
+ORGANIZER;CN=Meetup Reminder:MAILTO:info@meetup.com
+CLASS:PUBLIC
+CREATED:20140507T193628Z
+GEO:40.72;-74.01
+LOCATION:Kaplan Test Prep (395 Hudson Street\, 3rd Floor\, New York\, NY 
+ 10014)
+URL:http://www.meetup.com/agile-lean-practitioners/events/181749242/
+SEQUENCE:1
+LAST-MODIFIED:20140508T210404Z
+UID:event_181749242@meetup.com
+END:VEVENT
+END:VCALENDAR
+
+------=_Part_12790036_136585416.1403629686052--
+
