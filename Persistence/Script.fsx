@@ -49,6 +49,7 @@ let emailData = {
     MailDate = System.DateTime.Today;
     MailSender = "Charlie O'Donnell <charlie@odonnell.com>";
     MailIntro = "an\nintro";
+    OriginalMessage = "The Original Message String\n";
     CalendarEntries = [calendarEntry; yesterdayEntry]
 }
 

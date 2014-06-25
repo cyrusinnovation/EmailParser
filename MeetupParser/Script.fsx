@@ -15,9 +15,10 @@ open EmailParser.Utils.Collections
 open MeetupParser.Utils
 open MeetupParser.Parser
 
-let message = System.IO.File.ReadAllText("Email.meetup") |> loadMimeMessageFrom 
+let inputString = System.IO.File.ReadAllText("Email.meetup")
+let message = inputString |> loadMimeMessageFrom 
 
-let messageData = messageDataFor message
+let messageData = messageDataFor message inputString
 let messageLines = messageData.MessageLines
 
 let message2 = System.IO.File.ReadAllText("Email2.meetup") |> loadMimeMessageFrom 

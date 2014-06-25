@@ -8,12 +8,13 @@ open EmailParser.Utils.Text
 open EmailParser.Utils.Date
 open EmailParser.Types
 
-let messageDataFor (message: MimeMessage) =
+let messageDataFor (message: MimeMessage) (originalMessageString: string) =
     let messageLines = htmlPartsOf message |> String.concat "\n" |> toPlainText |> splitIntoLines
     {
         Sender = senderOf message;
         SentDate = dateOf message;
-        MessageLines = messageLines
+        MessageLines = messageLines;
+        EntireMessage = originalMessageString
     }
             
 let startsWithEventDate (line: string) =

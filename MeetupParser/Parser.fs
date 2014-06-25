@@ -82,12 +82,12 @@ let calendarEntryFrom (messageParts: seq<MessagePart>) =
         RsvpLink = (uriFrom rsvp)
     }
 
-let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (messageParts: list<MessagePart>) : EmailData =
+let parseIntoEmailData (sender: string) (sentDate: System.DateTime) (originalMessageString: string) (messageParts: list<MessagePart>) : EmailData =
     let calendarEntries = [ calendarEntryFrom messageParts ]
 
-    { MailDate = sentDate; MailSender = sender; MailIntro = ""; CalendarEntries = calendarEntries }
+    { MailDate = sentDate; MailSender = sender; MailIntro = ""; OriginalMessage = originalMessageString; CalendarEntries = calendarEntries }
 
-let parseMail (message: MimeMessage) : EmailData = 
-    let messageData = messageDataFor message
+let parseMail (message: MimeMessage) (originalMessageString: string) : EmailData = 
+    let messageData = messageDataFor message originalMessageString
     let messageParts = parse messageData.MessageLines Header
-    parseIntoEmailData messageData.Sender messageData.SentDate messageParts
+    parseIntoEmailData messageData.Sender messageData.SentDate originalMessageString messageParts

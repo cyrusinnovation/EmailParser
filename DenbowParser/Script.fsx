@@ -14,9 +14,10 @@ open System.Text.RegularExpressions
 open DenbowParser.Parser
 open DenbowParser.Utils
 
-let message = System.IO.File.ReadAllText("Email.denbow") |> loadMimeMessageFrom 
+let inputString = System.IO.File.ReadAllText("Email.denbow")
+let message = inputString |> loadMimeMessageFrom 
 
-let messageData = messageDataFor message
+let messageData = messageDataFor message inputString
 let messageLines = messageData.MessageLines
 
 let messageParts = parse messageLines PreIntro

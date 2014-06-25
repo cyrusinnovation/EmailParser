@@ -5,7 +5,8 @@ open System
 type EmailMessage = {
     Sender: string;
     SentDate: DateTime;
-    MessageLines: list<string>
+    MessageLines: list<string>;
+    EntireMessage: string
 }
 
 type DateAndTime = {
@@ -25,5 +26,6 @@ type EmailData = {
     MailDate: DateTime;
     MailSender: string;
     MailIntro: string;
+    OriginalMessage: string;
     CalendarEntries: list<CalendarEntry>
 }

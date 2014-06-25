@@ -8,11 +8,12 @@ open EmailParser.Utils.Date
 open EmailParser.Utils.Text
 open EmailParser.Types
 
-let messageDataFor (message: MimeMessage) =
+let messageDataFor (message: MimeMessage) (originalMessageString: string) =
     {
         Sender = senderOf message;
         SentDate = dateOf message;
-        MessageLines = (textOf message |> splitIntoLines)
+        MessageLines = (textOf message |> splitIntoLines);
+        EntireMessage = originalMessageString
     }
 
 let startsWithTitle (line: string) = line.Trim().StartsWith("What:")

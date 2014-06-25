@@ -14,9 +14,10 @@ open System.Text.RegularExpressions
 open ODonnellParser.Parser
 open ODonnellParser.Utils
 
-let message = System.IO.File.ReadAllText("Email.odonnell") |> loadMimeMessageFrom
+let inputString = System.IO.File.ReadAllText("Email.odonnell")
+let message = inputString |> loadMimeMessageFrom
 
-let messageData = messageDataFor message
+let messageData = messageDataFor message inputString
 let messageParts = parse messageData.MessageLines PreIntro
 let nonIntroParts = messageParts |> List.filter (function |IntroPart(_) -> false | _ -> true)
 let date = extractDateStringFrom nonIntroParts.Head    

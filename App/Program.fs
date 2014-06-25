@@ -35,7 +35,7 @@ let loadDataFrom (filename: string) =
     let inputString = System.IO.File.ReadAllText(filename)
     let message = loadMimeMessageFrom(inputString)
     let parseFunction = selectParseFunction filename
-    let parsed = parseFunction message
+    let parsed = parseFunction message inputString
     loadMail parsed
     ()
 
